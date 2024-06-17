@@ -47,7 +47,7 @@ fn main() {
                 print_data(&data);
 
                 let mut binary: Vec<u8> = Vec::new();
-                for i in 0..900 {
+                for i in 0..30 {
                     binary.push(255 - i as u8);
                 }
                 uart.send_data(binary).unwrap();
