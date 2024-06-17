@@ -1,6 +1,5 @@
 #![allow(dead_code)]
 
-use core::panic;
 use std::io::prelude::*;
 use std::net::{TcpListener, TcpStream};
 
@@ -38,7 +37,7 @@ fn main() {
 
     for stream in listener.incoming() {
         match stream {
-            Ok(mut stream) => {
+            Ok(stream) => {
                 // trait orphan or something like that I'm not sure I handled this correctly
                 let mut uart = UartSerial(stream);
                 let mut uart = UartCrc::new(&mut uart);
