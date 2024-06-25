@@ -4,9 +4,8 @@ use std::io::{self, prelude::*};
 use std::net::{TcpListener, TcpStream};
 use std::time::Duration;
 
-mod uart;
+use hopter_friend::uart::*;
 use std::{thread, time};
-use uart::*;
 const MESSSAGE_SIZE: usize = 59;
 const CHECKSUM_SIZE: usize = 4;
 const FLAGS_SIZE: usize = 1;
@@ -39,13 +38,6 @@ fn main() {
     for stream in listener.incoming() {
         match stream {
             Ok(stream) => {
-                let mut uart = UartSerial(stream);
-                for i in 0..10 {
-                    thread::sleep(time::Duration::from_secs(2));
-                    println!("Sending {}", i);
-                    uart.uart_write_byte(i).unwrap();
-                }
-                continue;
                 stream
                     .set_write_timeout(Some(Duration::from_secs(2)))
                     .unwrap();

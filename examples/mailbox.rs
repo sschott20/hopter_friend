@@ -4,14 +4,12 @@ use std::io::{self, prelude::*};
 use std::net::{TcpListener, TcpStream};
 use std::time::Duration;
 
-mod uart;
+use hopter_friend::uart::*;
 use std::{thread, time};
-use uart::*;
 const MESSSAGE_SIZE: usize = 59;
 const CHECKSUM_SIZE: usize = 4;
 const FLAGS_SIZE: usize = 1;
 const CHUNK_SIZE: usize = MESSSAGE_SIZE + FLAGS_SIZE + CHECKSUM_SIZE;
-
 struct UartSerial(TcpStream);
 
 impl UartRW for UartSerial {
@@ -31,7 +29,6 @@ impl UartRW for UartSerial {
         }
     }
 }
-
 fn main() {
     eprintln!("Starting Tcp receiver");
     let listener = TcpListener::bind("127.0.0.1:4545").unwrap();
@@ -46,29 +43,6 @@ fn main() {
                     uart.uart_write_byte(i).unwrap();
                 }
                 continue;
-                stream
-                    .set_write_timeout(Some(Duration::from_secs(2)))
-                    .unwrap();
-                stream
-                    .set_read_timeout(Some(Duration::from_secs(2)))
-                    .unwrap();
-
-                // trait orphan or something like that I'm not sure I handled this correctly
-                let mut uart = UartSerial(stream);
-
-                let mut uart = UartCrc::new(&mut uart);
-
-                // let sz = uart.listen_for_data_size();
-                let data = uart.listen_for_data().unwrap();
-                print_data(&data);
-
-                let mut binary: Vec<u8> = Vec::new();
-                for i in 0..30 {
-                    binary.push(255 - i as u8);
-                }
-                // uart.send_data(binary).unwrap();
-
-                // let request: Vec<u8> = uart.listen_for_data();
             }
 
             Err(e) => {
