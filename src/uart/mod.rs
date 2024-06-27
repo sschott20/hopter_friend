@@ -167,6 +167,7 @@ impl<'a, T: UartRW> UartCrc<'a, T> {
     pub fn listen_for_response(&mut self) -> Result<Flags, UartError> {
         // Readbyte should return UartError::timeout on timeout
         let buf = self.serial.uart_read_byte()?;
+        
         let flags = Flags {
             response_type: match buf & 0xF0 {
                 0xA0 => Some(ResponseType::Ack),
@@ -241,7 +242,7 @@ impl<'a, T: UartRW> UartCrc<'a, T> {
             let message_checksum = u32::from_le_bytes(message_checksum_b);
 
             let checksum = crc32fast::hash(&buf[0..MESSSAGE_SIZE]);
-
+            print_data(&buf);
             if checksum != message_checksum {
                 eprintln!("Checksum mismatch");
                 retransmission_counter += 1;

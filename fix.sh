@@ -1,8 +1,8 @@
 #!/bin/bash
-rm /home/alex/hopter_friend/src/uart.rs
-cp /home/alex/hopter/src/uart/mod.rs /home/alex/hopter_friend/src/uart.rs
+rm /home/alex/hopter_friend/src/uart/mod.rs
+cp /home/alex/hopter/src/uart/mod.rs /home/alex/hopter_friend/src/uart/mod.rs
 # Define the file to search for
-FILE_NAME="uart.rs"
+FILE_NAME="mod.rs"
 
 # Find the file
 FILE_PATH=$(find . -type f -name "$FILE_NAME")
@@ -14,3 +14,4 @@ sed -i 's/use super::{hprint, hprintln};//g' "$FILE_PATH"
 sed -i 's/hprint/eprint/g' "$FILE_PATH"
 
 echo "Replacements completed in $FILE_PATH"
+

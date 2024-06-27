@@ -58,7 +58,7 @@ fn main() {
                 for i in 0..30 {
                     binary.push(255 - i as u8);
                 }
-                // uart.send_data(binary).unwrap();
+                uart.send_data(binary).unwrap();
 
                 // let request: Vec<u8> = uart.listen_for_data();
             }
