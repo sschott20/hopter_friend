@@ -18,5 +18,15 @@
         "titleBar.inactiveBackground": "#330e2599",
         "titleBar.inactiveForeground": "#e7e7e799"
     },
-    "peacock.remoteColor": "#330e25"
+    "peacock.remoteColor": "#330e25",
+    "cSpell.words": [
+        "cloberred",
+        "devided",
+        "hasher",
+        "Hasher",
+        "postamble",
+        "POSTAMBLE",
+        "thumbv",
+        "totel"
+    ]
 }

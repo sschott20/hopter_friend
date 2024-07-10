@@ -38,7 +38,7 @@ fn main() {
             Ok(stream) => {
                 let mut uart = UartSerial(stream);
                 for i in 0..10 {
-                    thread::sleep(time::Duration::from_secs(2));
+                    thread::sleep(time::Duration::from_millis(100));
                     println!("Sending {}", i);
                     uart.uart_write_byte(i).unwrap();
                 }
