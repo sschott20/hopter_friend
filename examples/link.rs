@@ -1,7 +1,9 @@
 use std::{
-    fs::File,
+    fs::{self, File},
     io::{BufRead, BufReader, Write},
     process::{Command, Output},
+    thread::{sleep, sleep_ms},
+    time::Duration,
 };
 
 use std::fs::OpenOptions;
@@ -31,14 +33,14 @@ fn extract_function(func_name: &str) {
     let mut extract_file = OpenOptions::new()
         .write(true)
         .truncate(true)
+        .create(true)
         .open("objects/extract.s")
         .expect("Failed to open file");
-    // let mut extract_file = File::create("objects/extract.s").expect("Failed to create file");
 
     let reader = BufReader::new(asm_file);
     let mut inside_function = false;
     let mut inside_lanon = false;
-    let mut inside_mergedGlobals = false;
+    let mut inside_merged_globals = false;
     for line in reader.lines() {
         let line = line.unwrap();
 
@@ -58,11 +60,11 @@ fn extract_function(func_name: &str) {
         }
 
         if line.contains(".type") && line.contains("L_MergedGlobals") {
-            inside_mergedGlobals = true;
+            inside_merged_globals = true;
         } else if line.contains(".section") && !line.contains("L_MergedGlobals") {
-            inside_mergedGlobals = false;
+            inside_merged_globals = false;
         }
-        if inside_function || inside_lanon || inside_mergedGlobals {
+        if inside_function || inside_lanon || inside_merged_globals {
             if line.contains(".word") && line.contains("#") {
                 writeln!(extract_file, "{}", line.replace("#", "")).unwrap();
             } else {
@@ -84,34 +86,79 @@ fn compile_obj() {
         .expect("Failed to execute command");
 }
 fn link() {
-    let output = Command::new("/home/alex/opt/llvm/bin/ld.lld")
+    let _ = Command::new("/home/alex/opt/llvm/bin/ld.lld")
         .arg("simple_link.ld")
         .arg("objects/symbols.ld")
         .arg("--verbose")
         .arg("-o")
         .arg("objects/extract")
         .arg("objects/output.o")
-        .output()
+        .spawn()
         .expect("Failed to execute command");
 }
 
-fn dissassemble() {
+fn disassemble() {
     // /home/alex/opt/llvm/bin/llvm-objdump --disassemble read_with_timeout > read_with_timeout.s
     let output = Command::new("/home/alex/opt/llvm/bin/llvm-objdump")
         .arg("--disassemble")
         .arg("objects/extract")
         .output()
         .expect("Failed to execute command");
+
     let mut disassemble_file =
         File::create("objects/extract_disassemble.s").expect("Failed to create file");
     disassemble_file
         .write_all(&output.stdout)
         .expect("Failed to write to file");
 }
+
+fn copy_files(example_name: &str) {
+    let bin = format!(
+        "/home/alex/hopter/target/thumbv7em-none-eabihf/release/examples/{}",
+        example_name
+    );
+    let _ = Command::new("cp")
+        .arg(bin)
+        .arg("/home/alex/hopter_friend/objects/bin")
+        .output()
+        .expect("Failed to execute command");
+
+    let asm_file_path = find_asm_file(example_name);
+    let _ = Command::new("cp")
+        .arg(asm_file_path)
+        .arg("/home/alex/hopter_friend/objects/asm.s")
+        .output()
+        .expect("Failed to execute command");
+}
+fn find_asm_file(search_string: &str) -> String {
+    let dir = "/home/alex/hopter/target/thumbv7em-none-eabihf/release/examples/";
+
+    let entries = fs::read_dir(dir).unwrap();
+    for entry in entries {
+        if let Ok(entry) = entry {
+            let path = entry.path();
+            let file_path_str = path.to_str().unwrap();
+            if file_path_str.contains(search_string) && file_path_str.ends_with(".s") {
+                return file_path_str.to_string();
+            }
+        }
+    }
+    panic!("Could not find object file");
+}
 fn main() -> () {
+    copy_files("hello_world");
+    sleep(Duration::from_millis(50));
+
     get_symbols();
-    extract_function("read_with_timeout");
+    sleep(Duration::from_millis(50));
+
+    extract_function("say_hello_fn");
+    sleep(Duration::from_millis(50));
     compile_obj();
+    sleep(Duration::from_millis(50));
+
     link();
-    dissassemble();
+    sleep(Duration::from_millis(50));
+
+    disassemble();
 }

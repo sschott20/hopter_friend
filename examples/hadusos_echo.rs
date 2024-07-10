@@ -1,11 +1,10 @@
 #![allow(dead_code)]
 
-use std::io::{self, prelude::*};
+use std::io::prelude::*;
 use std::net::{TcpListener, TcpStream};
-use std::thread::sleep;
 use std::time::{Duration, SystemTime};
 
-use hopter_friend::hadusos::*;
+use hadusos::*;
 const TIMEOUT_MS: u32 = 10000;
 
 #[derive(Debug)]
@@ -32,7 +31,7 @@ impl Serial for TcpSerial {
         &mut self,
         timeout_ms: u32,
     ) -> Result<u8, SerialError<Self::ReadError, Self::WriteError>> {
-        if (self.stream.read_timeout().unwrap() != Some(Duration::from_millis(timeout_ms as u64))) {
+        if self.stream.read_timeout().unwrap() != Some(Duration::from_millis(timeout_ms as u64)) {
             self.stream
                 .set_read_timeout(Some(Duration::from_millis(timeout_ms as u64)))
                 .unwrap();
@@ -60,16 +59,13 @@ fn main() {
         match stream {
             Ok(stream) => {
                 println!("Connection established");
-                // let session = Session::new(serial, timer);
-                // sleep(Duration::from_secs(1));
+
                 let tcpserial = TcpSerial { stream };
                 let systimer = SysTimer {
                     start: SystemTime::now(),
                 };
                 let mut session: Session<TcpSerial, SysTimer, 150, 2> =
                     Session::new(tcpserial, systimer);
-
-                // let mut data: [u8; 2048] = [0; 2048];
 
                 let size = match session.listen(TIMEOUT_MS) {
                     Ok(size) => size,

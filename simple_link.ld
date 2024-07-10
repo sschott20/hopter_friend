@@ -32,6 +32,7 @@ MEMORY
   /* NOTE 1 K = 1 KiBi = 1024 bytes */
 }
 
+
 /* # Sections */
 SECTIONS
 {
