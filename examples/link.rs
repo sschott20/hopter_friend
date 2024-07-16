@@ -145,19 +145,35 @@ fn find_asm_file(search_string: &str) -> String {
     }
     panic!("Could not find object file");
 }
+
+fn extract_extab() {
+    let output = Command::new("/home/alex/opt/llvm/bin/llvm-objcopy")
+        .arg("--only-section")
+        .arg(".ARM.extab")
+        .arg("-O")
+        .arg("binary")
+        .arg("objects/bin")
+        .arg("objects/extab")
+        .output()
+        .expect("Failed to execute command");
+}
 fn main() -> () {
-    copy_files("hello_world");
+    copy_files("unw_iter");
     sleep(Duration::from_millis(50));
 
     get_symbols();
     sleep(Duration::from_millis(50));
 
-    extract_function("say_hello_fn");
+    extract_function("will_panic");
     sleep(Duration::from_millis(50));
+
     compile_obj();
     sleep(Duration::from_millis(50));
 
     link();
+    sleep(Duration::from_millis(50));
+
+    extract_extab();
     sleep(Duration::from_millis(50));
 
     disassemble();

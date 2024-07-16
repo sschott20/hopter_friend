@@ -7,5 +7,6 @@ edition = "2021"
 crc32fast = { version = "1.4.2", default-features = false }
 crossbeam = "0.8.4"
 hadusos = "0.2.1"
+postcard = { version = "1.0.8", features = ["alloc"] }
+serde = { version = "1.0.204", features = ["derive"] }
 static_assertions = "1.1.0"
-
