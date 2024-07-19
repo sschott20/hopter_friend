@@ -1,12 +1,12 @@
 #![allow(dead_code)]
 use hadusos::*;
 use hopter_friend::unwind::{self, ExTabEntry, PersonalityType::*};
-use postcard;
-use serde::{Deserialize, Serialize};
+
 use std::io::prelude::*;
-use std::mem;
 use std::net::{TcpListener, TcpStream};
 use std::time::{Duration, SystemTime};
+use std::{fs, mem};
+
 const TIMEOUT_MS: u32 = 10000;
 
 macro_rules! unwrap_or_return {
@@ -100,6 +100,22 @@ pub fn print_data(vec: &[u8]) {
     }
     println!();
 }
+fn get_extab_bytes() -> Vec<u8> {
+    let buffer = fs::read("objects/bin").unwrap();
+    let elf = goblin::elf::Elf::parse(&buffer).unwrap();
+    for header in elf.section_headers {
+        if header.sh_type == goblin::elf::section_header::SHT_PROGBITS {
+            let name = elf.shdr_strtab.get_at(header.sh_name).unwrap();
+            println!("name: {:?}", name);
+            if name == ".ARM.extab" {
+                return buffer
+                    [header.sh_offset as usize..(header.sh_offset + header.sh_size) as usize]
+                    .to_vec();
+            }
+        }
+    }
+    panic!("extab not found");
+}
 
 fn handle_connection(stream: TcpStream) -> () {
     println!("Connection established");
@@ -110,6 +126,7 @@ fn handle_connection(stream: TcpStream) -> () {
     };
     let mut session: Session<TcpSerial, SysTimer, 150, 2> = Session::new(tcpserial, systimer);
 
+    // receive extab entry address
     let Ok(size) = session.listen(TIMEOUT_MS) else {
         return;
     };
@@ -123,8 +140,11 @@ fn handle_connection(stream: TcpStream) -> () {
     println!("extab_entry_addr: {:?}", entry_offset);
     // read binary data from objects/extab into extab_b
 
-    let extab_b = include_bytes!("../objects/extab");
-    let (extab_entry, lsda_slice) = ExTabEntry::from_bytes(extab_b, entry_offset as usize).unwrap();
+    let extab_bytes = get_extab_bytes();
+    // let extab_b = include_bytes!("../objects/extab");
+
+    let (extab_entry, lsda_slice) =
+        ExTabEntry::from_bytes(&extab_bytes, entry_offset as usize).unwrap();
     let bytes = extab_entry.get_unw_instr_iter().get_byte_iter().bytes;
     println!("unw insn iter: {:?}", extab_entry.get_unw_instr_iter());
 

@@ -1,4 +1,3 @@
-use serde::{Deserialize, Serialize};
 use std::ops::Add;
 /// Prel31 offset is a position relative pointer. The value represented
 /// by a prel31 offset is *the address of the prel31 data itself plus
@@ -6,7 +5,7 @@ use std::ops::Add;
 /// significant bit is used for storing arbitrary data, which does
 /// not participate in value calculation. The reset 31 bits have two's
 /// complement representation.
-#[derive(Debug, Deserialize, Serialize)]
+#[derive(Debug)]
 pub struct Prel31 {
     /// The raw bits of the prel31 offset. The most significant bit
     /// stores arbitraty data. The reset 31 bits are two's complement
@@ -52,7 +51,7 @@ impl Prel31 {
 }
 
 /// The type of a personality function.
-#[derive(Debug, PartialEq, Clone, Deserialize, Serialize)]
+#[derive(Debug, PartialEq, Clone)]
 pub enum PersonalityType {
     /// The compact variant. The enclosed value is the selector
     /// to compact personality routines. Valid range [0, 15].
@@ -66,7 +65,7 @@ pub enum PersonalityType {
 /// The variants of unwind instructions. All variants are listed here
 /// but only integer variants are supported for now. See
 /// `UnwindState::step` for how these instructions are applied.
-#[derive(Debug, Deserialize, Serialize)]
+#[derive(Debug)]
 #[allow(unused)]
 pub enum UnwindInstruction {
     DataPop { size: u32 },
@@ -194,7 +193,7 @@ impl UnwindInstruction {
 ///   significant one to the most significant one.
 /// - Inside each word, read from the most significant byte to
 ///   the least significant byte.
-#[derive(Debug, Clone, Deserialize, Serialize)]
+#[derive(Debug, Clone)]
 pub struct UnwindByteIter<'a> {
     pub bytes: &'a [u8],
     pos: usize,
@@ -231,9 +230,8 @@ impl<'a> Iterator for UnwindByteIter<'a> {
 /// An iterator that yields unwind instructions by reading from either the exception
 /// table or the exception indicies. This iterator uses `UnwindByteIter` to get the
 /// raw bytes.
-#[derive(Debug, Clone, Deserialize, Serialize)]
+#[derive(Debug, Clone)]
 pub struct UnwindInstrIter<'a> {
-    #[serde(borrow)]
     byte_iter: UnwindByteIter<'a>,
 }
 
@@ -261,14 +259,13 @@ impl<'a> UnwindInstrIter<'a> {
 /// followed by a sequence of unwind instructions, and then optionally
 /// a LSDA (language specific data area). This structure only deals with
 /// the language agnostic part, deferring parsing the LSDA to other module.
-#[derive(Debug, Deserialize, Serialize)]
+#[derive(Debug)]
 pub struct ExTabEntry<'a> {
     /// The personality routine. Can be either the compact model
     /// or the generic model.
     personality: PersonalityType,
 
     /// An iterator that yields unwind instructions.
-    #[serde(borrow)]
     unw_instr_iter: UnwindInstrIter<'a>,
 }
 
