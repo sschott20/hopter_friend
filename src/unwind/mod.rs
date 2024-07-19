@@ -196,7 +196,7 @@ impl UnwindInstruction {
 ///   the least significant byte.
 #[derive(Debug, Clone, Deserialize, Serialize)]
 pub struct UnwindByteIter<'a> {
-    bytes: &'a [u8],
+    pub bytes: &'a [u8],
     pos: usize,
 }
 

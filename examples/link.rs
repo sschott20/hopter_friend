@@ -157,7 +157,22 @@ fn extract_extab() {
         .output()
         .expect("Failed to execute command");
 }
+fn clean_dir() {
+    if let Ok(entries) = fs::read_dir("/home/alex/hopter_friend/objects") {
+        for entry in entries {
+            if let Ok(entry) = entry {
+                let path = entry.path();
+                if path.is_file() {
+                    fs::remove_file(path).unwrap();
+                }
+            }
+        }
+    }
+}
 fn main() -> () {
+    clean_dir();
+    sleep(Duration::from_millis(50));
+
     copy_files("unw_iter");
     sleep(Duration::from_millis(50));
 
