@@ -290,7 +290,6 @@ impl<'a> ExTabEntry<'a> {
         let personality;
         let mut iter;
         let lsda_offset;
-        println!("entry offset is: {}", entry_offset);
         // Read the most significant byte in the first word. It distinguishes
         // the compact model between the generic model.
         let raw_pers = extab[entry_offset + 3];

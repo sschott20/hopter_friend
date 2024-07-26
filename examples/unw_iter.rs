@@ -1,11 +1,11 @@
 #![allow(dead_code)]
 use hadusos::*;
-use hopter_friend::unwind::{self, ExTabEntry, PersonalityType::*};
+use hopter_friend::unwind::{ExTabEntry, PersonalityType::*};
 
 use std::io::prelude::*;
 use std::net::{TcpListener, TcpStream};
 use std::time::{Duration, SystemTime};
-use std::{fs, mem};
+use std::{fs, thread};
 
 const TIMEOUT_MS: u32 = 10000;
 
@@ -75,7 +75,9 @@ fn main() {
     for stream in listener.incoming() {
         match stream {
             Ok(stream) => {
-                handle_connection(stream);
+                thread::spawn(|| {
+                    handle_connection(stream);
+                });
             }
 
             Err(e) => {
@@ -100,84 +102,117 @@ pub fn print_data(vec: &[u8]) {
     }
     println!();
 }
-fn get_extab_bytes() -> Vec<u8> {
-    let buffer = fs::read("objects/bin").unwrap();
-    let elf = goblin::elf::Elf::parse(&buffer).unwrap();
-    for header in elf.section_headers {
-        if header.sh_type == goblin::elf::section_header::SHT_PROGBITS {
-            let name = elf.shdr_strtab.get_at(header.sh_name).unwrap();
-            println!("name: {:?}", name);
-            if name == ".ARM.extab" {
-                return buffer
-                    [header.sh_offset as usize..(header.sh_offset + header.sh_size) as usize]
-                    .to_vec();
-            }
+
+fn get_extab_bytes() -> &'static [u8] {
+    let sections = fs::read_to_string("objects/sections.txt").unwrap();
+
+    let mut addr = 0;
+    let mut offset = 0;
+    let mut size = 0;
+
+    for line in sections.lines() {
+        if line.contains(".ARM.extab") {
+            let parts: Vec<&str> = line.split_whitespace().collect();
+            addr = u32::from_str_radix(parts[1], 16).unwrap();
+            offset = u32::from_str_radix(parts[2], 16).unwrap();
+            size = u32::from_str_radix(parts[3], 16).unwrap();
         }
     }
-    panic!("extab not found");
+    println!(
+        "addr: {:x?}, offset: {:x?}, size: {:x?}",
+        addr, offset, size
+    );
+    assert!(addr != 0);
+    assert!(offset != 0);
+    assert!(size != 0);
+
+    let fd = unsafe {
+        libc::open(
+            "objects/release.bin\0".as_ptr() as *const i8,
+            libc::O_RDONLY,
+        )
+    };
+
+    let _ = unsafe {
+        libc::mmap(
+            0x800_0000 as *mut libc::c_void,
+            (offset + size) as libc::size_t,
+            libc::PROT_READ | libc::PROT_WRITE as libc::c_int,
+            libc::MAP_PRIVATE as libc::c_int,
+            fd,
+            0,
+        )
+    };
+    let _ = unsafe {
+        libc::close(fd);
+    };
+
+    return unsafe { std::slice::from_raw_parts(addr as *const u8, size as usize) };
 }
 
 fn handle_connection(stream: TcpStream) -> () {
     println!("Connection established");
-
     let tcpserial = TcpSerial { stream };
     let systimer = SysTimer {
         start: SystemTime::now(),
     };
     let mut session: Session<TcpSerial, SysTimer, 150, 2> = Session::new(tcpserial, systimer);
+    loop {
+        // receive extab entry address
+        let Ok(size) = session.listen(TIMEOUT_MS) else {
+            return;
+        };
 
-    // receive extab entry address
-    let Ok(size) = session.listen(TIMEOUT_MS) else {
-        return;
-    };
+        let mut data = new_byte_slice(size as usize);
+        let Ok(_) = session.receive(&mut data, TIMEOUT_MS) else {
+            return;
+        };
 
-    let mut data = new_byte_slice(size as usize);
-    let Ok(_) = session.receive(&mut data, TIMEOUT_MS) else {
-        return;
-    };
+        let extab_bytes = get_extab_bytes();
 
-    let entry_offset: u32 = u32::from_le_bytes(data[0..4].try_into().unwrap());
-    println!("extab_entry_addr: {:?}", entry_offset);
-    // read binary data from objects/extab into extab_b
+        let extab_entry_addr: usize = u32::from_le_bytes(data[0..4].try_into().unwrap()) as usize;
+        let extab_start_addr = &extab_bytes[0] as *const u8 as usize;
+        let entry_offset = extab_entry_addr - extab_start_addr;
 
-    let extab_bytes = get_extab_bytes();
-    // let extab_b = include_bytes!("../objects/extab");
+        println!("extab_entry_addr: 0x{:x?}", extab_entry_addr);
+        println!("extab_start_addr: 0x{:x?}", extab_start_addr);
+        println!("entry_offset: 0x{:x?}", entry_offset);
 
-    let (extab_entry, lsda_slice) =
-        ExTabEntry::from_bytes(&extab_bytes, entry_offset as usize).unwrap();
-    let bytes = extab_entry.get_unw_instr_iter().get_byte_iter().bytes;
-    println!("unw insn iter: {:?}", extab_entry.get_unw_instr_iter());
+        let (extab_entry, lsda_slice) =
+            ExTabEntry::from_bytes(&extab_bytes, entry_offset as usize).unwrap();
 
-    // unwind insn iter
-    unwrap_or_return!(session.send(bytes, TIMEOUT_MS));
+        let bytes = extab_entry.get_unw_instr_iter().get_byte_iter().bytes;
+        println!("unw insn iter: {:?}", extab_entry.get_unw_instr_iter());
 
-    // lsda slice
-    println!("lsda slice size: {:?}", lsda_slice.len());
-    unwrap_or_return!(session.send(lsda_slice, TIMEOUT_MS));
+        // unwind insn iter
+        unwrap_or_return!(session.send(bytes, TIMEOUT_MS));
 
-    // personality
-    let personality = extab_entry.get_personality();
-    match personality {
-        Compact(p) => {
-            let p: u32 = p as u32;
-            let mut data: [u8; 5] = [0u8; 5];
-            data[0] = 0xAA;
-            data[1..5].copy_from_slice(&p.to_le_bytes());
-            println!("data: {:?}", data);
-            unwrap_or_return!(session.send(&data, TIMEOUT_MS));
+        // lsda slice
+        println!("lsda slice size: {:?}", lsda_slice.len());
+        unwrap_or_return!(session.send(lsda_slice, TIMEOUT_MS));
+
+        // personality
+        let personality = extab_entry.get_personality();
+        match personality {
+            Compact(p) => {
+                let p: u32 = p as u32;
+                let mut data: [u8; 5] = [0u8; 5];
+                data[0] = 0xAA;
+                data[1..5].copy_from_slice(&p.to_le_bytes());
+                println!("data: {:?}", data);
+                unwrap_or_return!(session.send(&data, TIMEOUT_MS));
+            }
+            Generic(p) => {
+                let mut data: [u8; 5] = [0u8; 5];
+                data[0] = 0xBB;
+                data[1..5].copy_from_slice(&p.to_le_bytes());
+                println!("data: {:?}", data);
+
+                // data[1..5].copy_from_slice(p.to_le_bytes());
+                unwrap_or_return!(session.send(&data, TIMEOUT_MS));
+            }
         }
-        Generic(p) => {
-            let mut data: [u8; 5] = [0u8; 5];
-            data[0] = 0xBB;
-            data[1..5].copy_from_slice(&p.to_le_bytes());
-            println!("data: {:?}", data);
-
-            // data[1..5].copy_from_slice(p.to_le_bytes());
-            unwrap_or_return!(session.send(&data, TIMEOUT_MS));
-        }
+        println!("personality: {:?}", personality);
+        // unwrap_or_return!(session.send(lsda_slice, TIMEOUT_MS));
     }
-    println!("personality: {:?}", personality);
-    // unwrap_or_return!(session.send(lsda_slice, TIMEOUT_MS));
-
-    return;
 }

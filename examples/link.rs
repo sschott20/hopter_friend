@@ -1,17 +1,17 @@
 use std::{
+    env,
     fs::{self, File},
     io::{BufRead, BufReader, Write},
-    process::{Command, Output},
-    thread::{sleep, sleep_ms},
+    process::Command,
+    thread::sleep,
     time::Duration,
 };
 
 use std::fs::OpenOptions;
-use std::io::prelude::*;
 
 fn get_symbols() {
     let output = Command::new("nm")
-        .arg("objects/bin")
+        .arg("objects/elf")
         .output()
         .expect("Failed to execute command");
     let mut symbol_file = File::create("objects/symbols.ld").expect("Failed to create file");
@@ -119,7 +119,7 @@ fn copy_files(example_name: &str) {
     );
     let _ = Command::new("cp")
         .arg(bin)
-        .arg("/home/alex/hopter_friend/objects/bin")
+        .arg("/home/alex/hopter_friend/objects/elf")
         .output()
         .expect("Failed to execute command");
 
@@ -146,17 +146,6 @@ fn find_asm_file(search_string: &str) -> String {
     panic!("Could not find object file");
 }
 
-fn extract_extab() {
-    let output = Command::new("/home/alex/opt/llvm/bin/llvm-objcopy")
-        .arg("--only-section")
-        .arg(".ARM.extab")
-        .arg("-O")
-        .arg("binary")
-        .arg("objects/bin")
-        .arg("objects/extab")
-        .output()
-        .expect("Failed to execute command");
-}
 fn clean_dir() {
     if let Ok(entries) = fs::read_dir("/home/alex/hopter_friend/objects") {
         for entry in entries {
@@ -169,17 +158,51 @@ fn clean_dir() {
         }
     }
 }
+fn elf_to_binary() {
+    let _ = Command::new("arm-none-eabi-objcopy")
+        .arg("objects/elf")
+        .arg("-O")
+        .arg("binary")
+        .arg("--pad-to")
+        .arg("0")
+        .arg("--remove-section=.bss")
+        .arg("objects/release.bin")
+        .output()
+        .expect("Failed to execute command");
+}
+
+fn dump_sections() {
+    let output = Command::new("arm-none-eabi-readelf")
+        .arg("--sections")
+        .arg("objects/elf")
+        .output()
+        .expect("Failed to execute command");
+
+    let mut file = File::create("objects/sections.txt").unwrap();
+    file.write(b"Section    Addr     Off    Size\n").unwrap();
+    for line in output.stdout.lines() {
+        let line = line.unwrap();
+        if line.contains(".ARM.extab") || line.contains(".ARM.exidx") {
+            let parts: Vec<&str> = line.split_whitespace().collect();
+            let useful = format!("{} {} {} {}\n", parts[2], parts[4], parts[5], parts[6]);
+            file.write(useful.as_bytes()).unwrap();
+        }
+        // println!("{}", String::from_utf8_lossy(&output.stdout));
+    }
+}
 fn main() -> () {
+    let args: Vec<String> = env::args().collect();
+    println!("{args:?}");
     clean_dir();
     sleep(Duration::from_millis(50));
 
-    copy_files("unw_iter");
+    copy_files(&args[1]);
     sleep(Duration::from_millis(50));
 
     get_symbols();
     sleep(Duration::from_millis(50));
 
-    extract_function("will_panic");
+    extract_function(&args[2]);
     sleep(Duration::from_millis(50));
 
     compile_obj();
@@ -188,8 +211,13 @@ fn main() -> () {
     link();
     sleep(Duration::from_millis(50));
 
-    extract_extab();
+    elf_to_binary();
     sleep(Duration::from_millis(50));
+
+    dump_sections();
+    sleep(Duration::from_millis(50));
+    // extract_extab();
+    // sleep(Duration::from_millis(50));
 
     disassemble();
 }
