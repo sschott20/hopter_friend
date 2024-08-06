@@ -28,7 +28,7 @@
 .Lanon.c5e386ee587a5e316f6126b870bfbb73.14:
 	.long	.Lanon.c5e386ee587a5e316f6126b870bfbb73.12
 	.asciz	"\013\000\000"
-	.long	.Lanon.3d894055dcef552c5e78b76cb8b140f8.93
+	.long	.Lanon.3d894055dcef552c5e78b76cb8b140f8.91
 	.asciz	"\001\000\000"
 	.size	.Lanon.c5e386ee587a5e316f6126b870bfbb73.14, 16
 
@@ -44,65 +44,75 @@
 .Lanon.c5e386ee587a5e316f6126b870bfbb73.16:
 	.long	.Lanon.c5e386ee587a5e316f6126b870bfbb73.15
 	.asciz	"\016\000\000"
-	.long	.Lanon.3d894055dcef552c5e78b76cb8b140f8.93
+	.long	.Lanon.3d894055dcef552c5e78b76cb8b140f8.91
 	.asciz	"\001\000\000"
 	.size	.Lanon.c5e386ee587a5e316f6126b870bfbb73.16, 16
 
 	.type	.Lanon.c5e386ee587a5e316f6126b870bfbb73.17,%object
 	.section	.rodata..Lanon.c5e386ee587a5e316f6126b870bfbb73.17,"a",%progbits
 .Lanon.c5e386ee587a5e316f6126b870bfbb73.17:
-	.ascii	"task woke up\n"
+	.ascii	"task woke up "
 	.size	.Lanon.c5e386ee587a5e316f6126b870bfbb73.17, 13
 
 	.type	.Lanon.c5e386ee587a5e316f6126b870bfbb73.18,%object
 	.section	.rodata..Lanon.c5e386ee587a5e316f6126b870bfbb73.18,"a",%progbits
+	.p2align	2, 0x0
 .Lanon.c5e386ee587a5e316f6126b870bfbb73.18:
-	.ascii	"panic passed "
-	.size	.Lanon.c5e386ee587a5e316f6126b870bfbb73.18, 13
+	.long	.Lanon.c5e386ee587a5e316f6126b870bfbb73.17
+	.asciz	"\r\000\000"
+	.long	.Lanon.3d894055dcef552c5e78b76cb8b140f8.91
+	.asciz	"\001\000\000"
+	.size	.Lanon.c5e386ee587a5e316f6126b870bfbb73.18, 16
 
 	.type	.Lanon.c5e386ee587a5e316f6126b870bfbb73.19,%object
 	.section	.rodata..Lanon.c5e386ee587a5e316f6126b870bfbb73.19,"a",%progbits
-	.p2align	2, 0x0
 .Lanon.c5e386ee587a5e316f6126b870bfbb73.19:
-	.long	.Lanon.c5e386ee587a5e316f6126b870bfbb73.18
-	.asciz	"\r\000\000"
-	.long	.Lanon.3d894055dcef552c5e78b76cb8b140f8.93
-	.asciz	"\001\000\000"
-	.size	.Lanon.c5e386ee587a5e316f6126b870bfbb73.19, 16
+	.ascii	"panic passed "
+	.size	.Lanon.c5e386ee587a5e316f6126b870bfbb73.19, 13
 
 	.type	.Lanon.c5e386ee587a5e316f6126b870bfbb73.20,%object
 	.section	.rodata..Lanon.c5e386ee587a5e316f6126b870bfbb73.20,"a",%progbits
+	.p2align	2, 0x0
 .Lanon.c5e386ee587a5e316f6126b870bfbb73.20:
-	.ascii	"Panic number: "
-	.size	.Lanon.c5e386ee587a5e316f6126b870bfbb73.20, 14
+	.long	.Lanon.c5e386ee587a5e316f6126b870bfbb73.19
+	.asciz	"\r\000\000"
+	.long	.Lanon.3d894055dcef552c5e78b76cb8b140f8.91
+	.asciz	"\001\000\000"
+	.size	.Lanon.c5e386ee587a5e316f6126b870bfbb73.20, 16
 
 	.type	.Lanon.c5e386ee587a5e316f6126b870bfbb73.21,%object
 	.section	.rodata..Lanon.c5e386ee587a5e316f6126b870bfbb73.21,"a",%progbits
-	.p2align	2, 0x0
 .Lanon.c5e386ee587a5e316f6126b870bfbb73.21:
-	.long	.Lanon.c5e386ee587a5e316f6126b870bfbb73.20
-	.asciz	"\016\000\000"
-	.long	.Lanon.3d894055dcef552c5e78b76cb8b140f8.93
-	.asciz	"\001\000\000"
-	.size	.Lanon.c5e386ee587a5e316f6126b870bfbb73.21, 16
+	.ascii	"Panic number: "
+	.size	.Lanon.c5e386ee587a5e316f6126b870bfbb73.21, 14
 
-	.type	.Lanon.c5e386ee587a5e316f6126b870bfbb73.26,%object
-	.section	.rodata..Lanon.c5e386ee587a5e316f6126b870bfbb73.26,"a",%progbits
-.Lanon.c5e386ee587a5e316f6126b870bfbb73.26:
-	.ascii	"Starting\n"
-	.size	.Lanon.c5e386ee587a5e316f6126b870bfbb73.26, 9
+	.type	.Lanon.c5e386ee587a5e316f6126b870bfbb73.22,%object
+	.section	.rodata..Lanon.c5e386ee587a5e316f6126b870bfbb73.22,"a",%progbits
+	.p2align	2, 0x0
+.Lanon.c5e386ee587a5e316f6126b870bfbb73.22:
+	.long	.Lanon.c5e386ee587a5e316f6126b870bfbb73.21
+	.asciz	"\016\000\000"
+	.long	.Lanon.3d894055dcef552c5e78b76cb8b140f8.91
+	.asciz	"\001\000\000"
+	.size	.Lanon.c5e386ee587a5e316f6126b870bfbb73.22, 16
 
 	.type	.Lanon.c5e386ee587a5e316f6126b870bfbb73.27,%object
 	.section	.rodata..Lanon.c5e386ee587a5e316f6126b870bfbb73.27,"a",%progbits
 .Lanon.c5e386ee587a5e316f6126b870bfbb73.27:
-	.ascii	"Task started\n"
-	.size	.Lanon.c5e386ee587a5e316f6126b870bfbb73.27, 13
+	.ascii	"Starting\n"
+	.size	.Lanon.c5e386ee587a5e316f6126b870bfbb73.27, 9
 
-	.type	.Lanon.c5e386ee587a5e316f6126b870bfbb73.30,%object
-	.section	.rodata..Lanon.c5e386ee587a5e316f6126b870bfbb73.30,"a",%progbits
-.Lanon.c5e386ee587a5e316f6126b870bfbb73.30:
+	.type	.Lanon.c5e386ee587a5e316f6126b870bfbb73.28,%object
+	.section	.rodata..Lanon.c5e386ee587a5e316f6126b870bfbb73.28,"a",%progbits
+.Lanon.c5e386ee587a5e316f6126b870bfbb73.28:
+	.ascii	"Task started\n"
+	.size	.Lanon.c5e386ee587a5e316f6126b870bfbb73.28, 13
+
+	.type	.Lanon.c5e386ee587a5e316f6126b870bfbb73.31,%object
+	.section	.rodata..Lanon.c5e386ee587a5e316f6126b870bfbb73.31,"a",%progbits
+.Lanon.c5e386ee587a5e316f6126b870bfbb73.31:
 	.ascii	"finished with restarting tasks, exiting\n"
-	.size	.Lanon.c5e386ee587a5e316f6126b870bfbb73.30, 40
+	.size	.Lanon.c5e386ee587a5e316f6126b870bfbb73.31, 40
 
 	.type	.Lanon.d9304c4eadee162becafe3aa002e9120.153,%object
 	.section	.rodata..Lanon.d9304c4eadee162becafe3aa002e9120.153,"a",%progbits
@@ -529,63 +539,51 @@
 	.ascii	"ExIdxEntry::from_bytes: corrupted entry."
 	.size	.Lanon.3d894055dcef552c5e78b76cb8b140f8.77, 40
 
-	.type	.Lanon.3d894055dcef552c5e78b76cb8b140f8.78,%object
-	.section	.rodata..Lanon.3d894055dcef552c5e78b76cb8b140f8.78,"a",%progbits
-.Lanon.3d894055dcef552c5e78b76cb8b140f8.78:
-	.ascii	"UnwindInstrIter::from_bytes: bytes length not a multiple of 4."
-	.size	.Lanon.3d894055dcef552c5e78b76cb8b140f8.78, 62
+	.type	.Lanon.3d894055dcef552c5e78b76cb8b140f8.87,%object
+	.section	.rodata..Lanon.3d894055dcef552c5e78b76cb8b140f8.87,"a",%progbits
+.Lanon.3d894055dcef552c5e78b76cb8b140f8.87:
+	.ascii	"No session\n"
+	.size	.Lanon.3d894055dcef552c5e78b76cb8b140f8.87, 11
 
-	.type	.Lanon.3d894055dcef552c5e78b76cb8b140f8.82,%object
-	.section	.rodata..Lanon.3d894055dcef552c5e78b76cb8b140f8.82,"a",%progbits
-.Lanon.3d894055dcef552c5e78b76cb8b140f8.82:
-	.ascii	"ExTabEntry::from_bytes: unexpected compact personality number."
-	.size	.Lanon.3d894055dcef552c5e78b76cb8b140f8.82, 62
-
-	.type	.Lanon.3d894055dcef552c5e78b76cb8b140f8.86,%object
-	.section	.rodata..Lanon.3d894055dcef552c5e78b76cb8b140f8.86,"a",%progbits
-.Lanon.3d894055dcef552c5e78b76cb8b140f8.86:
-	.ascii	"ExTabEntry::from_bytes: offset not multiple of 4."
-	.size	.Lanon.3d894055dcef552c5e78b76cb8b140f8.86, 49
+	.type	.Lanon.3d894055dcef552c5e78b76cb8b140f8.88,%object
+	.section	.rodata..Lanon.3d894055dcef552c5e78b76cb8b140f8.88,"a",%progbits
+.Lanon.3d894055dcef552c5e78b76cb8b140f8.88:
+	.ascii	"session established\n"
+	.size	.Lanon.3d894055dcef552c5e78b76cb8b140f8.88, 20
 
 	.type	.Lanon.3d894055dcef552c5e78b76cb8b140f8.89,%object
 	.section	.rodata..Lanon.3d894055dcef552c5e78b76cb8b140f8.89,"a",%progbits
 .Lanon.3d894055dcef552c5e78b76cb8b140f8.89:
-	.ascii	"No session\n"
-	.size	.Lanon.3d894055dcef552c5e78b76cb8b140f8.89, 11
+	.ascii	"Sent request type\n"
+	.size	.Lanon.3d894055dcef552c5e78b76cb8b140f8.89, 18
 
 	.type	.Lanon.3d894055dcef552c5e78b76cb8b140f8.90,%object
 	.section	.rodata..Lanon.3d894055dcef552c5e78b76cb8b140f8.90,"a",%progbits
 .Lanon.3d894055dcef552c5e78b76cb8b140f8.90:
-	.ascii	"session established\n"
-	.size	.Lanon.3d894055dcef552c5e78b76cb8b140f8.90, 20
+	.ascii	"Error: "
+	.size	.Lanon.3d894055dcef552c5e78b76cb8b140f8.90, 7
 
 	.type	.Lanon.3d894055dcef552c5e78b76cb8b140f8.91,%object
 	.section	.rodata..Lanon.3d894055dcef552c5e78b76cb8b140f8.91,"a",%progbits
 .Lanon.3d894055dcef552c5e78b76cb8b140f8.91:
-	.ascii	"Sent extab entry address\n"
-	.size	.Lanon.3d894055dcef552c5e78b76cb8b140f8.91, 25
+	.byte	10
+	.size	.Lanon.3d894055dcef552c5e78b76cb8b140f8.91, 1
 
 	.type	.Lanon.3d894055dcef552c5e78b76cb8b140f8.92,%object
 	.section	.rodata..Lanon.3d894055dcef552c5e78b76cb8b140f8.92,"a",%progbits
+	.p2align	2, 0x0
 .Lanon.3d894055dcef552c5e78b76cb8b140f8.92:
-	.ascii	"Error: "
-	.size	.Lanon.3d894055dcef552c5e78b76cb8b140f8.92, 7
+	.long	.Lanon.3d894055dcef552c5e78b76cb8b140f8.90
+	.asciz	"\007\000\000"
+	.long	.Lanon.3d894055dcef552c5e78b76cb8b140f8.91
+	.asciz	"\001\000\000"
+	.size	.Lanon.3d894055dcef552c5e78b76cb8b140f8.92, 16
 
 	.type	.Lanon.3d894055dcef552c5e78b76cb8b140f8.93,%object
 	.section	.rodata..Lanon.3d894055dcef552c5e78b76cb8b140f8.93,"a",%progbits
 .Lanon.3d894055dcef552c5e78b76cb8b140f8.93:
-	.byte	10
-	.size	.Lanon.3d894055dcef552c5e78b76cb8b140f8.93, 1
-
-	.type	.Lanon.3d894055dcef552c5e78b76cb8b140f8.94,%object
-	.section	.rodata..Lanon.3d894055dcef552c5e78b76cb8b140f8.94,"a",%progbits
-	.p2align	2, 0x0
-.Lanon.3d894055dcef552c5e78b76cb8b140f8.94:
-	.long	.Lanon.3d894055dcef552c5e78b76cb8b140f8.92
-	.asciz	"\007\000\000"
-	.long	.Lanon.3d894055dcef552c5e78b76cb8b140f8.93
-	.asciz	"\001\000\000"
-	.size	.Lanon.3d894055dcef552c5e78b76cb8b140f8.94, 16
+	.ascii	"Sent extab entry address\n"
+	.size	.Lanon.3d894055dcef552c5e78b76cb8b140f8.93, 25
 
 	.type	.Lanon.3d894055dcef552c5e78b76cb8b140f8.96,%object
 	.section	.rodata..Lanon.3d894055dcef552c5e78b76cb8b140f8.96,"a",%progbits
@@ -605,7 +603,7 @@
 .Lanon.3d894055dcef552c5e78b76cb8b140f8.99:
 	.long	.Lanon.3d894055dcef552c5e78b76cb8b140f8.98
 	.asciz	"\016\000\000"
-	.long	.Lanon.3d894055dcef552c5e78b76cb8b140f8.93
+	.long	.Lanon.3d894055dcef552c5e78b76cb8b140f8.91
 	.asciz	"\001\000\000"
 	.size	.Lanon.3d894055dcef552c5e78b76cb8b140f8.99, 16
 
@@ -627,7 +625,7 @@
 .Lanon.3d894055dcef552c5e78b76cb8b140f8.103:
 	.long	.Lanon.3d894055dcef552c5e78b76cb8b140f8.102
 	.asciz	"\t\000\000"
-	.long	.Lanon.3d894055dcef552c5e78b76cb8b140f8.93
+	.long	.Lanon.3d894055dcef552c5e78b76cb8b140f8.91
 	.asciz	"\001\000\000"
 	.size	.Lanon.3d894055dcef552c5e78b76cb8b140f8.103, 16
 
@@ -643,7 +641,7 @@
 .Lanon.3d894055dcef552c5e78b76cb8b140f8.106:
 	.long	.Lanon.3d894055dcef552c5e78b76cb8b140f8.105
 	.asciz	"\035\000\000"
-	.long	.Lanon.3d894055dcef552c5e78b76cb8b140f8.93
+	.long	.Lanon.3d894055dcef552c5e78b76cb8b140f8.91
 	.asciz	"\001\000\000"
 	.size	.Lanon.3d894055dcef552c5e78b76cb8b140f8.106, 16
 
@@ -665,7 +663,7 @@
 .Lanon.3d894055dcef552c5e78b76cb8b140f8.109:
 	.long	.Lanon.3d894055dcef552c5e78b76cb8b140f8.108
 	.asciz	"\020\000\000"
-	.long	.Lanon.3d894055dcef552c5e78b76cb8b140f8.93
+	.long	.Lanon.3d894055dcef552c5e78b76cb8b140f8.91
 	.asciz	"\001\000\000"
 	.size	.Lanon.3d894055dcef552c5e78b76cb8b140f8.109, 16
 

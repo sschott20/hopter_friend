@@ -1,3 +1,3 @@
 Section    Addr     Off    Size
-.ARM.exidx 080113ac 0114ac 0003b8
-.ARM.extab 08011764 011864 000b88
+.ARM.exidx 08011234 011334 0003b8
+.ARM.extab 080115ec 0116ec 000b58
