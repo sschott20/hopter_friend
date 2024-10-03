@@ -119,8 +119,8 @@ _ZN4core3ptr105drop_in_place$LT$core..option..Option$LT$alloc..sync..Weak$LT$hop
 	cmp.w	r12, #16
 	bge	.LBB1_2
 	svc	#254
-	.short	4
-	.short	0
+	.short	#4
+	.short	#0
 .LBB1_2:
 	.save	{r4, r5, r7, lr}
 	push	{r4, r5, r7, lr}
@@ -193,8 +193,8 @@ _ZN4core3ptr119drop_in_place$LT$core..option..Option$LT$alloc..boxed..Box$LT$hop
 	cmp.w	r12, #16
 	bge	.LBB2_2
 	svc	#254
-	.short	4
-	.short	0
+	.short	#4
+	.short	#0
 .LBB2_2:
 	.save	{r4, r6, r7, lr}
 	push	{r4, r6, r7, lr}
@@ -268,8 +268,8 @@ _ZN4core3ptr141drop_in_place$LT$core..option..Option$LT$alloc..sync..Arc$LT$dyn$
 	cmp.w	r12, #16
 	bge	.LBB3_2
 	svc	#254
-	.short	4
-	.short	0
+	.short	#4
+	.short	#0
 .LBB3_2:
 	.save	{r4, r5, r7, lr}
 	push	{r4, r5, r7, lr}
@@ -337,8 +337,8 @@ _ZN4core3ptr52drop_in_place$LT$hopter..task..task_struct..Task$GT$17hc284059f4f7
 	cmp.w	r12, #32
 	bge	.LBB4_2
 	svc	#254
-	.short	8
-	.short	0
+	.short	#8
+	.short	#0
 .LBB4_2:
 	.save	{r4, r5, r6, r7, lr}
 	push	{r4, r5, r6, r7, lr}
@@ -712,8 +712,8 @@ _ZN4core3ptr67drop_in_place$LT$hopter..schedule..scheduler..SchedSuspendGuard$GT
 	cmp.w	r12, #16
 	bge	.LBB5_2
 	svc	#254
-	.short	4
-	.short	0
+	.short	#4
+	.short	#0
 .LBB5_2:
 	.save	{r4, r6, r7, lr}
 	push	{r4, r6, r7, lr}
@@ -789,8 +789,8 @@ _ZN4core3ptr81drop_in_place$LT$alloc..sync..ArcInner$LT$hopter..task..task_struc
 	cmp.w	r12, #16
 	bge	.LBB6_2
 	svc	#254
-	.short	4
-	.short	0
+	.short	#4
+	.short	#0
 .LBB6_2:
 	.save	{r4, r6, r7, lr}
 	push	{r4, r6, r7, lr}
@@ -831,8 +831,8 @@ _ZN5alloc4sync16Arc$LT$T$C$A$GT$9drop_slow17h5b5cfad78a19b7b4E:
 	cmp.w	r12, #24
 	bge	.LBB7_2
 	svc	#255
-	.short	6
-	.short	0
+	.short	#6
+	.short	#0
 .LBB7_2:
 	.save	{r4, r5, r6, r7, lr}
 	push	{r4, r5, r6, r7, lr}
@@ -923,8 +923,8 @@ _ZN6hopter4task10trampoline15downcast_to_ptr17h98cf3a4bf6e0c09bE:
 	cmp.w	r12, #16
 	bge	.LBB8_2
 	svc	#255
-	.short	4
-	.short	0
+	.short	#4
+	.short	#0
 .LBB8_2:
 	.save	{r4, r5, r7, lr}
 	push	{r4, r5, r7, lr}
@@ -973,8 +973,8 @@ _ZN6hopter4task10trampoline22restartable_task_entry17h6a501ccc0320bcd7E:
 	cmp.w	r12, #72
 	bge	.LBB9_2
 	svc	#255
-	.short	18
-	.short	0
+	.short	#18
+	.short	#0
 .LBB9_2:
 	.save	{r4, r5, r6, r7, lr}
 	push	{r4, r5, r6, r7, lr}
@@ -1581,8 +1581,8 @@ __main_trampoline:
 	cmp.w	r12, #416
 	bge	.LBB10_2
 	svc	#255
-	.short	104
-	.short	0
+	.short	#104
+	.short	#0
 .LBB10_2:
 	.save	{r4, r5, r6, r7, lr}
 	push	{r4, r5, r6, r7, lr}
@@ -2081,8 +2081,8 @@ _ZN7off_unw10will_panic19panic_cold_explicit17had3e7e23debb2306E:
 	cmp.w	r12, #8
 	bge	.LBB11_2
 	svc	#255
-	.short	2
-	.short	0
+	.short	#2
+	.short	#0
 .LBB11_2:
 	.save	{r7, lr}
 	push	{r7, lr}
@@ -2124,8 +2124,8 @@ _ZN7off_unw14usart1_handler17h39772d2a53e413c6E:
 	cmp.w	r12, #56
 	bge	.LBB13_2
 	svc	#255
-	.short	14
-	.short	0
+	.short	#14
+	.short	#0
 .LBB13_2:
 	.save	{r4, r5, r6, r7, lr}
 	push	{r4, r5, r6, r7, lr}
@@ -2596,8 +2596,8 @@ _ZN4core5slice5index24slice_end_index_len_fail17hac1fb4e453f57fa0E:
 	cmp.w	r12, #8
 	bge	.LBB14_2
 	svc	#255
-	.short	2
-	.short	0
+	.short	#2
+	.short	#0
 .LBB14_2:
 	.save	{r7, lr}
 	push	{r7, lr}
@@ -2622,8 +2622,8 @@ _ZN4core3fmt5write17hd96a6c9ec72e986cE:
 	cmp.w	r12, #88
 	bge	.LBB15_2
 	svc	#255
-	.short	22
-	.short	0
+	.short	#22
+	.short	#0
 .LBB15_2:
 	.save	{r4, r5, r6, r7, lr}
 	push	{r4, r5, r6, r7, lr}
@@ -2830,8 +2830,8 @@ _ZN4core3fmt9Formatter12pad_integral17h2efbdfcbe48b529bE:
 	cmp.w	r12, #64
 	bge	.LBB16_2
 	svc	#255
-	.short	16
-	.short	1
+	.short	#16
+	.short	#1
 .LBB16_2:
 	.save	{r4, r5, r6, r7, lr}
 	push	{r4, r5, r6, r7, lr}
@@ -3150,8 +3150,8 @@ _ZN4core3fmt9Formatter12pad_integral12write_prefix17hd9658836d37c7407E:
 	cmp.w	r12, #24
 	bge	.LBB17_2
 	svc	#255
-	.short	6
-	.short	1
+	.short	#6
+	.short	#1
 .LBB17_2:
 	.save	{r4, r5, r6, r7, lr}
 	push	{r4, r5, r6, r7, lr}
@@ -3203,8 +3203,8 @@ _ZN4core3fmt3num3imp54_$LT$impl$u20$core..fmt..Display$u20$for$u20$usize$GT$3fmt
 	cmp.w	r12, #88
 	bge	.LBB18_2
 	svc	#255
-	.short	22
-	.short	0
+	.short	#22
+	.short	#0
 .LBB18_2:
 	.save	{r4, r5, r6, r7, lr}
 	push	{r4, r5, r6, r7, lr}
@@ -3318,8 +3318,8 @@ _ZN4core3fmt8builders11DebugStruct5field17hdf9b5539ac89cc85E:
 	cmp.w	r12, #96
 	bge	.LBB19_2
 	svc	#255
-	.short	24
-	.short	1
+	.short	#24
+	.short	#1
 .LBB19_2:
 	.save	{r4, r5, r6, r7, lr}
 	push	{r4, r5, r6, r7, lr}
@@ -3483,8 +3483,8 @@ _ZN68_$LT$core..fmt..builders..PadAdapter$u20$as$u20$core..fmt..Write$GT$9write_
 	cmp.w	r12, #64
 	bge	.LBB20_2
 	svc	#255
-	.short	16
-	.short	0
+	.short	#16
+	.short	#0
 .LBB20_2:
 	.save	{r4, r5, r6, r7, lr}
 	push	{r4, r5, r6, r7, lr}
@@ -3778,8 +3778,8 @@ _ZN68_$LT$core..fmt..builders..PadAdapter$u20$as$u20$core..fmt..Write$GT$10write
 	cmp.w	r12, #24
 	bge	.LBB21_2
 	svc	#255
-	.short	6
-	.short	0
+	.short	#6
+	.short	#0
 .LBB21_2:
 	.save	{r4, r5, r6, r7, lr}
 	push	{r4, r5, r6, r7, lr}
@@ -3865,8 +3865,8 @@ _ZN4core9panicking18panic_nounwind_fmt17h97b4a7f38ccb1269E:
 	cmp.w	r12, #8
 	bge	.LBB23_2
 	svc	#255
-	.short	2
-	.short	0
+	.short	#2
+	.short	#0
 .LBB23_2:
 	.save	{r7, lr}
 	push	{r7, lr}
@@ -3927,8 +3927,8 @@ _ZN4core9panicking19panic_cannot_unwind17hafaf6df854359a51E:
 	cmp.w	r12, #8
 	bge	.LBB24_2
 	svc	#255
-	.short	2
-	.short	0
+	.short	#2
+	.short	#0
 .LBB24_2:
 	.save	{r7, lr}
 	push	{r7, lr}
@@ -3952,8 +3952,8 @@ _ZN4core9panicking14panic_nounwind17ha0a4497e2fb2e653E:
 	cmp.w	r12, #8
 	bge	.LBB25_2
 	svc	#255
-	.short	2
-	.short	0
+	.short	#2
+	.short	#0
 .LBB25_2:
 	.save	{r7, lr}
 	push	{r7, lr}
@@ -3978,8 +3978,8 @@ _ZN4core9panicking26panic_nounwind_nobacktrace17he3e19dcefd50b386E:
 	cmp.w	r12, #8
 	bge	.LBB26_2
 	svc	#255
-	.short	2
-	.short	0
+	.short	#2
+	.short	#0
 .LBB26_2:
 	.save	{r7, lr}
 	push	{r7, lr}
@@ -4004,8 +4004,8 @@ _ZN4core9panicking16panic_in_cleanup17he5ac0e7f3fb1df47E:
 	cmp.w	r12, #8
 	bge	.LBB27_2
 	svc	#255
-	.short	2
-	.short	0
+	.short	#2
+	.short	#0
 .LBB27_2:
 	.save	{r7, lr}
 	push	{r7, lr}
@@ -4030,8 +4030,8 @@ _ZN4core3fmt8builders10DebugTuple5field17h8763a50d4132f583E:
 	cmp.w	r12, #88
 	bge	.LBB28_2
 	svc	#255
-	.short	22
-	.short	0
+	.short	#22
+	.short	#0
 .LBB28_2:
 	.save	{r4, r5, r6, r7, lr}
 	push	{r4, r5, r6, r7, lr}
@@ -4168,8 +4168,8 @@ _ZN4core3fmt8builders9DebugList5entry17hfffb18d293c911ecE:
 	cmp.w	r12, #88
 	bge	.LBB29_2
 	svc	#255
-	.short	22
-	.short	0
+	.short	#22
+	.short	#0
 .LBB29_2:
 	.save	{r4, r5, r6, r7, lr}
 	push	{r4, r5, r6, r7, lr}
@@ -4308,8 +4308,8 @@ _ZN4core3fmt3num52_$LT$impl$u20$core..fmt..LowerHex$u20$for$u20$u8$GT$3fmt17hc9e
 	cmp.w	r12, #144
 	bge	.LBB30_2
 	svc	#255
-	.short	36
-	.short	0
+	.short	#36
+	.short	#0
 .LBB30_2:
 	.save	{r7, lr}
 	push	{r7, lr}
@@ -4451,8 +4451,8 @@ _ZN74_$LT$cortex_m_semihosting..hio..HostStream$u20$as$u20$core..fmt..Write$GT$9
 	cmp.w	r12, #20
 	bge	.LBB36_3
 	svc	#255
-	.short	5
-	.short	0
+	.short	#5
+	.short	#0
 .LBB36_3:
 	.save	{r7, lr}
 	push	{r7, lr}
@@ -4515,8 +4515,8 @@ _ZN74_$LT$gimli..read..endian_slice..DebugBytes$u20$as$u20$core..fmt..Debug$GT$3
 	cmp.w	r12, #40
 	bge	.LBB37_2
 	svc	#255
-	.short	10
-	.short	0
+	.short	#10
+	.short	#0
 .LBB37_2:
 	.save	{r4, r5, r6, r7, lr}
 	push	{r4, r5, r6, r7, lr}
@@ -4670,8 +4670,8 @@ _ZN72_$LT$gimli..read..endian_slice..DebugLen$u20$as$u20$core..fmt..Debug$GT$3fm
 	cmp.w	r12, #40
 	bge	.LBB38_2
 	svc	#255
-	.short	10
-	.short	0
+	.short	#10
+	.short	#0
 .LBB38_2:
 	.save	{r7, lr}
 	push	{r7, lr}
@@ -4715,8 +4715,8 @@ _ZN73_$LT$gimli..read..endian_slice..DebugByte$u20$as$u20$core..fmt..Debug$GT$3f
 	cmp.w	r12, #72
 	bge	.LBB39_2
 	svc	#255
-	.short	18
-	.short	0
+	.short	#18
+	.short	#0
 .LBB39_2:
 	.save	{r7, lr}
 	push	{r7, lr}
@@ -4771,8 +4771,8 @@ _ZN7hadusos6packet6Packet12get_checksum17hf9a7170627db6d0fE:
 	cmp.w	r12, #108
 	bge	.LBB40_2
 	svc	#255
-	.short	27
-	.short	0
+	.short	#27
+	.short	#0
 .LBB40_2:
 	.save	{r4, r5, r6, r7, lr}
 	push	{r4, r5, r6, r7, lr}
@@ -5336,8 +5336,8 @@ _ZN6hopter4boot11system_init12system_start17he01f57ec47c2f034E:
 	cmp.w	r12, #408
 	bge	.LBB49_2
 	svc	#255
-	.short	102
-	.short	0
+	.short	#102
+	.short	#0
 .LBB49_2:
 	.save	{r4, r5, r6, r7, lr}
 	push	{r4, r5, r6, r7, lr}
@@ -5758,8 +5758,8 @@ _ZN6hopter4task10trampoline10task_entry17h7ad6013b03db55d9E:
 	cmp.w	r12, #8
 	bge	.LBB50_2
 	svc	#255
-	.short	2
-	.short	0
+	.short	#2
+	.short	#0
 .LBB50_2:
 	.save	{r7, lr}
 	push	{r7, lr}
@@ -5842,8 +5842,8 @@ _ZN6hopter4task11task_struct4Task17initialize_common17h5d08827810af73d5E:
 	cmp.w	r12, #40
 	bge	.LBB51_2
 	svc	#255
-	.short	10
-	.short	2
+	.short	#10
+	.short	#2
 .LBB51_2:
 	.save	{r4, r5, r6, r7, lr}
 	push	{r4, r5, r6, r7, lr}
@@ -6037,8 +6037,8 @@ _ZN4core3ptr52drop_in_place$LT$hopter..task..task_struct..Task$GT$17hc1e63b4bd3e
 	cmp.w	r12, #32
 	bge	.LBB52_2
 	svc	#254
-	.short	8
-	.short	0
+	.short	#8
+	.short	#0
 .LBB52_2:
 	.save	{r4, r5, r6, r7, lr}
 	push	{r4, r5, r6, r7, lr}
@@ -6431,8 +6431,8 @@ _ZN4core3ptr81drop_in_place$LT$alloc..sync..ArcInner$LT$hopter..task..task_struc
 	cmp.w	r12, #16
 	bge	.LBB54_2
 	svc	#254
-	.short	4
-	.short	0
+	.short	#4
+	.short	#0
 .LBB54_2:
 	.save	{r4, r6, r7, lr}
 	push	{r4, r6, r7, lr}
@@ -6474,8 +6474,8 @@ _ZN6hopter8schedule9scheduler9Scheduler11accept_task17hae07d7880c7281c3E:
 	cmp.w	r12, #48
 	bge	.LBB55_2
 	svc	#255
-	.short	12
-	.short	0
+	.short	#12
+	.short	#0
 .LBB55_2:
 	.save	{r4, r5, r6, r7, lr}
 	push	{r4, r5, r6, r7, lr}
@@ -7250,8 +7250,8 @@ _ZN6hopter8schedule9scheduler9Scheduler5start17h6fceb0cda251839aE:
 	cmp.w	r12, #400
 	bge	.LBB56_2
 	svc	#255
-	.short	100
-	.short	0
+	.short	#100
+	.short	#0
 .LBB56_2:
 	.save	{r4, r5, r6, r7, lr}
 	push	{r4, r5, r6, r7, lr}
@@ -7447,8 +7447,8 @@ _ZN6hopter4task11task_struct4Task10build_idle17hecea391c7000e1d3E:
 	cmp.w	r12, #224
 	bge	.LBB57_2
 	svc	#255
-	.short	56
-	.short	0
+	.short	#56
+	.short	#0
 .LBB57_2:
 	.save	{r4, r5, r6, r7, lr}
 	push	{r4, r5, r6, r7, lr}
@@ -7588,8 +7588,8 @@ _ZN5alloc5alloc15exchange_malloc17hce7398a49c757ca9E:
 	cmp.w	r12, #8
 	bge	.LBB58_2
 	svc	#255
-	.short	2
-	.short	0
+	.short	#2
+	.short	#0
 .LBB58_2:
 	.save	{r7, lr}
 	push	{r7, lr}
@@ -7631,8 +7631,8 @@ _ZN6hopter8schedule7current15update_cur_task17h4ae8e4c75e3ee595E:
 	cmp.w	r12, #16
 	bge	.LBB59_2
 	svc	#255
-	.short	4
-	.short	0
+	.short	#4
+	.short	#0
 .LBB59_2:
 	.save	{r4, r5, r7, lr}
 	push	{r4, r5, r7, lr}
@@ -7879,8 +7879,8 @@ _ZN6hopter8schedule4idle9idle_task17hb3d0c1d66090bb73E:
 	cmp.w	r12, #8
 	bge	.LBB60_2
 	svc	#255
-	.short	2
-	.short	0
+	.short	#2
+	.short	#0
 .LBB60_2:
 	.save	{r7, lr}
 	push	{r7, lr}
@@ -7925,8 +7925,8 @@ _ZN5alloc4sync16Arc$LT$T$C$A$GT$9drop_slow17hc6ff97e9d682e2e5E:
 	cmp.w	r12, #16
 	bge	.LBB62_2
 	svc	#255
-	.short	4
-	.short	0
+	.short	#4
+	.short	#0
 .LBB62_2:
 	.save	{r4, r5, r7, lr}
 	push	{r4, r5, r7, lr}
@@ -8008,8 +8008,8 @@ _ZN6hopter9allocator9Allocator11kernel_free17h984699c5dc4fb780E:
 	cmp.w	r12, #16
 	bge	.LBB64_2
 	svc	#255
-	.short	4
-	.short	0
+	.short	#4
+	.short	#0
 .LBB64_2:
 	.save	{r4, r5, r7, lr}
 	push	{r4, r5, r7, lr}
@@ -8273,8 +8273,8 @@ _ZN4core3ptr99drop_in_place$LT$hopter..sync..soft_lock..AccessGuard$LT$hopter..s
 	cmp.w	r12, #32
 	bge	.LBB67_2
 	svc	#254
-	.short	8
-	.short	0
+	.short	#8
+	.short	#0
 .LBB67_2:
 	.save	{r4, r5, r6, r7, lr}
 	push	{r4, r5, r6, r7, lr}
@@ -8430,8 +8430,8 @@ _ZN4core3ptr76drop_in_place$LT$alloc..sync..Arc$LT$hopter..task..task_struct..Ta
 	cmp.w	r12, #16
 	bge	.LBB69_2
 	svc	#254
-	.short	4
-	.short	0
+	.short	#4
+	.short	#0
 .LBB69_2:
 	.save	{r4, r6, r7, lr}
 	push	{r4, r6, r7, lr}
@@ -8482,8 +8482,8 @@ _ZN103_$LT$hopter..schedule..scheduler..InnerFullAccessor$u20$as$u20$hopter..syn
 	cmp.w	r12, #40
 	bge	.LBB70_2
 	svc	#255
-	.short	10
-	.short	0
+	.short	#10
+	.short	#0
 .LBB70_2:
 	.save	{r4, r5, r6, r7, lr}
 	push	{r4, r5, r6, r7, lr}
@@ -9032,8 +9032,8 @@ _ZN6hopter6unwind6unwind11UnwindState19create_unwind_state17h6621ca35eb879c86E:
 	cmp.w	r12, #56
 	bge	.LBB71_2
 	svc	#255
-	.short	14
-	.short	0
+	.short	#14
+	.short	#0
 .LBB71_2:
 	.save	{r4, r5, r6, r7, lr}
 	push	{r4, r5, r6, r7, lr}
@@ -9908,8 +9908,8 @@ _ZN6hopter6unwind6unwind13resume_unwind17h7192b3d726d8697eE:
 	cmp.w	r12, #128
 	bge	.LBB72_2
 	svc	#255
-	.short	32
-	.short	0
+	.short	#32
+	.short	#0
 .LBB72_2:
 	.save	{r4, r5, r6, r7, lr}
 	push	{r4, r5, r6, r7, lr}
@@ -10842,8 +10842,8 @@ _ZN6hopter6unwind6unwind13UnwindAbility10get_for_pc17hfd0045ecf37ba56dE:
 	cmp.w	r12, #256
 	bge	.LBB74_2
 	svc	#255
-	.short	64
-	.short	0
+	.short	#64
+	.short	#0
 .LBB74_2:
 	.save	{r4, r5, r6, r7, lr}
 	push	{r4, r5, r6, r7, lr}
@@ -11826,8 +11826,8 @@ _ZN6hopter6unwind8unw_lsda20read_encoded_pointer17ha45a491be157e4a8E:
 	cmp.w	r12, #56
 	bge	.LBB75_2
 	svc	#255
-	.short	14
-	.short	0
+	.short	#14
+	.short	#0
 .LBB75_2:
 	.save	{r4, r5, r6, r7, lr}
 	push	{r4, r5, r6, r7, lr}
@@ -12144,8 +12144,8 @@ _ZN6hopter5debug11semihosting11hstdout_str17h5daf40e60d934bb3E:
 	cmp.w	r12, #40
 	bge	.LBB76_2
 	svc	#255
-	.short	10
-	.short	0
+	.short	#10
+	.short	#0
 .LBB76_2:
 	.save	{r4, r5, r7, lr}
 	push	{r4, r5, r7, lr}
@@ -12380,8 +12380,8 @@ _ZN4core3fmt3num50_$LT$impl$u20$core..fmt..Debug$u20$for$u20$u32$GT$3fmt17h40a53
 	cmp.w	r12, #176
 	bge	.LBB77_2
 	svc	#255
-	.short	44
-	.short	0
+	.short	#44
+	.short	#0
 .LBB77_2:
 	.save	{r4, r5, r6, r7, lr}
 	push	{r4, r5, r6, r7, lr}
@@ -12633,8 +12633,8 @@ _ZN6hopter5debug11semihosting11hstdout_fmt17hdfe091813f5553f4E:
 	cmp.w	r12, #40
 	bge	.LBB78_2
 	svc	#255
-	.short	10
-	.short	0
+	.short	#10
+	.short	#0
 .LBB78_2:
 	.save	{r4, r6, r7, lr}
 	push	{r4, r6, r7, lr}
@@ -12894,8 +12894,8 @@ _ZN7hadusos7session28Session$LT$S$C$T$C$_$C$_$GT$4send17h0d67c617dbce3758E:
 	cmp.w	r12, #48
 	bge	.LBB79_2
 	svc	#255
-	.short	12
-	.short	0
+	.short	#12
+	.short	#0
 .LBB79_2:
 	.save	{r4, r5, r6, r7, lr}
 	push	{r4, r5, r6, r7, lr}
@@ -13429,8 +13429,8 @@ _ZN7hadusos7session28Session$LT$S$C$T$C$_$C$_$GT$6listen17h8b4ca4bd3023f826E:
 	cmp.w	r12, #56
 	bge	.LBB80_2
 	svc	#255
-	.short	14
-	.short	0
+	.short	#14
+	.short	#0
 .LBB80_2:
 	.save	{r4, r5, r6, r7, lr}
 	push	{r4, r5, r6, r7, lr}
@@ -13579,8 +13579,8 @@ _ZN7hadusos7session28Session$LT$S$C$T$C$_$C$_$GT$7receive17hc3207c425e65190aE:
 	cmp.w	r12, #96
 	bge	.LBB81_2
 	svc	#255
-	.short	24
-	.short	0
+	.short	#24
+	.short	#0
 .LBB81_2:
 	.save	{r4, r5, r6, r7, lr}
 	push	{r4, r5, r6, r7, lr}
@@ -14452,8 +14452,8 @@ _ZN4core3ptr58drop_in_place$LT$alloc..boxed..Box$LT$$u5b$u8$u5d$$GT$$GT$17h51654
 	cmp.w	r12, #16
 	bge	.LBB82_2
 	svc	#254
-	.short	4
-	.short	0
+	.short	#4
+	.short	#0
 .LBB82_2:
 	.save	{r4, r6, r7, lr}
 	push	{r4, r6, r7, lr}
@@ -14518,8 +14518,8 @@ _ZN4core3ptr58drop_in_place$LT$hopter..unwind..unw_table..ExIdxEntry$GT$17h08d22
 	cmp.w	r12, #16
 	bge	.LBB83_2
 	svc	#254
-	.short	4
-	.short	0
+	.short	#4
+	.short	#0
 .LBB83_2:
 	.save	{r4, r6, r7, lr}
 	push	{r4, r6, r7, lr}
@@ -14636,8 +14636,8 @@ _ZN79_$LT$hopter..unwind..unw_table..UnwindInstrIter$u20$as$u20$core..fmt..Debug
 	cmp.w	r12, #32
 	bge	.LBB84_2
 	svc	#255
-	.short	8
-	.short	0
+	.short	#8
+	.short	#0
 .LBB84_2:
 	.save	{r4, r6, r7, lr}
 	push	{r4, r6, r7, lr}
@@ -14719,8 +14719,8 @@ _ZN4core3ptr63drop_in_place$LT$hopter..unwind..unw_table..UnwindInstrIter$GT$17h
 	cmp.w	r12, #16
 	bge	.LBB85_2
 	svc	#254
-	.short	4
-	.short	0
+	.short	#4
+	.short	#0
 .LBB85_2:
 	.save	{r4, r6, r7, lr}
 	push	{r4, r6, r7, lr}
@@ -14809,8 +14809,8 @@ _ZN4core3fmt3num50_$LT$impl$u20$core..fmt..Debug$u20$for$u20$u16$GT$3fmt17h8c02d
 	cmp.w	r12, #144
 	bge	.LBB86_2
 	svc	#255
-	.short	36
-	.short	0
+	.short	#36
+	.short	#0
 .LBB86_2:
 	.save	{r7, lr}
 	push	{r7, lr}
@@ -15003,8 +15003,8 @@ _ZN76_$LT$hopter..unwind..unw_lsda..LSDA$LT$R$GT$$u20$as$u20$core..fmt..Debug$GT
 	cmp.w	r12, #32
 	bge	.LBB87_2
 	svc	#255
-	.short	8
-	.short	0
+	.short	#8
+	.short	#0
 .LBB87_2:
 	.save	{r4, r5, r7, lr}
 	push	{r4, r5, r7, lr}
@@ -15095,8 +15095,8 @@ _ZN79_$LT$hopter..unwind..unw_table..PersonalityType$u20$as$u20$core..fmt..Debug
 	cmp.w	r12, #32
 	bge	.LBB88_2
 	svc	#255
-	.short	8
-	.short	0
+	.short	#8
+	.short	#0
 .LBB88_2:
 	.save	{r4, r6, r7, lr}
 	push	{r4, r6, r7, lr}
@@ -15202,8 +15202,8 @@ _ZN4core3ptr62drop_in_place$LT$hopter..unwind..unw_table..UnwindByteIter$GT$17h2
 	cmp.w	r12, #16
 	bge	.LBB89_2
 	svc	#254
-	.short	4
-	.short	0
+	.short	#4
+	.short	#0
 .LBB89_2:
 	.save	{r4, r6, r7, lr}
 	push	{r4, r6, r7, lr}
@@ -15283,8 +15283,8 @@ _ZN4core3ptr58drop_in_place$LT$hopter..unwind..unwind..UnwindAbility$GT$17h1e0e3
 	cmp.w	r12, #16
 	bge	.LBB90_2
 	svc	#254
-	.short	4
-	.short	0
+	.short	#4
+	.short	#0
 .LBB90_2:
 	.save	{r4, r6, r7, lr}
 	push	{r4, r6, r7, lr}
@@ -15397,8 +15397,8 @@ _ZN42_$LT$$RF$T$u20$as$u20$core..fmt..Debug$GT$3fmt17h07a9dc2c8d16b8adE:
 	cmp.w	r12, #144
 	bge	.LBB91_2
 	svc	#255
-	.short	36
-	.short	0
+	.short	#36
+	.short	#0
 .LBB91_2:
 	.save	{r7, lr}
 	push	{r7, lr}
@@ -15517,8 +15517,8 @@ _ZN89_$LT$gimli..read..endian_slice..EndianSlice$LT$Endian$GT$$u20$as$u20$core..
 	cmp.w	r12, #40
 	bge	.LBB92_2
 	svc	#255
-	.short	10
-	.short	0
+	.short	#10
+	.short	#0
 .LBB92_2:
 	.save	{r4, r5, r7, lr}
 	push	{r4, r5, r7, lr}
@@ -15626,8 +15626,8 @@ _ZN42_$LT$$RF$T$u20$as$u20$core..fmt..Debug$GT$3fmt17h8b4535ba97e1b6b2E:
 	cmp.w	r12, #32
 	bge	.LBB94_2
 	svc	#255
-	.short	8
-	.short	0
+	.short	#8
+	.short	#0
 .LBB94_2:
 	.save	{r4, r5, r7, lr}
 	push	{r4, r5, r7, lr}
@@ -15718,8 +15718,8 @@ _ZN42_$LT$$RF$T$u20$as$u20$core..fmt..Debug$GT$3fmt17h3cea9385b0bc70b9E:
 	cmp.w	r12, #176
 	bge	.LBB95_2
 	svc	#255
-	.short	44
-	.short	0
+	.short	#44
+	.short	#0
 .LBB95_2:
 	.save	{r4, r5, r6, r7, lr}
 	push	{r4, r5, r6, r7, lr}
@@ -15972,8 +15972,8 @@ _ZN67_$LT$alloc..boxed..Box$LT$T$C$A$GT$$u20$as$u20$core..fmt..Debug$GT$3fmt17h8
 	cmp.w	r12, #40
 	bge	.LBB96_2
 	svc	#255
-	.short	10
-	.short	0
+	.short	#10
+	.short	#0
 .LBB96_2:
 	.save	{r4, r5, r6, r7, lr}
 	push	{r4, r5, r6, r7, lr}
@@ -16060,8 +16060,8 @@ _ZN7hadusos6packet6Packet4send17h7a915cbb9eccff1dE:
 	cmp.w	r12, #88
 	bge	.LBB97_2
 	svc	#255
-	.short	22
-	.short	0
+	.short	#22
+	.short	#0
 .LBB97_2:
 	.save	{r4, r5, r7, lr}
 	push	{r4, r5, r7, lr}
@@ -16258,8 +16258,8 @@ _ZN7hadusos6packet6Packet7receive17h4eaa849e54150822E:
 	cmp.w	r12, #96
 	bge	.LBB98_2
 	svc	#255
-	.short	24
-	.short	0
+	.short	#24
+	.short	#0
 .LBB98_2:
 	.save	{r4, r5, r6, r7, lr}
 	push	{r4, r5, r6, r7, lr}
@@ -16865,8 +16865,8 @@ _ZN7hadusos4link17Link$LT$S$C$T$GT$36read_byte_with_timeout_remove_escape17hb03a
 	cmp.w	r12, #32
 	bge	.LBB99_2
 	svc	#255
-	.short	8
-	.short	0
+	.short	#8
+	.short	#0
 .LBB99_2:
 	.save	{r4, r5, r6, r7, lr}
 	push	{r4, r5, r6, r7, lr}
@@ -17016,8 +17016,8 @@ _ZN6hopter4sync7mailbox7Mailbox18wait_until_timeout17ha9b48912f16f8cb7E:
 	cmp.w	r12, #72
 	bge	.LBB100_2
 	svc	#255
-	.short	18
-	.short	0
+	.short	#18
+	.short	#0
 .LBB100_2:
 	.save	{r4, r5, r6, r7, lr}
 	push	{r4, r5, r6, r7, lr}
@@ -18271,8 +18271,8 @@ _ZN4core3ptr93drop_in_place$LT$hopter..sync..soft_lock..AccessGuard$LT$hopter..s
 	cmp.w	r12, #48
 	bge	.LBB101_2
 	svc	#254
-	.short	12
-	.short	0
+	.short	#12
+	.short	#0
 .LBB101_2:
 	.save	{r4, r5, r6, r7, lr}
 	push	{r4, r5, r6, r7, lr}
@@ -18395,8 +18395,8 @@ _ZN4core3ptr146drop_in_place$LT$hopter..sync..spin_lock..SpinGuard$LT$core..opti
 	cmp.w	r12, #8
 	bge	.LBB102_2
 	svc	#254
-	.short	2
-	.short	0
+	.short	#2
+	.short	#0
 .LBB102_2:
 	.save	{r7, lr}
 	push	{r7, lr}
@@ -18471,8 +18471,8 @@ _ZN6hopter4time23add_task_to_sleep_queue17h1c47166422a0c91cE:
 	cmp.w	r12, #48
 	bge	.LBB103_2
 	svc	#255
-	.short	12
-	.short	0
+	.short	#12
+	.short	#0
 .LBB103_2:
 	.save	{r4, r5, r6, r7, lr}
 	push	{r4, r5, r6, r7, lr}
@@ -18991,8 +18991,8 @@ _ZN97_$LT$hopter..sync..mailbox..InnerFullAccessor$u20$as$u20$hopter..sync..soft
 	cmp.w	r12, #32
 	bge	.LBB104_2
 	svc	#255
-	.short	8
-	.short	0
+	.short	#8
+	.short	#0
 .LBB104_2:
 	.save	{r4, r5, r6, r7, lr}
 	push	{r4, r5, r6, r7, lr}
@@ -19188,8 +19188,8 @@ _ZN6hopter4time38remove_task_from_sleep_queue_allow_isr17h8dcb015f078f4deaE:
 	cmp.w	r12, #48
 	bge	.LBB105_2
 	svc	#255
-	.short	12
-	.short	0
+	.short	#12
+	.short	#0
 .LBB105_2:
 	.save	{r4, r5, r6, r7, lr}
 	push	{r4, r5, r6, r7, lr}
@@ -19791,8 +19791,8 @@ _ZN4core3ptr84drop_in_place$LT$hopter..sync..soft_lock..AccessGuard$LT$hopter..t
 	cmp.w	r12, #48
 	bge	.LBB106_2
 	svc	#254
-	.short	12
-	.short	0
+	.short	#12
+	.short	#0
 .LBB106_2:
 	.save	{r4, r5, r6, r7, lr}
 	push	{r4, r5, r6, r7, lr}
@@ -19919,8 +19919,8 @@ _ZN6hopter4time17InnerFullAccessor18wake_expired_tasks17h3c2736a472e82972E:
 	cmp.w	r12, #40
 	bge	.LBB107_2
 	svc	#255
-	.short	10
-	.short	0
+	.short	#10
+	.short	#0
 .LBB107_2:
 	.save	{r4, r5, r6, r7, lr}
 	push	{r4, r5, r6, r7, lr}
@@ -20273,8 +20273,8 @@ _ZN4core3ptr135drop_in_place$LT$hopter..sync..refcell_sched_safe..RefSchedSafe$L
 	cmp.w	r12, #16
 	bge	.LBB108_2
 	svc	#254
-	.short	4
-	.short	0
+	.short	#4
+	.short	#0
 .LBB108_2:
 	.save	{r4, r6, r7, lr}
 	push	{r4, r6, r7, lr}
@@ -20361,8 +20361,8 @@ _ZN7hadusos4link17Link$LT$S$C$T$GT$10send_frame17h83d3b11332b271e9E:
 	cmp.w	r12, #32
 	bge	.LBB109_2
 	svc	#255
-	.short	8
-	.short	0
+	.short	#8
+	.short	#0
 .LBB109_2:
 	.save	{r4, r5, r6, r7, lr}
 	push	{r4, r5, r6, r7, lr}
@@ -20467,8 +20467,8 @@ _ZN4core3ptr164drop_in_place$LT$$LP$hopter..interrupt..mask..HeldInterrupt$LT$ho
 	cmp.w	r12, #16
 	bge	.LBB110_2
 	svc	#254
-	.short	4
-	.short	0
+	.short	#4
+	.short	#0
 .LBB110_2:
 	.save	{r4, r6, r7, lr}
 	push	{r4, r6, r7, lr}
@@ -20655,8 +20655,8 @@ _ZN4core3ptr183drop_in_place$LT$hopter..sync..spin_lock..SpinSchedIrqSafeGuard$L
 	cmp.w	r12, #16
 	bge	.LBB111_2
 	svc	#254
-	.short	4
-	.short	0
+	.short	#4
+	.short	#0
 .LBB111_2:
 	.save	{r4, r6, r7, lr}
 	push	{r4, r6, r7, lr}
@@ -20785,8 +20785,8 @@ _ZN4core3fmt5Write10write_char17h20c85caff1172db1E:
 	cmp.w	r12, #32
 	bge	.LBB112_2
 	svc	#255
-	.short	8
-	.short	0
+	.short	#8
+	.short	#0
 .LBB112_2:
 	.save	{r4, r6, r7, lr}
 	push	{r4, r6, r7, lr}
@@ -20892,8 +20892,8 @@ _ZN4core3fmt5Write9write_fmt17h65173c6947fb7f69E:
 	cmp.w	r12, #28
 	bge	.LBB113_2
 	svc	#255
-	.short	7
-	.short	0
+	.short	#7
+	.short	#0
 .LBB113_2:
 	.save	{r4, r6, r7, lr}
 	push	{r4, r6, r7, lr}
@@ -20978,8 +20978,8 @@ _ZN6hopter6unwind6unwind22try_concurrent_restart17h01474cb0d2a8547aE:
 	cmp.w	r12, #416
 	bge	.LBB114_2
 	svc	#255
-	.short	104
-	.short	0
+	.short	#104
+	.short	#0
 .LBB114_2:
 	.save	{r4, r5, r6, r7, lr}
 	push	{r4, r5, r6, r7, lr}
@@ -21906,8 +21906,8 @@ _ZN5alloc4sync16Arc$LT$T$C$A$GT$9drop_slow17h27401401ebe58ed8E:
 	cmp.w	r12, #24
 	bge	.LBB115_2
 	svc	#255
-	.short	6
-	.short	0
+	.short	#6
+	.short	#0
 .LBB115_2:
 	.save	{r4, r5, r6, r7, lr}
 	push	{r4, r5, r6, r7, lr}
@@ -21998,8 +21998,8 @@ _ZN5alloc4sync16Arc$LT$T$C$A$GT$9downgrade18panic_cold_display17h2568957e0ec7470
 	cmp.w	r12, #8
 	bge	.LBB116_2
 	svc	#255
-	.short	2
-	.short	0
+	.short	#2
+	.short	#0
 .LBB116_2:
 	.save	{r7, lr}
 	push	{r7, lr}
@@ -22026,8 +22026,8 @@ _ZN6hopter9allocator9Allocator13kernel_malloc17h49ffefb37966e904E:
 	cmp.w	r12, #32
 	bge	.LBB117_2
 	svc	#255
-	.short	8
-	.short	0
+	.short	#8
+	.short	#0
 .LBB117_2:
 	.save	{r4, r5, r6, r7, lr}
 	push	{r4, r5, r6, r7, lr}
@@ -22321,8 +22321,8 @@ _ZN4core3ptr141drop_in_place$LT$core..option..Option$LT$alloc..sync..Arc$LT$dyn$
 	cmp.w	r12, #16
 	bge	.LBB119_2
 	svc	#254
-	.short	4
-	.short	0
+	.short	#4
+	.short	#0
 .LBB119_2:
 	.save	{r4, r5, r7, lr}
 	push	{r4, r5, r7, lr}
@@ -22407,8 +22407,8 @@ _ZN6hopter6unwind6unwind11UnwindState13drop_from_ptr17h3c27aa534a52a251E:
 	cmp.w	r12, #16
 	bge	.LBB121_2
 	svc	#255
-	.short	4
-	.short	0
+	.short	#4
+	.short	#0
 .LBB121_2:
 	.save	{r4, r5, r7, lr}
 	push	{r4, r5, r7, lr}
@@ -22699,8 +22699,8 @@ _ZN6hopter9interrupt7systick15systick_handler17h165320de3410cb85E:
 	cmp.w	r12, #48
 	bge	.LBB127_2
 	svc	#255
-	.short	12
-	.short	0
+	.short	#12
+	.short	#0
 .LBB127_2:
 	.save	{r4, r5, r6, r7, lr}
 	push	{r4, r5, r6, r7, lr}
@@ -23047,8 +23047,8 @@ _ZN6hopter9interrupt10entry_exit18handler_trampoline17hb4e6e3ea379999a5E:
 	cmp.w	r12, #16
 	bge	.LBB129_2
 	svc	#255
-	.short	4
-	.short	0
+	.short	#4
+	.short	#0
 .LBB129_2:
 	.save	{r4, r5, r7, lr}
 	push	{r4, r5, r7, lr}
@@ -23129,8 +23129,8 @@ _ZN6hopter9interrupt14context_switch14pendsv_handler17h0ec9207dd0cf0455E:
 	cmp.w	r12, #64
 	bge	.LBB130_2
 	svc	#255
-	.short	16
-	.short	0
+	.short	#16
+	.short	#0
 .LBB130_2:
 	.save	{r4, r5, r6, r7, lr}
 	push	{r4, r5, r6, r7, lr}
@@ -24253,8 +24253,8 @@ _ZN4core3ptr163drop_in_place$LT$hopter..sync..spin_lock..SpinSchedSafeGuard$LT$a
 	cmp.w	r12, #16
 	bge	.LBB131_2
 	svc	#254
-	.short	4
-	.short	0
+	.short	#4
+	.short	#0
 .LBB131_2:
 	.save	{r4, r6, r7, lr}
 	push	{r4, r6, r7, lr}
@@ -24434,8 +24434,8 @@ _ZN6hopter9interrupt11svc_handler11svc_handler17hcf725b40cf6e788cE:
 	cmp.w	r12, #104
 	bge	.LBB132_2
 	svc	#255
-	.short	26
-	.short	0
+	.short	#26
+	.short	#0
 .LBB132_2:
 	.save	{r4, r5, r6, r7, lr}
 	push	{r4, r5, r6, r7, lr}
@@ -25992,8 +25992,8 @@ rust_begin_unwind:
 	cmp.w	r12, #8
 	bge	.LBB144_2
 	svc	#255
-	.short	2
-	.short	0
+	.short	#2
+	.short	#0
 .LBB144_2:
 	.save	{r7, lr}
 	push	{r7, lr}
@@ -26053,8 +26053,8 @@ _ZN6hopter4time18sleep_ms_unchecked27add_cur_task_to_sleep_queue17h26db67c960ab3
 	cmp.w	r12, #24
 	bge	.LBB147_2
 	svc	#255
-	.short	6
-	.short	0
+	.short	#6
+	.short	#0
 .LBB147_2:
 	.save	{r4, r5, r6, r7, lr}
 	push	{r4, r5, r6, r7, lr}
@@ -26373,8 +26373,8 @@ _ZN13stm32f4xx_hal3rcc3pll7MainPll10fast_setup17hd86cab006923601dE:
 	cmp.w	r12, #56
 	bge	.LBB148_2
 	svc	#255
-	.short	14
-	.short	2
+	.short	#14
+	.short	#2
 .LBB148_2:
 	.save	{r4, r5, r6, r7, lr}
 	push	{r4, r5, r6, r7, lr}
@@ -26775,8 +26775,8 @@ _ZN13stm32f4xx_hal3rcc3pll6I2sPll14setup_shared_m17hf5a51e4af01367dbE:
 	cmp.w	r12, #184
 	bge	.LBB149_2
 	svc	#255
-	.short	46
-	.short	2
+	.short	#46
+	.short	#2
 .LBB149_2:
 	.save	{r4, r5, r6, r7, lr}
 	push	{r4, r5, r6, r7, lr}
@@ -27023,8 +27023,8 @@ _ZN13stm32f4xx_hal3rcc3pll6I2sPll16optimize_fixed_m17he40cae585332fff9E:
 	cmp.w	r12, #56
 	bge	.LBB150_2
 	svc	#255
-	.short	14
-	.short	0
+	.short	#14
+	.short	#0
 .LBB150_2:
 	.save	{r4, r5, r6, r7, lr}
 	push	{r4, r5, r6, r7, lr}

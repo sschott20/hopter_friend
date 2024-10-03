@@ -1,13 +1,13 @@
 #![allow(dead_code)]
 use hadusos::*;
-use hopter_friend::unwind::{ExTabEntry, PersonalityType::*};
+use hopter_friend::unwind::{ExTabEntry, PersonalityType::*, Prel31};
 
 use std::io::prelude::*;
 use std::net::{TcpListener, TcpStream};
 use std::time::{Duration, SystemTime};
 use std::{fs, thread};
 
-const TIMEOUT_MS: u32 = 10000;
+const TIMEOUT_MS: u32 = 30000;
 static mut G_SESSION: Option<Session<TcpSerial, SysTimer, 150, 2>> = None;
 
 macro_rules! unwrap_or_return {
@@ -104,7 +104,7 @@ pub fn print_data(vec: &[u8]) {
     println!();
 }
 
-fn get_extab_bytes() -> &'static [u8] {
+fn get_section_bytes(sec: &str) -> &'static [u8] {
     let sections = fs::read_to_string("objects/sections.txt").unwrap();
 
     let mut addr = 0;
@@ -112,7 +112,7 @@ fn get_extab_bytes() -> &'static [u8] {
     let mut size = 0;
 
     for line in sections.lines() {
-        if line.contains(".ARM.extab") {
+        if line.contains(sec) {
             let parts: Vec<&str> = line.split_whitespace().collect();
             addr = u32::from_str_radix(parts[1], 16).unwrap();
             offset = u32::from_str_radix(parts[2], 16).unwrap();
@@ -133,11 +133,12 @@ fn get_extab_bytes() -> &'static [u8] {
             libc::O_RDONLY,
         )
     };
-
+    let binary_size = get_binary_size();
     let _ = unsafe {
         libc::mmap(
             0x800_0000 as *mut libc::c_void,
-            (offset + size) as libc::size_t,
+            // (offset + size) as libc::size_t,
+            binary_size as libc::size_t,
             libc::PROT_READ | libc::PROT_WRITE as libc::c_int,
             libc::MAP_PRIVATE as libc::c_int,
             fd,
@@ -150,6 +151,7 @@ fn get_extab_bytes() -> &'static [u8] {
 
     return unsafe { std::slice::from_raw_parts(addr as *const u8, size as usize) };
 }
+
 fn handle_extab() {
     println!("serving extab request");
     let session = unsafe { G_SESSION.as_mut().unwrap() };
@@ -162,7 +164,7 @@ fn handle_extab() {
         return;
     };
 
-    let extab_bytes = get_extab_bytes();
+    let extab_bytes = get_section_bytes(".ARM.extab");
 
     let extab_entry_addr: usize = u32::from_le_bytes(data[0..4].try_into().unwrap()) as usize;
     let extab_start_addr = &extab_bytes[0] as *const u8 as usize;
@@ -183,8 +185,15 @@ fn handle_extab() {
 
     // lsda slice
     println!("lsda slice size: {:?}", lsda_slice.len());
-    unwrap_or_return!(session.send(lsda_slice, TIMEOUT_MS));
-
+    // unwrap_or_return!(session.send(lsda_slice, TIMEOUT_MS));
+    let result = session.send(lsda_slice, TIMEOUT_MS);
+    match result {
+        Ok(_) => {}
+        Err(e) => {
+            println!("Error sending lsda slice {:?}", e);
+            return;
+        }
+    }
     // personality
     let personality = extab_entry.get_personality();
     match personality {
@@ -207,10 +216,72 @@ fn handle_extab() {
         }
     }
     println!("personality: {:?}", personality);
+    println!("finished serving extab request\n");
     // unwrap_or_return!(session.send(lsda_slice, TIMEOUT_MS));
 }
 fn handle_exidx() {
     println!("serving exidx request");
+
+    let session = unsafe { G_SESSION.as_mut().unwrap() };
+
+    let Ok(size) = session.listen(TIMEOUT_MS) else {
+        println!("Error listening");
+        return;
+    };
+    println!("size: {:?}", size);
+
+    let mut data = new_byte_slice(size as usize);
+    let _ = session.receive(&mut data, TIMEOUT_MS).unwrap();
+    let pc = u32::from_le_bytes(data[0..4].try_into().unwrap());
+    println!("pc: {:x?}", pc);
+    let exidx: &[u8] = get_section_bytes(".ARM.exidx");
+
+    // println!("Full exidx: {:?}", exidx);
+
+    if exidx.len() % 8 != 0 {
+        panic!("UnwindAbility::get_for_func: exidx length not multiple of 8.");
+    }
+    if exidx.len() == 0 {
+        panic!("UnwindAbility::get_for_func: empty exidx.");
+    }
+
+    // Binary search boundaries.
+    let mut first = 0usize;
+    let mut last = exidx.len() - 8;
+    let entry;
+
+    let first_pc = Prel31::from_bytes(<&[u8; 4]>::try_from(&exidx[first..first + 4]).unwrap());
+    if pc < first_pc.value() {
+        panic!("UnwindAbility::get_for_func: no matching entry.");
+    }
+
+    let last_pc = Prel31::from_bytes(<&[u8; 4]>::try_from(&exidx[last..last + 4]).unwrap());
+
+    if pc >= last_pc.value() {
+        entry = <&[u8; 8]>::try_from(&exidx[last..last + 8]).unwrap();
+    } else {
+        // Perform binary search.
+        while first < last - 8 {
+            let mid = first + (((last - first) / 8 + 1) >> 1) * 8;
+            let mid_pc = Prel31::from_bytes(<&[u8; 4]>::try_from(&exidx[mid..mid + 4]).unwrap());
+            if pc < mid_pc.value() {
+                last = mid;
+            } else {
+                first = mid;
+            }
+        }
+        entry = <&[u8; 8]>::try_from(&exidx[first..first + 8]).unwrap();
+    }
+    // println!("entry addr: {:x?}", &entry[0] as *const _ as u32);
+    // send the bytes of the exidx entry
+    unwrap_or_return!(session.send(entry, TIMEOUT_MS));
+
+    // send the intended address of the entry which is needed to construct the prel31
+    let entry_addr: u32 = &entry[0] as *const _ as u32;
+    let entry_bytes: [u8; 4] = entry_addr.to_le_bytes();
+    unwrap_or_return!(session.send(&entry_bytes, TIMEOUT_MS));
+    println!("exidx_entry_addr: {:x?}", entry_addr);
+    println!("finished serving exidx request\n");
 }
 
 fn handle_connection(stream: TcpStream) -> () {
@@ -225,6 +296,7 @@ fn handle_connection(stream: TcpStream) -> () {
 
     loop {
         // receive extab entry address
+
         let session = unsafe { G_SESSION.as_mut().unwrap() };
 
         let Ok(size) = session.listen(TIMEOUT_MS) else {
@@ -235,6 +307,7 @@ fn handle_connection(stream: TcpStream) -> () {
             return;
         };
         let request_type: u32 = u32::from_le_bytes(data[0..4].try_into().unwrap());
+
         match request_type {
             0xAAAA => {
                 handle_extab();
@@ -248,4 +321,18 @@ fn handle_connection(stream: TcpStream) -> () {
             }
         }
     }
+}
+
+fn get_binary_size() -> u32 {
+    let sections = fs::read_to_string("objects/sections.txt").unwrap();
+
+    for line in sections.lines() {
+        if line.contains(".ARM.extab") {
+            let parts: Vec<&str> = line.split_whitespace().collect();
+            let offset = u32::from_str_radix(parts[2], 16).unwrap();
+            let size = u32::from_str_radix(parts[3], 16).unwrap();
+            return offset + size;
+        }
+    }
+    return 0;
 }

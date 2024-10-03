@@ -240,19 +240,6 @@ _ZN4core3ptr119drop_in_place$LT$core..option..Option$LT$alloc..boxed..Box$LT$hop
 	.personality DefaultHandler_
 	.handlerdata
 	.p2align	2
-GCC_except_table2:
-.Lexception0:
-	.byte	255
-	.byte	255
-	.byte	1
-	.uleb128 .Lcst_end0-.Lcst_begin0
-.Lcst_begin0:
-	.uleb128 .Lfunc_begin0-.Lfunc_begin0
-	.uleb128 .Lfunc_end2-.Lfunc_begin0
-	.byte	0
-	.byte	0
-.Lcst_end0:
-	.p2align	2
 	.fnend
 
 	.section	".text._ZN4core3ptr141drop_in_place$LT$core..option..Option$LT$alloc..sync..Arc$LT$dyn$u20$core..any..Any$u2b$core..marker..Sync$u2b$core..marker..Send$GT$$GT$$GT$17h5a3154469c7d0d28E","ax",%progbits
@@ -624,78 +611,6 @@ _ZN4core3ptr52drop_in_place$LT$hopter..task..task_struct..Task$GT$17hc284059f4f7
 	.size	_ZN4core3ptr52drop_in_place$LT$hopter..task..task_struct..Task$GT$17hc284059f4f7252dcE, .Lfunc_end4-_ZN4core3ptr52drop_in_place$LT$hopter..task..task_struct..Task$GT$17hc284059f4f7252dcE
 	.personality DefaultHandler_
 	.handlerdata
-	.p2align	2
-GCC_except_table4:
-.Lexception1:
-	.byte	255
-	.byte	0
-	.uleb128 .Lttbase0-.Lttbaseref0
-.Lttbaseref0:
-	.byte	1
-	.uleb128 .Lcst_end1-.Lcst_begin1
-.Lcst_begin1:
-	.uleb128 .Lfunc_begin1-.Lfunc_begin1
-	.uleb128 .Ltmp13-.Lfunc_begin1
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp13-.Lfunc_begin1
-	.uleb128 .Ltmp14-.Ltmp13
-	.uleb128 .Ltmp15-.Lfunc_begin1
-	.byte	0
-	.uleb128 .Ltmp16-.Lfunc_begin1
-	.uleb128 .Ltmp17-.Ltmp16
-	.uleb128 .Ltmp30-.Lfunc_begin1
-	.byte	0
-	.uleb128 .Ltmp18-.Lfunc_begin1
-	.uleb128 .Ltmp19-.Ltmp18
-	.uleb128 .Ltmp27-.Lfunc_begin1
-	.byte	0
-	.uleb128 .Ltmp20-.Lfunc_begin1
-	.uleb128 .Ltmp21-.Ltmp20
-	.uleb128 .Ltmp24-.Lfunc_begin1
-	.byte	0
-	.uleb128 .Ltmp28-.Lfunc_begin1
-	.uleb128 .Ltmp29-.Ltmp28
-	.uleb128 .Ltmp30-.Lfunc_begin1
-	.byte	0
-	.uleb128 .Ltmp25-.Lfunc_begin1
-	.uleb128 .Ltmp26-.Ltmp25
-	.uleb128 .Ltmp27-.Lfunc_begin1
-	.byte	0
-	.uleb128 .Ltmp22-.Lfunc_begin1
-	.uleb128 .Ltmp23-.Ltmp22
-	.uleb128 .Ltmp24-.Lfunc_begin1
-	.byte	0
-	.uleb128 .Ltmp31-.Lfunc_begin1
-	.uleb128 .Ltmp32-.Ltmp31
-	.uleb128 .Ltmp33-.Lfunc_begin1
-	.byte	0
-	.uleb128 .Ltmp32-.Lfunc_begin1
-	.uleb128 .Ltmp34-.Ltmp32
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp34-.Lfunc_begin1
-	.uleb128 .Ltmp39-.Ltmp34
-	.uleb128 .Ltmp42-.Lfunc_begin1
-	.byte	1
-	.uleb128 .Ltmp39-.Lfunc_begin1
-	.uleb128 .Ltmp40-.Ltmp39
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp40-.Lfunc_begin1
-	.uleb128 .Ltmp41-.Ltmp40
-	.uleb128 .Ltmp42-.Lfunc_begin1
-	.byte	1
-	.uleb128 .Ltmp41-.Lfunc_begin1
-	.uleb128 .Lfunc_end4-.Ltmp41
-	.byte	0
-	.byte	0
-.Lcst_end1:
-	.byte	127
-	.byte	0
-	.p2align	2
-.Lttbase0:
-	.long	0
 	.p2align	2
 	.fnend
 
@@ -1473,97 +1388,6 @@ _ZN6hopter4task10trampoline22restartable_task_entry17h6a501ccc0320bcd7E:
 	.personality DefaultHandler_
 	.handlerdata
 	.p2align	2
-GCC_except_table9:
-.Lexception2:
-	.byte	255
-	.byte	0
-	.uleb128 .Lttbase1-.Lttbaseref1
-.Lttbaseref1:
-	.byte	1
-	.uleb128 .Lcst_end2-.Lcst_begin2
-.Lcst_begin2:
-	.uleb128 .Lfunc_begin2-.Lfunc_begin2
-	.uleb128 .Ltmp43-.Lfunc_begin2
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp43-.Lfunc_begin2
-	.uleb128 .Ltmp54-.Ltmp43
-	.uleb128 .Ltmp55-.Lfunc_begin2
-	.byte	7
-	.uleb128 .Ltmp54-.Lfunc_begin2
-	.uleb128 .Ltmp56-.Ltmp54
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp56-.Lfunc_begin2
-	.uleb128 .Ltmp57-.Ltmp56
-	.uleb128 .Ltmp58-.Lfunc_begin2
-	.byte	1
-	.uleb128 .Ltmp59-.Lfunc_begin2
-	.uleb128 .Ltmp60-.Ltmp59
-	.uleb128 .Ltmp61-.Lfunc_begin2
-	.byte	7
-	.uleb128 .Ltmp62-.Lfunc_begin2
-	.uleb128 .Ltmp63-.Ltmp62
-	.uleb128 .Ltmp74-.Lfunc_begin2
-	.byte	7
-	.uleb128 .Ltmp66-.Lfunc_begin2
-	.uleb128 .Ltmp67-.Ltmp66
-	.uleb128 .Ltmp68-.Lfunc_begin2
-	.byte	5
-	.uleb128 .Ltmp79-.Lfunc_begin2
-	.uleb128 .Ltmp78-.Ltmp79
-	.uleb128 .Ltmp81-.Lfunc_begin2
-	.byte	1
-	.uleb128 .Ltmp75-.Lfunc_begin2
-	.uleb128 .Ltmp76-.Ltmp75
-	.uleb128 .Ltmp87-.Lfunc_begin2
-	.byte	1
-	.uleb128 .Ltmp64-.Lfunc_begin2
-	.uleb128 .Ltmp65-.Ltmp64
-	.uleb128 .Ltmp68-.Lfunc_begin2
-	.byte	5
-	.uleb128 .Ltmp65-.Lfunc_begin2
-	.uleb128 .Ltmp69-.Ltmp65
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp69-.Lfunc_begin2
-	.uleb128 .Ltmp70-.Ltmp69
-	.uleb128 .Ltmp71-.Lfunc_begin2
-	.byte	1
-	.uleb128 .Ltmp72-.Lfunc_begin2
-	.uleb128 .Ltmp73-.Ltmp72
-	.uleb128 .Ltmp74-.Lfunc_begin2
-	.byte	7
-	.uleb128 .Ltmp73-.Lfunc_begin2
-	.uleb128 .Ltmp82-.Ltmp73
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp82-.Lfunc_begin2
-	.uleb128 .Ltmp83-.Ltmp82
-	.uleb128 .Ltmp84-.Lfunc_begin2
-	.byte	1
-	.uleb128 .Ltmp85-.Lfunc_begin2
-	.uleb128 .Ltmp86-.Ltmp85
-	.uleb128 .Ltmp87-.Lfunc_begin2
-	.byte	1
-	.uleb128 .Ltmp86-.Lfunc_begin2
-	.uleb128 .Lfunc_end9-.Ltmp86
-	.byte	0
-	.byte	0
-.Lcst_end2:
-	.byte	127
-	.byte	0
-	.byte	0
-	.byte	0
-	.byte	1
-	.byte	125
-	.byte	1
-	.byte	0
-	.p2align	2
-	.long	0
-.Lttbase1:
-	.long	0
-	.p2align	2
 	.fnend
 
 	.section	.text.__main_trampoline,"ax",%progbits
@@ -1997,74 +1821,6 @@ __main_trampoline:
 	.size	__main_trampoline, .Lfunc_end10-__main_trampoline
 	.personality DefaultHandler_
 	.handlerdata
-	.p2align	2
-GCC_except_table10:
-.Lexception3:
-	.byte	255
-	.byte	0
-	.uleb128 .Lttbase2-.Lttbaseref2
-.Lttbaseref2:
-	.byte	1
-	.uleb128 .Lcst_end3-.Lcst_begin3
-.Lcst_begin3:
-	.uleb128 .Lfunc_begin3-.Lfunc_begin3
-	.uleb128 .Ltmp88-.Lfunc_begin3
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp88-.Lfunc_begin3
-	.uleb128 .Ltmp93-.Ltmp88
-	.uleb128 .Ltmp120-.Lfunc_begin3
-	.byte	1
-	.uleb128 .Ltmp93-.Lfunc_begin3
-	.uleb128 .Ltmp94-.Ltmp93
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp94-.Lfunc_begin3
-	.uleb128 .Ltmp97-.Ltmp94
-	.uleb128 .Ltmp98-.Lfunc_begin3
-	.byte	1
-	.uleb128 .Ltmp97-.Lfunc_begin3
-	.uleb128 .Ltmp101-.Ltmp97
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp101-.Lfunc_begin3
-	.uleb128 .Ltmp102-.Ltmp101
-	.uleb128 .Ltmp103-.Lfunc_begin3
-	.byte	1
-	.uleb128 .Ltmp102-.Lfunc_begin3
-	.uleb128 .Ltmp106-.Ltmp102
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp106-.Lfunc_begin3
-	.uleb128 .Ltmp119-.Ltmp106
-	.uleb128 .Ltmp120-.Lfunc_begin3
-	.byte	1
-	.uleb128 .Ltmp110-.Lfunc_begin3
-	.uleb128 .Ltmp111-.Ltmp110
-	.uleb128 .Ltmp112-.Lfunc_begin3
-	.byte	1
-	.uleb128 .Ltmp108-.Lfunc_begin3
-	.uleb128 .Ltmp109-.Ltmp108
-	.uleb128 .Ltmp120-.Lfunc_begin3
-	.byte	1
-	.uleb128 .Ltmp104-.Lfunc_begin3
-	.uleb128 .Ltmp114-.Ltmp104
-	.uleb128 .Ltmp115-.Lfunc_begin3
-	.byte	1
-	.uleb128 .Ltmp116-.Lfunc_begin3
-	.uleb128 .Ltmp117-.Ltmp116
-	.uleb128 .Ltmp120-.Lfunc_begin3
-	.byte	1
-	.uleb128 .Ltmp117-.Lfunc_begin3
-	.uleb128 .Lfunc_end10-.Ltmp117
-	.byte	0
-	.byte	0
-.Lcst_end3:
-	.byte	127
-	.byte	0
-	.p2align	2
-.Lttbase2:
-	.long	0
 	.p2align	2
 	.fnend
 
@@ -2509,78 +2265,6 @@ _ZN7off_unw14usart1_handler17h39772d2a53e413c6E:
 	.personality DefaultHandler_
 	.handlerdata
 	.p2align	2
-GCC_except_table13:
-.Lexception4:
-	.byte	255
-	.byte	0
-	.uleb128 .Lttbase3-.Lttbaseref3
-.Lttbaseref3:
-	.byte	1
-	.uleb128 .Lcst_end4-.Lcst_begin4
-.Lcst_begin4:
-	.uleb128 .Lfunc_begin4-.Lfunc_begin4
-	.uleb128 .Ltmp121-.Lfunc_begin4
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp121-.Lfunc_begin4
-	.uleb128 .Ltmp122-.Ltmp121
-	.uleb128 .Ltmp123-.Lfunc_begin4
-	.byte	0
-	.uleb128 .Ltmp122-.Lfunc_begin4
-	.uleb128 .Ltmp129-.Ltmp122
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp129-.Lfunc_begin4
-	.uleb128 .Ltmp130-.Ltmp129
-	.uleb128 .Ltmp131-.Lfunc_begin4
-	.byte	0
-	.uleb128 .Ltmp130-.Lfunc_begin4
-	.uleb128 .Ltmp132-.Ltmp130
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp132-.Lfunc_begin4
-	.uleb128 .Ltmp133-.Ltmp132
-	.uleb128 .Ltmp142-.Lfunc_begin4
-	.byte	0
-	.uleb128 .Ltmp134-.Lfunc_begin4
-	.uleb128 .Ltmp135-.Ltmp134
-	.uleb128 .Ltmp136-.Lfunc_begin4
-	.byte	0
-	.uleb128 .Ltmp135-.Lfunc_begin4
-	.uleb128 .Ltmp124-.Ltmp135
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp124-.Lfunc_begin4
-	.uleb128 .Ltmp125-.Ltmp124
-	.uleb128 .Ltmp126-.Lfunc_begin4
-	.byte	1
-	.uleb128 .Ltmp127-.Lfunc_begin4
-	.uleb128 .Ltmp128-.Ltmp127
-	.uleb128 .Ltmp136-.Lfunc_begin4
-	.byte	0
-	.uleb128 .Ltmp137-.Lfunc_begin4
-	.uleb128 .Ltmp138-.Ltmp137
-	.uleb128 .Ltmp139-.Lfunc_begin4
-	.byte	1
-	.uleb128 .Ltmp140-.Lfunc_begin4
-	.uleb128 .Ltmp141-.Ltmp140
-	.uleb128 .Ltmp142-.Lfunc_begin4
-	.byte	0
-	.uleb128 .Ltmp143-.Lfunc_begin4
-	.uleb128 .Ltmp144-.Ltmp143
-	.uleb128 .Ltmp145-.Lfunc_begin4
-	.byte	1
-	.uleb128 .Ltmp144-.Lfunc_begin4
-	.uleb128 .Lfunc_end13-.Ltmp144
-	.byte	0
-	.byte	0
-.Lcst_end4:
-	.byte	127
-	.byte	0
-	.p2align	2
-.Lttbase3:
-	.long	0
-	.p2align	2
 	.fnend
 
 	.section	.text.unlikely._ZN4core5slice5index24slice_end_index_len_fail17hac1fb4e453f57fa0E,"ax",%progbits
@@ -2800,19 +2484,6 @@ _ZN4core3fmt5write17hd96a6c9ec72e986cE:
 	.size	_ZN4core3fmt5write17hd96a6c9ec72e986cE, .Lfunc_end15-_ZN4core3fmt5write17hd96a6c9ec72e986cE
 	.personality DefaultHandler_
 	.handlerdata
-	.p2align	2
-GCC_except_table15:
-.Lexception5:
-	.byte	255
-	.byte	255
-	.byte	1
-	.uleb128 .Lcst_end5-.Lcst_begin5
-.Lcst_begin5:
-	.uleb128 .Lfunc_begin5-.Lfunc_begin5
-	.uleb128 .Lfunc_end15-.Lfunc_begin5
-	.byte	0
-	.byte	0
-.Lcst_end5:
 	.p2align	2
 	.fnend
 
@@ -3121,19 +2792,6 @@ _ZN4core3fmt9Formatter12pad_integral17h2efbdfcbe48b529bE:
 	.size	_ZN4core3fmt9Formatter12pad_integral17h2efbdfcbe48b529bE, .Lfunc_end16-_ZN4core3fmt9Formatter12pad_integral17h2efbdfcbe48b529bE
 	.personality DefaultHandler_
 	.handlerdata
-	.p2align	2
-GCC_except_table16:
-.Lexception6:
-	.byte	255
-	.byte	255
-	.byte	1
-	.uleb128 .Lcst_end6-.Lcst_begin6
-.Lcst_begin6:
-	.uleb128 .Lfunc_begin6-.Lfunc_begin6
-	.uleb128 .Lfunc_end16-.Lfunc_begin6
-	.byte	0
-	.byte	0
-.Lcst_end6:
 	.p2align	2
 	.fnend
 
@@ -3454,19 +3112,6 @@ _ZN4core3fmt8builders11DebugStruct5field17hdf9b5539ac89cc85E:
 	.personality DefaultHandler_
 	.handlerdata
 	.p2align	2
-GCC_except_table19:
-.Lexception7:
-	.byte	255
-	.byte	255
-	.byte	1
-	.uleb128 .Lcst_end7-.Lcst_begin7
-.Lcst_begin7:
-	.uleb128 .Lfunc_begin7-.Lfunc_begin7
-	.uleb128 .Lfunc_end19-.Lfunc_begin7
-	.byte	0
-	.byte	0
-.Lcst_end7:
-	.p2align	2
 	.fnend
 
 	.section	".text._ZN68_$LT$core..fmt..builders..PadAdapter$u20$as$u20$core..fmt..Write$GT$9write_str17hafef927e6f8dce8dE","ax",%progbits
@@ -3750,19 +3395,6 @@ _ZN68_$LT$core..fmt..builders..PadAdapter$u20$as$u20$core..fmt..Write$GT$9write_
 	.personality DefaultHandler_
 	.handlerdata
 	.p2align	2
-GCC_except_table20:
-.Lexception8:
-	.byte	255
-	.byte	255
-	.byte	1
-	.uleb128 .Lcst_end8-.Lcst_begin8
-.Lcst_begin8:
-	.uleb128 .Lfunc_begin8-.Lfunc_begin8
-	.uleb128 .Lfunc_end20-.Lfunc_begin8
-	.byte	0
-	.byte	0
-.Lcst_end8:
-	.p2align	2
 	.fnend
 
 	.section	".text._ZN68_$LT$core..fmt..builders..PadAdapter$u20$as$u20$core..fmt..Write$GT$10write_char17hebf4a75b647dcac2E","ax",%progbits
@@ -3883,34 +3515,6 @@ _ZN4core9panicking18panic_nounwind_fmt17h97b4a7f38ccb1269E:
 	.size	_ZN4core9panicking18panic_nounwind_fmt17h97b4a7f38ccb1269E, .Lfunc_end23-_ZN4core9panicking18panic_nounwind_fmt17h97b4a7f38ccb1269E
 	.personality DefaultHandler_
 	.handlerdata
-	.p2align	2
-GCC_except_table23:
-.Lexception9:
-	.byte	255
-	.byte	0
-	.uleb128 .Lttbase4-.Lttbaseref4
-.Lttbaseref4:
-	.byte	1
-	.uleb128 .Lcst_end9-.Lcst_begin9
-.Lcst_begin9:
-	.uleb128 .Lfunc_begin9-.Lfunc_begin9
-	.uleb128 .Ltmp146-.Lfunc_begin9
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp146-.Lfunc_begin9
-	.uleb128 .Ltmp147-.Ltmp146
-	.uleb128 .Ltmp148-.Lfunc_begin9
-	.byte	1
-	.uleb128 .Ltmp147-.Lfunc_begin9
-	.uleb128 .Lfunc_end23-.Ltmp147
-	.byte	0
-	.byte	0
-.Lcst_end9:
-	.byte	127
-	.byte	0
-	.p2align	2
-.Lttbase4:
-	.long	0
 	.p2align	2
 	.fnend
 
@@ -4139,19 +3743,6 @@ _ZN4core3fmt8builders10DebugTuple5field17h8763a50d4132f583E:
 	.personality DefaultHandler_
 	.handlerdata
 	.p2align	2
-GCC_except_table28:
-.Lexception10:
-	.byte	255
-	.byte	255
-	.byte	1
-	.uleb128 .Lcst_end10-.Lcst_begin10
-.Lcst_begin10:
-	.uleb128 .Lfunc_begin10-.Lfunc_begin10
-	.uleb128 .Lfunc_end28-.Lfunc_begin10
-	.byte	0
-	.byte	0
-.Lcst_end10:
-	.p2align	2
 	.fnend
 
 	.section	.text._ZN4core3fmt8builders9DebugList5entry17hfffb18d293c911ecE,"ax",%progbits
@@ -4279,19 +3870,6 @@ _ZN4core3fmt8builders9DebugList5entry17hfffb18d293c911ecE:
 	.size	_ZN4core3fmt8builders9DebugList5entry17hfffb18d293c911ecE, .Lfunc_end29-_ZN4core3fmt8builders9DebugList5entry17hfffb18d293c911ecE
 	.personality DefaultHandler_
 	.handlerdata
-	.p2align	2
-GCC_except_table29:
-.Lexception11:
-	.byte	255
-	.byte	255
-	.byte	1
-	.uleb128 .Lcst_end11-.Lcst_begin11
-.Lcst_begin11:
-	.uleb128 .Lfunc_begin11-.Lfunc_begin11
-	.uleb128 .Lfunc_end29-.Lfunc_begin11
-	.byte	0
-	.byte	0
-.Lcst_end11:
 	.p2align	2
 	.fnend
 
@@ -4641,19 +4219,6 @@ _ZN74_$LT$gimli..read..endian_slice..DebugBytes$u20$as$u20$core..fmt..Debug$GT$3
 	.size	_ZN74_$LT$gimli..read..endian_slice..DebugBytes$u20$as$u20$core..fmt..Debug$GT$3fmt17h1baeca1c201a4fcaE, .Lfunc_end37-_ZN74_$LT$gimli..read..endian_slice..DebugBytes$u20$as$u20$core..fmt..Debug$GT$3fmt17h1baeca1c201a4fcaE
 	.personality DefaultHandler_
 	.handlerdata
-	.p2align	2
-GCC_except_table37:
-.Lexception12:
-	.byte	255
-	.byte	255
-	.byte	1
-	.uleb128 .Lcst_end12-.Lcst_begin12
-.Lcst_begin12:
-	.uleb128 .Lfunc_begin12-.Lfunc_begin12
-	.uleb128 .Lfunc_end37-.Lfunc_begin12
-	.byte	0
-	.byte	0
-.Lcst_end12:
 	.p2align	2
 	.fnend
 
@@ -5678,70 +5243,6 @@ _ZN6hopter4boot11system_init12system_start17he01f57ec47c2f034E:
 	.personality DefaultHandler_
 	.handlerdata
 	.p2align	2
-GCC_except_table49:
-.Lexception13:
-	.byte	255
-	.byte	0
-	.uleb128 .Lttbase5-.Lttbaseref5
-.Lttbaseref5:
-	.byte	1
-	.uleb128 .Lcst_end13-.Lcst_begin13
-.Lcst_begin13:
-	.uleb128 .Lfunc_begin13-.Lfunc_begin13
-	.uleb128 .Ltmp149-.Lfunc_begin13
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp149-.Lfunc_begin13
-	.uleb128 .Ltmp150-.Ltmp149
-	.uleb128 .Ltmp151-.Lfunc_begin13
-	.byte	1
-	.uleb128 .Ltmp150-.Lfunc_begin13
-	.uleb128 .Ltmp154-.Ltmp150
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp154-.Lfunc_begin13
-	.uleb128 .Ltmp155-.Ltmp154
-	.uleb128 .Ltmp170-.Lfunc_begin13
-	.byte	1
-	.uleb128 .Ltmp155-.Lfunc_begin13
-	.uleb128 .Ltmp156-.Ltmp155
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp156-.Lfunc_begin13
-	.uleb128 .Ltmp157-.Ltmp156
-	.uleb128 .Ltmp158-.Lfunc_begin13
-	.byte	1
-	.uleb128 .Ltmp168-.Lfunc_begin13
-	.uleb128 .Ltmp169-.Ltmp168
-	.uleb128 .Ltmp170-.Lfunc_begin13
-	.byte	1
-	.uleb128 .Ltmp169-.Lfunc_begin13
-	.uleb128 .Ltmp164-.Ltmp169
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp164-.Lfunc_begin13
-	.uleb128 .Ltmp167-.Ltmp164
-	.uleb128 .Ltmp170-.Lfunc_begin13
-	.byte	1
-	.uleb128 .Ltmp159-.Lfunc_begin13
-	.uleb128 .Ltmp153-.Ltmp159
-	.uleb128 .Ltmp161-.Lfunc_begin13
-	.byte	1
-	.uleb128 .Ltmp162-.Lfunc_begin13
-	.uleb128 .Ltmp163-.Ltmp162
-	.uleb128 .Ltmp170-.Lfunc_begin13
-	.byte	1
-	.uleb128 .Ltmp163-.Lfunc_begin13
-	.uleb128 .Lfunc_end49-.Ltmp163
-	.byte	0
-	.byte	0
-.Lcst_end13:
-	.byte	127
-	.byte	0
-	.p2align	2
-.Lttbase5:
-	.long	0
-	.p2align	2
 	.fnend
 
 	.section	.text._ZN6hopter4task10trampoline10task_entry17h7ad6013b03db55d9E,"ax",%progbits
@@ -5797,34 +5298,6 @@ _ZN6hopter4task10trampoline10task_entry17h7ad6013b03db55d9E:
 	.size	_ZN6hopter4task10trampoline10task_entry17h7ad6013b03db55d9E, .Lfunc_end50-_ZN6hopter4task10trampoline10task_entry17h7ad6013b03db55d9E
 	.personality DefaultHandler_
 	.handlerdata
-	.p2align	2
-GCC_except_table50:
-.Lexception14:
-	.byte	255
-	.byte	0
-	.uleb128 .Lttbase6-.Lttbaseref6
-.Lttbaseref6:
-	.byte	1
-	.uleb128 .Lcst_end14-.Lcst_begin14
-.Lcst_begin14:
-	.uleb128 .Lfunc_begin14-.Lfunc_begin14
-	.uleb128 .Ltmp171-.Lfunc_begin14
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp171-.Lfunc_begin14
-	.uleb128 .Ltmp172-.Ltmp171
-	.uleb128 .Ltmp173-.Lfunc_begin14
-	.byte	1
-	.uleb128 .Ltmp172-.Lfunc_begin14
-	.uleb128 .Lfunc_end50-.Ltmp172
-	.byte	0
-	.byte	0
-.Lcst_end14:
-	.byte	1
-	.byte	0
-	.p2align	2
-	.long	0
-.Lttbase6:
 	.p2align	2
 	.fnend
 
@@ -6007,19 +5480,6 @@ _ZN6hopter4task11task_struct4Task17initialize_common17h5d08827810af73d5E:
 	.size	_ZN6hopter4task11task_struct4Task17initialize_common17h5d08827810af73d5E, .Lfunc_end51-_ZN6hopter4task11task_struct4Task17initialize_common17h5d08827810af73d5E
 	.personality DefaultHandler_
 	.handlerdata
-	.p2align	2
-GCC_except_table51:
-.Lexception15:
-	.byte	255
-	.byte	255
-	.byte	1
-	.uleb128 .Lcst_end15-.Lcst_begin15
-.Lcst_begin15:
-	.uleb128 .Lfunc_begin15-.Lfunc_begin15
-	.uleb128 .Lfunc_end51-.Lfunc_begin15
-	.byte	0
-	.byte	0
-.Lcst_end15:
 	.p2align	2
 	.fnend
 
@@ -6324,78 +5784,6 @@ _ZN4core3ptr52drop_in_place$LT$hopter..task..task_struct..Task$GT$17hc1e63b4bd3e
 	.size	_ZN4core3ptr52drop_in_place$LT$hopter..task..task_struct..Task$GT$17hc1e63b4bd3e67439E, .Lfunc_end52-_ZN4core3ptr52drop_in_place$LT$hopter..task..task_struct..Task$GT$17hc1e63b4bd3e67439E
 	.personality DefaultHandler_
 	.handlerdata
-	.p2align	2
-GCC_except_table52:
-.Lexception16:
-	.byte	255
-	.byte	0
-	.uleb128 .Lttbase7-.Lttbaseref7
-.Lttbaseref7:
-	.byte	1
-	.uleb128 .Lcst_end16-.Lcst_begin16
-.Lcst_begin16:
-	.uleb128 .Lfunc_begin16-.Lfunc_begin16
-	.uleb128 .Ltmp174-.Lfunc_begin16
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp174-.Lfunc_begin16
-	.uleb128 .Ltmp175-.Ltmp174
-	.uleb128 .Ltmp176-.Lfunc_begin16
-	.byte	0
-	.uleb128 .Ltmp177-.Lfunc_begin16
-	.uleb128 .Ltmp178-.Ltmp177
-	.uleb128 .Ltmp191-.Lfunc_begin16
-	.byte	0
-	.uleb128 .Ltmp179-.Lfunc_begin16
-	.uleb128 .Ltmp180-.Ltmp179
-	.uleb128 .Ltmp188-.Lfunc_begin16
-	.byte	0
-	.uleb128 .Ltmp181-.Lfunc_begin16
-	.uleb128 .Ltmp182-.Ltmp181
-	.uleb128 .Ltmp185-.Lfunc_begin16
-	.byte	0
-	.uleb128 .Ltmp189-.Lfunc_begin16
-	.uleb128 .Ltmp190-.Ltmp189
-	.uleb128 .Ltmp191-.Lfunc_begin16
-	.byte	0
-	.uleb128 .Ltmp186-.Lfunc_begin16
-	.uleb128 .Ltmp187-.Ltmp186
-	.uleb128 .Ltmp188-.Lfunc_begin16
-	.byte	0
-	.uleb128 .Ltmp183-.Lfunc_begin16
-	.uleb128 .Ltmp184-.Ltmp183
-	.uleb128 .Ltmp185-.Lfunc_begin16
-	.byte	0
-	.uleb128 .Ltmp192-.Lfunc_begin16
-	.uleb128 .Ltmp193-.Ltmp192
-	.uleb128 .Ltmp194-.Lfunc_begin16
-	.byte	0
-	.uleb128 .Ltmp193-.Lfunc_begin16
-	.uleb128 .Ltmp195-.Ltmp193
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp195-.Lfunc_begin16
-	.uleb128 .Ltmp200-.Ltmp195
-	.uleb128 .Ltmp203-.Lfunc_begin16
-	.byte	1
-	.uleb128 .Ltmp200-.Lfunc_begin16
-	.uleb128 .Ltmp201-.Ltmp200
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp201-.Lfunc_begin16
-	.uleb128 .Ltmp202-.Ltmp201
-	.uleb128 .Ltmp203-.Lfunc_begin16
-	.byte	1
-	.uleb128 .Ltmp202-.Lfunc_begin16
-	.uleb128 .Lfunc_end52-.Ltmp202
-	.byte	0
-	.byte	0
-.Lcst_end16:
-	.byte	127
-	.byte	0
-	.p2align	2
-.Lttbase7:
-	.long	0
 	.p2align	2
 	.fnend
 
@@ -7134,106 +6522,6 @@ _ZN6hopter8schedule9scheduler9Scheduler11accept_task17hae07d7880c7281c3E:
 	.personality DefaultHandler_
 	.handlerdata
 	.p2align	2
-GCC_except_table55:
-.Lexception17:
-	.byte	255
-	.byte	0
-	.uleb128 .Lttbase8-.Lttbaseref8
-.Lttbaseref8:
-	.byte	1
-	.uleb128 .Lcst_end17-.Lcst_begin17
-.Lcst_begin17:
-	.uleb128 .Lfunc_begin17-.Lfunc_begin17
-	.uleb128 .Ltmp210-.Lfunc_begin17
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp210-.Lfunc_begin17
-	.uleb128 .Ltmp211-.Ltmp210
-	.uleb128 .Ltmp212-.Lfunc_begin17
-	.byte	0
-	.uleb128 .Ltmp233-.Lfunc_begin17
-	.uleb128 .Ltmp234-.Ltmp233
-	.uleb128 .Ltmp235-.Lfunc_begin17
-	.byte	0
-	.uleb128 .Ltmp234-.Lfunc_begin17
-	.uleb128 .Ltmp221-.Ltmp234
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp221-.Lfunc_begin17
-	.uleb128 .Ltmp224-.Ltmp221
-	.uleb128 .Ltmp227-.Lfunc_begin17
-	.byte	0
-	.uleb128 .Ltmp204-.Lfunc_begin17
-	.uleb128 .Ltmp205-.Ltmp204
-	.uleb128 .Ltmp218-.Lfunc_begin17
-	.byte	0
-	.uleb128 .Ltmp236-.Lfunc_begin17
-	.uleb128 .Ltmp237-.Ltmp236
-	.uleb128 .Ltmp246-.Lfunc_begin17
-	.byte	0
-	.uleb128 .Ltmp238-.Lfunc_begin17
-	.uleb128 .Ltmp239-.Ltmp238
-	.uleb128 .Ltmp240-.Lfunc_begin17
-	.byte	0
-	.uleb128 .Ltmp225-.Lfunc_begin17
-	.uleb128 .Ltmp226-.Ltmp225
-	.uleb128 .Ltmp227-.Lfunc_begin17
-	.byte	0
-	.uleb128 .Ltmp208-.Lfunc_begin17
-	.uleb128 .Ltmp209-.Ltmp208
-	.uleb128 .Ltmp212-.Lfunc_begin17
-	.byte	0
-	.uleb128 .Ltmp206-.Lfunc_begin17
-	.uleb128 .Ltmp207-.Ltmp206
-	.uleb128 .Ltmp218-.Lfunc_begin17
-	.byte	0
-	.uleb128 .Ltmp207-.Lfunc_begin17
-	.uleb128 .Ltmp228-.Ltmp207
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp228-.Lfunc_begin17
-	.uleb128 .Ltmp229-.Ltmp228
-	.uleb128 .Ltmp230-.Lfunc_begin17
-	.byte	1
-	.uleb128 .Ltmp213-.Lfunc_begin17
-	.uleb128 .Ltmp214-.Ltmp213
-	.uleb128 .Ltmp215-.Lfunc_begin17
-	.byte	1
-	.uleb128 .Ltmp216-.Lfunc_begin17
-	.uleb128 .Ltmp217-.Ltmp216
-	.uleb128 .Ltmp218-.Lfunc_begin17
-	.byte	0
-	.uleb128 .Ltmp219-.Lfunc_begin17
-	.uleb128 .Ltmp220-.Ltmp219
-	.uleb128 .Ltmp230-.Lfunc_begin17
-	.byte	1
-	.uleb128 .Ltmp231-.Lfunc_begin17
-	.uleb128 .Ltmp232-.Ltmp231
-	.uleb128 .Ltmp240-.Lfunc_begin17
-	.byte	0
-	.uleb128 .Ltmp241-.Lfunc_begin17
-	.uleb128 .Ltmp242-.Ltmp241
-	.uleb128 .Ltmp243-.Lfunc_begin17
-	.byte	1
-	.uleb128 .Ltmp244-.Lfunc_begin17
-	.uleb128 .Ltmp245-.Ltmp244
-	.uleb128 .Ltmp246-.Lfunc_begin17
-	.byte	0
-	.uleb128 .Ltmp247-.Lfunc_begin17
-	.uleb128 .Ltmp248-.Ltmp247
-	.uleb128 .Ltmp249-.Lfunc_begin17
-	.byte	1
-	.uleb128 .Ltmp248-.Lfunc_begin17
-	.uleb128 .Lfunc_end55-.Ltmp248
-	.byte	0
-	.byte	0
-.Lcst_end17:
-	.byte	127
-	.byte	0
-	.p2align	2
-.Lttbase8:
-	.long	0
-	.p2align	2
 	.fnend
 
 	.section	.text._ZN6hopter8schedule9scheduler9Scheduler5start17h6fceb0cda251839aE,"ax",%progbits
@@ -7395,42 +6683,6 @@ _ZN6hopter8schedule9scheduler9Scheduler5start17h6fceb0cda251839aE:
 	.personality DefaultHandler_
 	.handlerdata
 	.p2align	2
-GCC_except_table56:
-.Lexception18:
-	.byte	255
-	.byte	0
-	.uleb128 .Lttbase9-.Lttbaseref9
-.Lttbaseref9:
-	.byte	1
-	.uleb128 .Lcst_end18-.Lcst_begin18
-.Lcst_begin18:
-	.uleb128 .Lfunc_begin18-.Lfunc_begin18
-	.uleb128 .Ltmp250-.Lfunc_begin18
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp250-.Lfunc_begin18
-	.uleb128 .Ltmp251-.Ltmp250
-	.uleb128 .Ltmp252-.Lfunc_begin18
-	.byte	0
-	.uleb128 .Ltmp251-.Lfunc_begin18
-	.uleb128 .Ltmp253-.Ltmp251
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp253-.Lfunc_begin18
-	.uleb128 .Ltmp254-.Ltmp253
-	.uleb128 .Ltmp255-.Lfunc_begin18
-	.byte	1
-	.uleb128 .Ltmp254-.Lfunc_begin18
-	.uleb128 .Lfunc_end56-.Ltmp254
-	.byte	0
-	.byte	0
-.Lcst_end18:
-	.byte	127
-	.byte	0
-	.p2align	2
-.Lttbase9:
-	.long	0
-	.p2align	2
 	.fnend
 
 	.section	.text._ZN6hopter4task11task_struct4Task10build_idle17hecea391c7000e1d3E,"ax",%progbits
@@ -7536,42 +6788,6 @@ _ZN6hopter4task11task_struct4Task10build_idle17hecea391c7000e1d3E:
 	.size	_ZN6hopter4task11task_struct4Task10build_idle17hecea391c7000e1d3E, .Lfunc_end57-_ZN6hopter4task11task_struct4Task10build_idle17hecea391c7000e1d3E
 	.personality DefaultHandler_
 	.handlerdata
-	.p2align	2
-GCC_except_table57:
-.Lexception19:
-	.byte	255
-	.byte	0
-	.uleb128 .Lttbase10-.Lttbaseref10
-.Lttbaseref10:
-	.byte	1
-	.uleb128 .Lcst_end19-.Lcst_begin19
-.Lcst_begin19:
-	.uleb128 .Lfunc_begin19-.Lfunc_begin19
-	.uleb128 .Ltmp256-.Lfunc_begin19
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp256-.Lfunc_begin19
-	.uleb128 .Ltmp257-.Ltmp256
-	.uleb128 .Ltmp258-.Lfunc_begin19
-	.byte	0
-	.uleb128 .Ltmp257-.Lfunc_begin19
-	.uleb128 .Ltmp259-.Ltmp257
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp259-.Lfunc_begin19
-	.uleb128 .Ltmp260-.Ltmp259
-	.uleb128 .Ltmp261-.Lfunc_begin19
-	.byte	1
-	.uleb128 .Ltmp260-.Lfunc_begin19
-	.uleb128 .Lfunc_end57-.Ltmp260
-	.byte	0
-	.byte	0
-.Lcst_end19:
-	.byte	127
-	.byte	0
-	.p2align	2
-.Lttbase10:
-	.long	0
 	.p2align	2
 	.fnend
 
@@ -7819,50 +7035,6 @@ _ZN6hopter8schedule7current15update_cur_task17h4ae8e4c75e3ee595E:
 	.size	_ZN6hopter8schedule7current15update_cur_task17h4ae8e4c75e3ee595E, .Lfunc_end59-_ZN6hopter8schedule7current15update_cur_task17h4ae8e4c75e3ee595E
 	.personality DefaultHandler_
 	.handlerdata
-	.p2align	2
-GCC_except_table59:
-.Lexception20:
-	.byte	255
-	.byte	0
-	.uleb128 .Lttbase11-.Lttbaseref11
-.Lttbaseref11:
-	.byte	1
-	.uleb128 .Lcst_end20-.Lcst_begin20
-.Lcst_begin20:
-	.uleb128 .Lfunc_begin20-.Lfunc_begin20
-	.uleb128 .Ltmp262-.Lfunc_begin20
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp262-.Lfunc_begin20
-	.uleb128 .Ltmp263-.Ltmp262
-	.uleb128 .Ltmp266-.Lfunc_begin20
-	.byte	0
-	.uleb128 .Ltmp263-.Lfunc_begin20
-	.uleb128 .Ltmp264-.Ltmp263
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp264-.Lfunc_begin20
-	.uleb128 .Ltmp265-.Ltmp264
-	.uleb128 .Ltmp266-.Lfunc_begin20
-	.byte	0
-	.uleb128 .Ltmp265-.Lfunc_begin20
-	.uleb128 .Ltmp267-.Ltmp265
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp267-.Lfunc_begin20
-	.uleb128 .Ltmp268-.Ltmp267
-	.uleb128 .Ltmp269-.Lfunc_begin20
-	.byte	1
-	.uleb128 .Ltmp268-.Lfunc_begin20
-	.uleb128 .Lfunc_end59-.Ltmp268
-	.byte	0
-	.byte	0
-.Lcst_end20:
-	.byte	127
-	.byte	0
-	.p2align	2
-.Lttbase11:
-	.long	0
 	.p2align	2
 	.fnend
 
@@ -8202,19 +7374,6 @@ _ZN6hopter9allocator9Allocator11kernel_free17h984699c5dc4fb780E:
 	.personality DefaultHandler_
 	.handlerdata
 	.p2align	2
-GCC_except_table64:
-.Lexception21:
-	.byte	255
-	.byte	255
-	.byte	1
-	.uleb128 .Lcst_end21-.Lcst_begin21
-.Lcst_begin21:
-	.uleb128 .Lfunc_begin21-.Lfunc_begin21
-	.uleb128 .Lfunc_end64-.Lfunc_begin21
-	.byte	0
-	.byte	0
-.Lcst_end21:
-	.p2align	2
 	.fnend
 
 	.section	.text._ZN6hopter9interrupt3svc8svc_free17hb6e5a758db066a5aE,"ax",%progbits
@@ -8247,15 +7406,6 @@ _ZN6hopter4task10trampoline10task_entry17h59a228630a9247f5E:
 	.size	_ZN6hopter4task10trampoline10task_entry17h59a228630a9247f5E, .Lfunc_end66-_ZN6hopter4task10trampoline10task_entry17h59a228630a9247f5E
 	.personality DefaultHandler_
 	.handlerdata
-	.p2align	2
-GCC_except_table66:
-.Lexception22:
-	.byte	255
-	.byte	255
-	.byte	1
-	.uleb128 .Lcst_end22-.Lcst_begin22
-.Lcst_begin22:
-.Lcst_end22:
 	.p2align	2
 	.fnend
 
@@ -8357,19 +7507,6 @@ _ZN4core3ptr99drop_in_place$LT$hopter..sync..soft_lock..AccessGuard$LT$hopter..s
 	.size	_ZN4core3ptr99drop_in_place$LT$hopter..sync..soft_lock..AccessGuard$LT$hopter..schedule..scheduler..Inner$GT$$GT$17h90747539c1272305E, .Lfunc_end67-_ZN4core3ptr99drop_in_place$LT$hopter..sync..soft_lock..AccessGuard$LT$hopter..schedule..scheduler..Inner$GT$$GT$17h90747539c1272305E
 	.personality DefaultHandler_
 	.handlerdata
-	.p2align	2
-GCC_except_table67:
-.Lexception23:
-	.byte	255
-	.byte	255
-	.byte	1
-	.uleb128 .Lcst_end23-.Lcst_begin23
-.Lcst_begin23:
-	.uleb128 .Lfunc_begin23-.Lfunc_begin23
-	.uleb128 .Lfunc_end67-.Lfunc_begin23
-	.byte	0
-	.byte	0
-.Lcst_end23:
 	.p2align	2
 	.fnend
 
@@ -8947,74 +8084,6 @@ _ZN103_$LT$hopter..schedule..scheduler..InnerFullAccessor$u20$as$u20$hopter..syn
 	.size	_ZN103_$LT$hopter..schedule..scheduler..InnerFullAccessor$u20$as$u20$hopter..sync..soft_lock..RunPendedOp$GT$13run_pended_op17he3604cf6d0d3da63E, .Lfunc_end70-_ZN103_$LT$hopter..schedule..scheduler..InnerFullAccessor$u20$as$u20$hopter..sync..soft_lock..RunPendedOp$GT$13run_pended_op17he3604cf6d0d3da63E
 	.personality DefaultHandler_
 	.handlerdata
-	.p2align	2
-GCC_except_table70:
-.Lexception24:
-	.byte	255
-	.byte	0
-	.uleb128 .Lttbase12-.Lttbaseref12
-.Lttbaseref12:
-	.byte	1
-	.uleb128 .Lcst_end24-.Lcst_begin24
-.Lcst_begin24:
-	.uleb128 .Lfunc_begin24-.Lfunc_begin24
-	.uleb128 .Ltmp292-.Lfunc_begin24
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp292-.Lfunc_begin24
-	.uleb128 .Ltmp293-.Ltmp292
-	.uleb128 .Ltmp294-.Lfunc_begin24
-	.byte	0
-	.uleb128 .Ltmp277-.Lfunc_begin24
-	.uleb128 .Ltmp280-.Ltmp277
-	.uleb128 .Ltmp283-.Lfunc_begin24
-	.byte	0
-	.uleb128 .Ltmp280-.Lfunc_begin24
-	.uleb128 .Ltmp272-.Ltmp280
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp272-.Lfunc_begin24
-	.uleb128 .Ltmp273-.Ltmp272
-	.uleb128 .Ltmp289-.Lfunc_begin24
-	.byte	0
-	.uleb128 .Ltmp274-.Lfunc_begin24
-	.uleb128 .Ltmp275-.Ltmp274
-	.uleb128 .Ltmp276-.Lfunc_begin24
-	.byte	0
-	.uleb128 .Ltmp270-.Lfunc_begin24
-	.uleb128 .Ltmp271-.Ltmp270
-	.uleb128 .Ltmp294-.Lfunc_begin24
-	.byte	0
-	.uleb128 .Ltmp281-.Lfunc_begin24
-	.uleb128 .Ltmp282-.Ltmp281
-	.uleb128 .Ltmp283-.Lfunc_begin24
-	.byte	0
-	.uleb128 .Ltmp282-.Lfunc_begin24
-	.uleb128 .Ltmp284-.Ltmp282
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp284-.Lfunc_begin24
-	.uleb128 .Ltmp285-.Ltmp284
-	.uleb128 .Ltmp286-.Lfunc_begin24
-	.byte	1
-	.uleb128 .Ltmp287-.Lfunc_begin24
-	.uleb128 .Ltmp288-.Ltmp287
-	.uleb128 .Ltmp289-.Lfunc_begin24
-	.byte	0
-	.uleb128 .Ltmp290-.Lfunc_begin24
-	.uleb128 .Ltmp296-.Ltmp290
-	.uleb128 .Ltmp297-.Lfunc_begin24
-	.byte	1
-	.uleb128 .Ltmp296-.Lfunc_begin24
-	.uleb128 .Lfunc_end70-.Ltmp296
-	.byte	0
-	.byte	0
-.Lcst_end24:
-	.byte	127
-	.byte	0
-	.p2align	2
-.Lttbase12:
-	.long	0
 	.p2align	2
 	.fnend
 
@@ -9819,78 +8888,6 @@ _ZN6hopter6unwind6unwind11UnwindState19create_unwind_state17h6621ca35eb879c86E:
 	.size	_ZN6hopter6unwind6unwind11UnwindState19create_unwind_state17h6621ca35eb879c86E, .Lfunc_end71-_ZN6hopter6unwind6unwind11UnwindState19create_unwind_state17h6621ca35eb879c86E
 	.personality DefaultHandler_
 	.handlerdata
-	.p2align	2
-GCC_except_table71:
-.Lexception25:
-	.byte	255
-	.byte	0
-	.uleb128 .Lttbase13-.Lttbaseref13
-.Lttbaseref13:
-	.byte	1
-	.uleb128 .Lcst_end25-.Lcst_begin25
-.Lcst_begin25:
-	.uleb128 .Lfunc_begin25-.Lfunc_begin25
-	.uleb128 .Ltmp321-.Lfunc_begin25
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp321-.Lfunc_begin25
-	.uleb128 .Ltmp316-.Ltmp321
-	.uleb128 .Ltmp323-.Lfunc_begin25
-	.byte	1
-	.uleb128 .Ltmp302-.Lfunc_begin25
-	.uleb128 .Ltmp318-.Ltmp302
-	.uleb128 .Ltmp329-.Lfunc_begin25
-	.byte	1
-	.uleb128 .Ltmp318-.Lfunc_begin25
-	.uleb128 .Ltmp311-.Ltmp318
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp311-.Lfunc_begin25
-	.uleb128 .Ltmp312-.Ltmp311
-	.uleb128 .Ltmp329-.Lfunc_begin25
-	.byte	1
-	.uleb128 .Ltmp313-.Lfunc_begin25
-	.uleb128 .Ltmp314-.Ltmp313
-	.uleb128 .Ltmp323-.Lfunc_begin25
-	.byte	1
-	.uleb128 .Ltmp304-.Lfunc_begin25
-	.uleb128 .Ltmp305-.Ltmp304
-	.uleb128 .Ltmp306-.Lfunc_begin25
-	.byte	1
-	.uleb128 .Ltmp298-.Lfunc_begin25
-	.uleb128 .Ltmp299-.Ltmp298
-	.uleb128 .Ltmp329-.Lfunc_begin25
-	.byte	1
-	.uleb128 .Ltmp299-.Lfunc_begin25
-	.uleb128 .Ltmp300-.Ltmp299
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp300-.Lfunc_begin25
-	.uleb128 .Ltmp310-.Ltmp300
-	.uleb128 .Ltmp329-.Lfunc_begin25
-	.byte	1
-	.uleb128 .Ltmp319-.Lfunc_begin25
-	.uleb128 .Ltmp320-.Ltmp319
-	.uleb128 .Ltmp323-.Lfunc_begin25
-	.byte	1
-	.uleb128 .Ltmp307-.Lfunc_begin25
-	.uleb128 .Ltmp325-.Ltmp307
-	.uleb128 .Ltmp326-.Lfunc_begin25
-	.byte	1
-	.uleb128 .Ltmp327-.Lfunc_begin25
-	.uleb128 .Ltmp328-.Ltmp327
-	.uleb128 .Ltmp329-.Lfunc_begin25
-	.byte	1
-	.uleb128 .Ltmp328-.Lfunc_begin25
-	.uleb128 .Lfunc_end71-.Ltmp328
-	.byte	0
-	.byte	0
-.Lcst_end25:
-	.byte	127
-	.byte	0
-	.p2align	2
-.Lttbase13:
-	.long	0
 	.p2align	2
 	.fnend
 
@@ -10750,66 +9747,6 @@ _ZN6hopter6unwind6unwind13resume_unwind17h7192b3d726d8697eE:
 	.personality DefaultHandler_
 	.handlerdata
 	.p2align	2
-GCC_except_table72:
-.Lexception26:
-	.byte	255
-	.byte	0
-	.uleb128 .Lttbase14-.Lttbaseref14
-.Lttbaseref14:
-	.byte	1
-	.uleb128 .Lcst_end26-.Lcst_begin26
-.Lcst_begin26:
-	.uleb128 .Lfunc_begin26-.Lfunc_begin26
-	.uleb128 .Ltmp351-.Lfunc_begin26
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp351-.Lfunc_begin26
-	.uleb128 .Ltmp337-.Ltmp351
-	.uleb128 .Ltmp353-.Lfunc_begin26
-	.byte	1
-	.uleb128 .Ltmp354-.Lfunc_begin26
-	.uleb128 .Ltmp359-.Ltmp354
-	.uleb128 .Ltmp360-.Lfunc_begin26
-	.byte	1
-	.uleb128 .Ltmp332-.Lfunc_begin26
-	.uleb128 .Ltmp333-.Ltmp332
-	.uleb128 .Ltmp353-.Lfunc_begin26
-	.byte	1
-	.uleb128 .Ltmp342-.Lfunc_begin26
-	.uleb128 .Ltmp343-.Ltmp342
-	.uleb128 .Ltmp344-.Lfunc_begin26
-	.byte	1
-	.uleb128 .Ltmp330-.Lfunc_begin26
-	.uleb128 .Ltmp331-.Ltmp330
-	.uleb128 .Ltmp350-.Lfunc_begin26
-	.byte	1
-	.uleb128 .Ltmp340-.Lfunc_begin26
-	.uleb128 .Ltmp341-.Ltmp340
-	.uleb128 .Ltmp344-.Lfunc_begin26
-	.byte	1
-	.uleb128 .Ltmp338-.Lfunc_begin26
-	.uleb128 .Ltmp339-.Ltmp338
-	.uleb128 .Ltmp350-.Lfunc_begin26
-	.byte	1
-	.uleb128 .Ltmp345-.Lfunc_begin26
-	.uleb128 .Ltmp346-.Ltmp345
-	.uleb128 .Ltmp347-.Lfunc_begin26
-	.byte	1
-	.uleb128 .Ltmp348-.Lfunc_begin26
-	.uleb128 .Ltmp349-.Ltmp348
-	.uleb128 .Ltmp350-.Lfunc_begin26
-	.byte	1
-	.uleb128 .Ltmp349-.Lfunc_begin26
-	.uleb128 .Lfunc_end72-.Ltmp349
-	.byte	0
-	.byte	0
-.Lcst_end26:
-	.byte	127
-	.byte	0
-	.p2align	2
-.Lttbase14:
-	.long	0
-	.p2align	2
 	.fnend
 
 	.section	.text._ZN6hopter9interrupt3svc14svc_less_stack17h2d066de19d72b509E,"ax",%progbits
@@ -11666,150 +10603,6 @@ _ZN6hopter6unwind6unwind13UnwindAbility10get_for_pc17hfd0045ecf37ba56dE:
 	.personality DefaultHandler_
 	.handlerdata
 	.p2align	2
-GCC_except_table74:
-.Lexception27:
-	.byte	255
-	.byte	0
-	.uleb128 .Lttbase15-.Lttbaseref15
-.Lttbaseref15:
-	.byte	1
-	.uleb128 .Lcst_end27-.Lcst_begin27
-.Lcst_begin27:
-	.uleb128 .Lfunc_begin27-.Lfunc_begin27
-	.uleb128 .Ltmp361-.Lfunc_begin27
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp361-.Lfunc_begin27
-	.uleb128 .Ltmp368-.Ltmp361
-	.uleb128 .Ltmp462-.Lfunc_begin27
-	.byte	0
-	.uleb128 .Ltmp368-.Lfunc_begin27
-	.uleb128 .Ltmp369-.Ltmp368
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp369-.Lfunc_begin27
-	.uleb128 .Ltmp454-.Ltmp369
-	.uleb128 .Ltmp465-.Lfunc_begin27
-	.byte	0
-	.uleb128 .Ltmp455-.Lfunc_begin27
-	.uleb128 .Ltmp456-.Ltmp455
-	.uleb128 .Ltmp457-.Lfunc_begin27
-	.byte	0
-	.uleb128 .Ltmp458-.Lfunc_begin27
-	.uleb128 .Ltmp459-.Ltmp458
-	.uleb128 .Ltmp462-.Lfunc_begin27
-	.byte	0
-	.uleb128 .Ltmp459-.Lfunc_begin27
-	.uleb128 .Ltmp443-.Ltmp459
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp443-.Lfunc_begin27
-	.uleb128 .Ltmp444-.Ltmp443
-	.uleb128 .Ltmp445-.Lfunc_begin27
-	.byte	0
-	.uleb128 .Ltmp451-.Lfunc_begin27
-	.uleb128 .Ltmp452-.Ltmp451
-	.uleb128 .Ltmp465-.Lfunc_begin27
-	.byte	0
-	.uleb128 .Ltmp441-.Lfunc_begin27
-	.uleb128 .Ltmp386-.Ltmp441
-	.uleb128 .Ltmp445-.Lfunc_begin27
-	.byte	0
-	.uleb128 .Ltmp386-.Lfunc_begin27
-	.uleb128 .Ltmp387-.Ltmp386
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp387-.Lfunc_begin27
-	.uleb128 .Ltmp388-.Ltmp387
-	.uleb128 .Ltmp391-.Lfunc_begin27
-	.byte	0
-	.uleb128 .Ltmp406-.Lfunc_begin27
-	.uleb128 .Ltmp415-.Ltmp406
-	.uleb128 .Ltmp416-.Lfunc_begin27
-	.byte	0
-	.uleb128 .Ltmp415-.Lfunc_begin27
-	.uleb128 .Ltmp417-.Ltmp415
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp417-.Lfunc_begin27
-	.uleb128 .Ltmp418-.Ltmp417
-	.uleb128 .Ltmp421-.Lfunc_begin27
-	.byte	0
-	.uleb128 .Ltmp424-.Lfunc_begin27
-	.uleb128 .Ltmp437-.Ltmp424
-	.uleb128 .Ltmp438-.Lfunc_begin27
-	.byte	0
-	.uleb128 .Ltmp437-.Lfunc_begin27
-	.uleb128 .Ltmp463-.Ltmp437
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp463-.Lfunc_begin27
-	.uleb128 .Ltmp464-.Ltmp463
-	.uleb128 .Ltmp465-.Lfunc_begin27
-	.byte	0
-	.uleb128 .Ltmp365-.Lfunc_begin27
-	.uleb128 .Ltmp461-.Ltmp365
-	.uleb128 .Ltmp462-.Lfunc_begin27
-	.byte	0
-	.uleb128 .Ltmp383-.Lfunc_begin27
-	.uleb128 .Ltmp384-.Ltmp383
-	.uleb128 .Ltmp445-.Lfunc_begin27
-	.byte	0
-	.uleb128 .Ltmp432-.Lfunc_begin27
-	.uleb128 .Ltmp433-.Ltmp432
-	.uleb128 .Ltmp438-.Lfunc_begin27
-	.byte	0
-	.uleb128 .Ltmp389-.Lfunc_begin27
-	.uleb128 .Ltmp390-.Ltmp389
-	.uleb128 .Ltmp391-.Lfunc_begin27
-	.byte	0
-	.uleb128 .Ltmp394-.Lfunc_begin27
-	.uleb128 .Ltmp397-.Ltmp394
-	.uleb128 .Ltmp400-.Lfunc_begin27
-	.byte	0
-	.uleb128 .Ltmp410-.Lfunc_begin27
-	.uleb128 .Ltmp411-.Ltmp410
-	.uleb128 .Ltmp416-.Lfunc_begin27
-	.byte	0
-	.uleb128 .Ltmp419-.Lfunc_begin27
-	.uleb128 .Ltmp420-.Ltmp419
-	.uleb128 .Ltmp421-.Lfunc_begin27
-	.byte	0
-	.uleb128 .Ltmp401-.Lfunc_begin27
-	.uleb128 .Ltmp402-.Ltmp401
-	.uleb128 .Ltmp403-.Lfunc_begin27
-	.byte	0
-	.uleb128 .Ltmp398-.Lfunc_begin27
-	.uleb128 .Ltmp399-.Ltmp398
-	.uleb128 .Ltmp400-.Lfunc_begin27
-	.byte	0
-	.uleb128 .Ltmp399-.Lfunc_begin27
-	.uleb128 .Ltmp404-.Ltmp399
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp404-.Lfunc_begin27
-	.uleb128 .Ltmp447-.Ltmp404
-	.uleb128 .Ltmp448-.Lfunc_begin27
-	.byte	1
-	.uleb128 .Ltmp449-.Lfunc_begin27
-	.uleb128 .Ltmp450-.Ltmp449
-	.uleb128 .Ltmp465-.Lfunc_begin27
-	.byte	0
-	.uleb128 .Ltmp466-.Lfunc_begin27
-	.uleb128 .Ltmp469-.Ltmp466
-	.uleb128 .Ltmp470-.Lfunc_begin27
-	.byte	1
-	.uleb128 .Ltmp469-.Lfunc_begin27
-	.uleb128 .Lfunc_end74-.Ltmp469
-	.byte	0
-	.byte	0
-.Lcst_end27:
-	.byte	127
-	.byte	0
-	.p2align	2
-.Lttbase15:
-	.long	0
-	.p2align	2
 	.fnend
 
 	.section	.text._ZN6hopter6unwind8unw_lsda20read_encoded_pointer17ha45a491be157e4a8E,"ax",%progbits
@@ -12115,19 +10908,6 @@ _ZN6hopter6unwind8unw_lsda20read_encoded_pointer17ha45a491be157e4a8E:
 	.personality DefaultHandler_
 	.handlerdata
 	.p2align	2
-GCC_except_table75:
-.Lexception28:
-	.byte	255
-	.byte	255
-	.byte	1
-	.uleb128 .Lcst_end28-.Lcst_begin28
-.Lcst_begin28:
-	.uleb128 .Lfunc_begin28-.Lfunc_begin28
-	.uleb128 .Lfunc_end75-.Lfunc_begin28
-	.byte	0
-	.byte	0
-.Lcst_end28:
-	.p2align	2
 	.fnend
 
 	.section	.text._ZN6hopter5debug11semihosting11hstdout_str17h5daf40e60d934bb3E,"ax",%progbits
@@ -12316,54 +11096,6 @@ _ZN6hopter5debug11semihosting11hstdout_str17h5daf40e60d934bb3E:
 	.size	_ZN6hopter5debug11semihosting11hstdout_str17h5daf40e60d934bb3E, .Lfunc_end76-_ZN6hopter5debug11semihosting11hstdout_str17h5daf40e60d934bb3E
 	.personality DefaultHandler_
 	.handlerdata
-	.p2align	2
-GCC_except_table76:
-.Lexception29:
-	.byte	255
-	.byte	0
-	.uleb128 .Lttbase16-.Lttbaseref16
-.Lttbaseref16:
-	.byte	1
-	.uleb128 .Lcst_end29-.Lcst_begin29
-.Lcst_begin29:
-	.uleb128 .Lfunc_begin29-.Lfunc_begin29
-	.uleb128 .Ltmp477-.Lfunc_begin29
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp477-.Lfunc_begin29
-	.uleb128 .Ltmp478-.Ltmp477
-	.uleb128 .Ltmp479-.Lfunc_begin29
-	.byte	0
-	.uleb128 .Ltmp478-.Lfunc_begin29
-	.uleb128 .Ltmp471-.Ltmp478
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp471-.Lfunc_begin29
-	.uleb128 .Ltmp472-.Ltmp471
-	.uleb128 .Ltmp473-.Lfunc_begin29
-	.byte	0
-	.uleb128 .Ltmp474-.Lfunc_begin29
-	.uleb128 .Ltmp475-.Ltmp474
-	.uleb128 .Ltmp476-.Lfunc_begin29
-	.byte	1
-	.uleb128 .Ltmp475-.Lfunc_begin29
-	.uleb128 .Ltmp480-.Ltmp475
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp480-.Lfunc_begin29
-	.uleb128 .Ltmp481-.Ltmp480
-	.uleb128 .Ltmp482-.Lfunc_begin29
-	.byte	1
-	.uleb128 .Ltmp481-.Lfunc_begin29
-	.uleb128 .Lfunc_end76-.Ltmp481
-	.byte	0
-	.byte	0
-.Lcst_end29:
-	.byte	127
-	.byte	0
-	.p2align	2
-.Lttbase16:
-	.long	0
 	.p2align	2
 	.fnend
 
@@ -12821,62 +11553,6 @@ _ZN6hopter5debug11semihosting11hstdout_fmt17hdfe091813f5553f4E:
 	.size	_ZN6hopter5debug11semihosting11hstdout_fmt17hdfe091813f5553f4E, .Lfunc_end78-_ZN6hopter5debug11semihosting11hstdout_fmt17hdfe091813f5553f4E
 	.personality DefaultHandler_
 	.handlerdata
-	.p2align	2
-GCC_except_table78:
-.Lexception30:
-	.byte	255
-	.byte	0
-	.uleb128 .Lttbase17-.Lttbaseref17
-.Lttbaseref17:
-	.byte	1
-	.uleb128 .Lcst_end30-.Lcst_begin30
-.Lcst_begin30:
-	.uleb128 .Lfunc_begin30-.Lfunc_begin30
-	.uleb128 .Ltmp491-.Lfunc_begin30
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp491-.Lfunc_begin30
-	.uleb128 .Ltmp492-.Ltmp491
-	.uleb128 .Ltmp493-.Lfunc_begin30
-	.byte	0
-	.uleb128 .Ltmp492-.Lfunc_begin30
-	.uleb128 .Ltmp483-.Ltmp492
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp483-.Lfunc_begin30
-	.uleb128 .Ltmp484-.Ltmp483
-	.uleb128 .Ltmp487-.Lfunc_begin30
-	.byte	0
-	.uleb128 .Ltmp484-.Lfunc_begin30
-	.uleb128 .Ltmp485-.Ltmp484
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp485-.Lfunc_begin30
-	.uleb128 .Ltmp486-.Ltmp485
-	.uleb128 .Ltmp487-.Lfunc_begin30
-	.byte	0
-	.uleb128 .Ltmp488-.Lfunc_begin30
-	.uleb128 .Ltmp489-.Ltmp488
-	.uleb128 .Ltmp490-.Lfunc_begin30
-	.byte	1
-	.uleb128 .Ltmp489-.Lfunc_begin30
-	.uleb128 .Ltmp494-.Ltmp489
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp494-.Lfunc_begin30
-	.uleb128 .Ltmp495-.Ltmp494
-	.uleb128 .Ltmp496-.Lfunc_begin30
-	.byte	1
-	.uleb128 .Ltmp495-.Lfunc_begin30
-	.uleb128 .Lfunc_end78-.Ltmp495
-	.byte	0
-	.byte	0
-.Lcst_end30:
-	.byte	127
-	.byte	0
-	.p2align	2
-.Lttbase17:
-	.long	0
 	.p2align	2
 	.fnend
 
@@ -13400,19 +12076,6 @@ _ZN7hadusos7session28Session$LT$S$C$T$C$_$C$_$GT$4send17h0d67c617dbce3758E:
 	.size	_ZN7hadusos7session28Session$LT$S$C$T$C$_$C$_$GT$4send17h0d67c617dbce3758E, .Lfunc_end79-_ZN7hadusos7session28Session$LT$S$C$T$C$_$C$_$GT$4send17h0d67c617dbce3758E
 	.personality DefaultHandler_
 	.handlerdata
-	.p2align	2
-GCC_except_table79:
-.Lexception31:
-	.byte	255
-	.byte	255
-	.byte	1
-	.uleb128 .Lcst_end31-.Lcst_begin31
-.Lcst_begin31:
-	.uleb128 .Lfunc_begin31-.Lfunc_begin31
-	.uleb128 .Lfunc_end79-.Lfunc_begin31
-	.byte	0
-	.byte	0
-.Lcst_end31:
 	.p2align	2
 	.fnend
 
@@ -14423,19 +13086,6 @@ _ZN7hadusos7session28Session$LT$S$C$T$C$_$C$_$GT$7receive17hc3207c425e65190aE:
 	.personality DefaultHandler_
 	.handlerdata
 	.p2align	2
-GCC_except_table81:
-.Lexception32:
-	.byte	255
-	.byte	255
-	.byte	1
-	.uleb128 .Lcst_end32-.Lcst_begin32
-.Lcst_begin32:
-	.uleb128 .Lfunc_begin32-.Lfunc_begin32
-	.uleb128 .Lfunc_end81-.Lfunc_begin32
-	.byte	0
-	.byte	0
-.Lcst_end32:
-	.p2align	2
 	.fnend
 
 	.section	".text._ZN4core3ptr58drop_in_place$LT$alloc..boxed..Box$LT$$u5b$u8$u5d$$GT$$GT$17h5165404d3bfb340cE","ax",%progbits
@@ -14488,19 +13138,6 @@ _ZN4core3ptr58drop_in_place$LT$alloc..boxed..Box$LT$$u5b$u8$u5d$$GT$$GT$17h51654
 	.size	_ZN4core3ptr58drop_in_place$LT$alloc..boxed..Box$LT$$u5b$u8$u5d$$GT$$GT$17h5165404d3bfb340cE, .Lfunc_end82-_ZN4core3ptr58drop_in_place$LT$alloc..boxed..Box$LT$$u5b$u8$u5d$$GT$$GT$17h5165404d3bfb340cE
 	.personality DefaultHandler_
 	.handlerdata
-	.p2align	2
-GCC_except_table82:
-.Lexception33:
-	.byte	255
-	.byte	255
-	.byte	1
-	.uleb128 .Lcst_end33-.Lcst_begin33
-.Lcst_begin33:
-	.uleb128 .Lfunc_begin33-.Lfunc_begin33
-	.uleb128 .Lfunc_end82-.Lfunc_begin33
-	.byte	0
-	.byte	0
-.Lcst_end33:
 	.p2align	2
 	.fnend
 
@@ -14607,19 +13244,6 @@ _ZN4core3ptr58drop_in_place$LT$hopter..unwind..unw_table..ExIdxEntry$GT$17h08d22
 	.size	_ZN4core3ptr58drop_in_place$LT$hopter..unwind..unw_table..ExIdxEntry$GT$17h08d22a684800f9a2E, .Lfunc_end83-_ZN4core3ptr58drop_in_place$LT$hopter..unwind..unw_table..ExIdxEntry$GT$17h08d22a684800f9a2E
 	.personality DefaultHandler_
 	.handlerdata
-	.p2align	2
-GCC_except_table83:
-.Lexception34:
-	.byte	255
-	.byte	255
-	.byte	1
-	.uleb128 .Lcst_end34-.Lcst_begin34
-.Lcst_begin34:
-	.uleb128 .Lfunc_begin34-.Lfunc_begin34
-	.uleb128 .Lfunc_end83-.Lfunc_begin34
-	.byte	0
-	.byte	0
-.Lcst_end34:
 	.p2align	2
 	.fnend
 
@@ -14780,19 +13404,6 @@ _ZN4core3ptr63drop_in_place$LT$hopter..unwind..unw_table..UnwindInstrIter$GT$17h
 	.size	_ZN4core3ptr63drop_in_place$LT$hopter..unwind..unw_table..UnwindInstrIter$GT$17h828c6855d934853dE, .Lfunc_end85-_ZN4core3ptr63drop_in_place$LT$hopter..unwind..unw_table..UnwindInstrIter$GT$17h828c6855d934853dE
 	.personality DefaultHandler_
 	.handlerdata
-	.p2align	2
-GCC_except_table85:
-.Lexception35:
-	.byte	255
-	.byte	255
-	.byte	1
-	.uleb128 .Lcst_end35-.Lcst_begin35
-.Lcst_begin35:
-	.uleb128 .Lfunc_begin35-.Lfunc_begin35
-	.uleb128 .Lfunc_end85-.Lfunc_begin35
-	.byte	0
-	.byte	0
-.Lcst_end35:
 	.p2align	2
 	.fnend
 
@@ -15254,19 +13865,6 @@ _ZN4core3ptr62drop_in_place$LT$hopter..unwind..unw_table..UnwindByteIter$GT$17h2
 	.personality DefaultHandler_
 	.handlerdata
 	.p2align	2
-GCC_except_table89:
-.Lexception36:
-	.byte	255
-	.byte	255
-	.byte	1
-	.uleb128 .Lcst_end36-.Lcst_begin36
-.Lcst_begin36:
-	.uleb128 .Lfunc_begin36-.Lfunc_begin36
-	.uleb128 .Lfunc_end89-.Lfunc_begin36
-	.byte	0
-	.byte	0
-.Lcst_end36:
-	.p2align	2
 	.fnend
 
 	.section	".text._ZN4core3ptr58drop_in_place$LT$hopter..unwind..unwind..UnwindAbility$GT$17h1e0e3bf9b92a9525E","ax",%progbits
@@ -15368,19 +13966,6 @@ _ZN4core3ptr58drop_in_place$LT$hopter..unwind..unwind..UnwindAbility$GT$17h1e0e3
 	.size	_ZN4core3ptr58drop_in_place$LT$hopter..unwind..unwind..UnwindAbility$GT$17h1e0e3bf9b92a9525E, .Lfunc_end90-_ZN4core3ptr58drop_in_place$LT$hopter..unwind..unwind..UnwindAbility$GT$17h1e0e3bf9b92a9525E
 	.personality DefaultHandler_
 	.handlerdata
-	.p2align	2
-GCC_except_table90:
-.Lexception37:
-	.byte	255
-	.byte	255
-	.byte	1
-	.uleb128 .Lcst_end37-.Lcst_begin37
-.Lcst_begin37:
-	.uleb128 .Lfunc_begin37-.Lfunc_begin37
-	.uleb128 .Lfunc_end90-.Lfunc_begin37
-	.byte	0
-	.byte	0
-.Lcst_end37:
 	.p2align	2
 	.fnend
 
@@ -16030,19 +14615,6 @@ _ZN67_$LT$alloc..boxed..Box$LT$T$C$A$GT$$u20$as$u20$core..fmt..Debug$GT$3fmt17h8
 	.size	_ZN67_$LT$alloc..boxed..Box$LT$T$C$A$GT$$u20$as$u20$core..fmt..Debug$GT$3fmt17h83ebc61089308305E, .Lfunc_end96-_ZN67_$LT$alloc..boxed..Box$LT$T$C$A$GT$$u20$as$u20$core..fmt..Debug$GT$3fmt17h83ebc61089308305E
 	.personality DefaultHandler_
 	.handlerdata
-	.p2align	2
-GCC_except_table96:
-.Lexception38:
-	.byte	255
-	.byte	255
-	.byte	1
-	.uleb128 .Lcst_end38-.Lcst_begin38
-.Lcst_begin38:
-	.uleb128 .Lfunc_begin38-.Lfunc_begin38
-	.uleb128 .Lfunc_end96-.Lfunc_begin38
-	.byte	0
-	.byte	0
-.Lcst_end38:
 	.p2align	2
 	.fnend
 
@@ -16836,19 +15408,6 @@ _ZN7hadusos6packet6Packet7receive17h4eaa849e54150822E:
 	.personality DefaultHandler_
 	.handlerdata
 	.p2align	2
-GCC_except_table98:
-.Lexception39:
-	.byte	255
-	.byte	255
-	.byte	1
-	.uleb128 .Lcst_end39-.Lcst_begin39
-.Lcst_begin39:
-	.uleb128 .Lfunc_begin39-.Lfunc_begin39
-	.uleb128 .Lfunc_end98-.Lfunc_begin39
-	.byte	0
-	.byte	0
-.Lcst_end39:
-	.p2align	2
 	.fnend
 
 	.section	".text._ZN7hadusos4link17Link$LT$S$C$T$GT$36read_byte_with_timeout_remove_escape17hb03adf97424fcf90E","ax",%progbits
@@ -16986,19 +15545,6 @@ _ZN7hadusos4link17Link$LT$S$C$T$GT$36read_byte_with_timeout_remove_escape17hb03a
 	.size	_ZN7hadusos4link17Link$LT$S$C$T$GT$36read_byte_with_timeout_remove_escape17hb03adf97424fcf90E, .Lfunc_end99-_ZN7hadusos4link17Link$LT$S$C$T$GT$36read_byte_with_timeout_remove_escape17hb03adf97424fcf90E
 	.personality DefaultHandler_
 	.handlerdata
-	.p2align	2
-GCC_except_table99:
-.Lexception40:
-	.byte	255
-	.byte	255
-	.byte	1
-	.uleb128 .Lcst_end40-.Lcst_begin40
-.Lcst_begin40:
-	.uleb128 .Lfunc_begin40-.Lfunc_begin40
-	.uleb128 .Lfunc_end99-.Lfunc_begin40
-	.byte	0
-	.byte	0
-.Lcst_end40:
 	.p2align	2
 	.fnend
 
@@ -18095,166 +16641,6 @@ _ZN6hopter4sync7mailbox7Mailbox18wait_until_timeout17ha9b48912f16f8cb7E:
 	.personality DefaultHandler_
 	.handlerdata
 	.p2align	2
-GCC_except_table100:
-.Lexception41:
-	.byte	255
-	.byte	0
-	.uleb128 .Lttbase18-.Lttbaseref18
-.Lttbaseref18:
-	.byte	1
-	.uleb128 .Lcst_end41-.Lcst_begin41
-.Lcst_begin41:
-	.uleb128 .Lfunc_begin41-.Lfunc_begin41
-	.uleb128 .Ltmp497-.Lfunc_begin41
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp497-.Lfunc_begin41
-	.uleb128 .Ltmp498-.Ltmp497
-	.uleb128 .Ltmp561-.Lfunc_begin41
-	.byte	0
-	.uleb128 .Ltmp553-.Lfunc_begin41
-	.uleb128 .Ltmp554-.Ltmp553
-	.uleb128 .Ltmp555-.Lfunc_begin41
-	.byte	0
-	.uleb128 .Ltmp499-.Lfunc_begin41
-	.uleb128 .Ltmp500-.Ltmp499
-	.uleb128 .Ltmp544-.Lfunc_begin41
-	.byte	0
-	.uleb128 .Ltmp505-.Lfunc_begin41
-	.uleb128 .Ltmp506-.Ltmp505
-	.uleb128 .Ltmp507-.Lfunc_begin41
-	.byte	0
-	.uleb128 .Ltmp501-.Lfunc_begin41
-	.uleb128 .Ltmp502-.Ltmp501
-	.uleb128 .Ltmp550-.Lfunc_begin41
-	.byte	0
-	.uleb128 .Ltmp502-.Lfunc_begin41
-	.uleb128 .Ltmp508-.Ltmp502
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp508-.Lfunc_begin41
-	.uleb128 .Ltmp509-.Ltmp508
-	.uleb128 .Ltmp519-.Lfunc_begin41
-	.byte	0
-	.uleb128 .Ltmp503-.Lfunc_begin41
-	.uleb128 .Ltmp504-.Ltmp503
-	.uleb128 .Ltmp561-.Lfunc_begin41
-	.byte	0
-	.uleb128 .Ltmp504-.Lfunc_begin41
-	.uleb128 .Ltmp510-.Ltmp504
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp510-.Lfunc_begin41
-	.uleb128 .Ltmp511-.Ltmp510
-	.uleb128 .Ltmp512-.Lfunc_begin41
-	.byte	0
-	.uleb128 .Ltmp511-.Lfunc_begin41
-	.uleb128 .Ltmp536-.Ltmp511
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp536-.Lfunc_begin41
-	.uleb128 .Ltmp537-.Ltmp536
-	.uleb128 .Ltmp567-.Lfunc_begin41
-	.byte	0
-	.uleb128 .Ltmp542-.Lfunc_begin41
-	.uleb128 .Ltmp543-.Ltmp542
-	.uleb128 .Ltmp544-.Lfunc_begin41
-	.byte	0
-	.uleb128 .Ltmp540-.Lfunc_begin41
-	.uleb128 .Ltmp541-.Ltmp540
-	.uleb128 .Ltmp555-.Lfunc_begin41
-	.byte	0
-	.uleb128 .Ltmp538-.Lfunc_begin41
-	.uleb128 .Ltmp539-.Ltmp538
-	.uleb128 .Ltmp561-.Lfunc_begin41
-	.byte	0
-	.uleb128 .Ltmp534-.Lfunc_begin41
-	.uleb128 .Ltmp535-.Ltmp534
-	.uleb128 .Ltmp573-.Lfunc_begin41
-	.byte	0
-	.uleb128 .Ltmp515-.Lfunc_begin41
-	.uleb128 .Ltmp516-.Ltmp515
-	.uleb128 .Ltmp525-.Lfunc_begin41
-	.byte	0
-	.uleb128 .Ltmp517-.Lfunc_begin41
-	.uleb128 .Ltmp518-.Ltmp517
-	.uleb128 .Ltmp519-.Lfunc_begin41
-	.byte	0
-	.uleb128 .Ltmp513-.Lfunc_begin41
-	.uleb128 .Ltmp514-.Ltmp513
-	.uleb128 .Ltmp531-.Lfunc_begin41
-	.byte	0
-	.uleb128 .Ltmp514-.Lfunc_begin41
-	.uleb128 .Ltmp520-.Ltmp514
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp520-.Lfunc_begin41
-	.uleb128 .Ltmp521-.Ltmp520
-	.uleb128 .Ltmp522-.Lfunc_begin41
-	.byte	1
-	.uleb128 .Ltmp523-.Lfunc_begin41
-	.uleb128 .Ltmp524-.Ltmp523
-	.uleb128 .Ltmp525-.Lfunc_begin41
-	.byte	0
-	.uleb128 .Ltmp526-.Lfunc_begin41
-	.uleb128 .Ltmp527-.Ltmp526
-	.uleb128 .Ltmp528-.Lfunc_begin41
-	.byte	1
-	.uleb128 .Ltmp529-.Lfunc_begin41
-	.uleb128 .Ltmp530-.Ltmp529
-	.uleb128 .Ltmp531-.Lfunc_begin41
-	.byte	0
-	.uleb128 .Ltmp532-.Lfunc_begin41
-	.uleb128 .Ltmp533-.Ltmp532
-	.uleb128 .Ltmp576-.Lfunc_begin41
-	.byte	1
-	.uleb128 .Ltmp545-.Lfunc_begin41
-	.uleb128 .Ltmp546-.Ltmp545
-	.uleb128 .Ltmp547-.Lfunc_begin41
-	.byte	1
-	.uleb128 .Ltmp548-.Lfunc_begin41
-	.uleb128 .Ltmp549-.Ltmp548
-	.uleb128 .Ltmp550-.Lfunc_begin41
-	.byte	0
-	.uleb128 .Ltmp551-.Lfunc_begin41
-	.uleb128 .Ltmp557-.Ltmp551
-	.uleb128 .Ltmp558-.Lfunc_begin41
-	.byte	1
-	.uleb128 .Ltmp559-.Lfunc_begin41
-	.uleb128 .Ltmp560-.Ltmp559
-	.uleb128 .Ltmp561-.Lfunc_begin41
-	.byte	0
-	.uleb128 .Ltmp562-.Lfunc_begin41
-	.uleb128 .Ltmp563-.Ltmp562
-	.uleb128 .Ltmp564-.Lfunc_begin41
-	.byte	1
-	.uleb128 .Ltmp565-.Lfunc_begin41
-	.uleb128 .Ltmp566-.Ltmp565
-	.uleb128 .Ltmp567-.Lfunc_begin41
-	.byte	0
-	.uleb128 .Ltmp568-.Lfunc_begin41
-	.uleb128 .Ltmp569-.Ltmp568
-	.uleb128 .Ltmp570-.Lfunc_begin41
-	.byte	1
-	.uleb128 .Ltmp571-.Lfunc_begin41
-	.uleb128 .Ltmp572-.Ltmp571
-	.uleb128 .Ltmp573-.Lfunc_begin41
-	.byte	0
-	.uleb128 .Ltmp574-.Lfunc_begin41
-	.uleb128 .Ltmp575-.Ltmp574
-	.uleb128 .Ltmp576-.Lfunc_begin41
-	.byte	1
-	.uleb128 .Ltmp575-.Lfunc_begin41
-	.uleb128 .Lfunc_end100-.Ltmp575
-	.byte	0
-	.byte	0
-.Lcst_end41:
-	.byte	127
-	.byte	0
-	.p2align	2
-.Lttbase18:
-	.long	0
-	.p2align	2
 	.fnend
 
 	.section	".text._ZN4core3ptr93drop_in_place$LT$hopter..sync..soft_lock..AccessGuard$LT$hopter..sync..mailbox..Inner$GT$$GT$17h7a903a30843dd4adE","ax",%progbits
@@ -18366,19 +16752,6 @@ _ZN4core3ptr93drop_in_place$LT$hopter..sync..soft_lock..AccessGuard$LT$hopter..s
 	.size	_ZN4core3ptr93drop_in_place$LT$hopter..sync..soft_lock..AccessGuard$LT$hopter..sync..mailbox..Inner$GT$$GT$17h7a903a30843dd4adE, .Lfunc_end101-_ZN4core3ptr93drop_in_place$LT$hopter..sync..soft_lock..AccessGuard$LT$hopter..sync..mailbox..Inner$GT$$GT$17h7a903a30843dd4adE
 	.personality DefaultHandler_
 	.handlerdata
-	.p2align	2
-GCC_except_table101:
-.Lexception42:
-	.byte	255
-	.byte	255
-	.byte	1
-	.uleb128 .Lcst_end42-.Lcst_begin42
-.Lcst_begin42:
-	.uleb128 .Lfunc_begin42-.Lfunc_begin42
-	.uleb128 .Lfunc_end101-.Lfunc_begin42
-	.byte	0
-	.byte	0
-.Lcst_end42:
 	.p2align	2
 	.fnend
 
@@ -18903,78 +17276,6 @@ _ZN6hopter4time23add_task_to_sleep_queue17h1c47166422a0c91cE:
 	.personality DefaultHandler_
 	.handlerdata
 	.p2align	2
-GCC_except_table103:
-.Lexception43:
-	.byte	255
-	.byte	0
-	.uleb128 .Lttbase19-.Lttbaseref19
-.Lttbaseref19:
-	.byte	1
-	.uleb128 .Lcst_end43-.Lcst_begin43
-.Lcst_begin43:
-	.uleb128 .Lfunc_begin43-.Lfunc_begin43
-	.uleb128 .Ltmp577-.Lfunc_begin43
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp577-.Lfunc_begin43
-	.uleb128 .Ltmp580-.Ltmp577
-	.uleb128 .Ltmp583-.Lfunc_begin43
-	.byte	0
-	.uleb128 .Ltmp589-.Lfunc_begin43
-	.uleb128 .Ltmp590-.Ltmp589
-	.uleb128 .Ltmp591-.Lfunc_begin43
-	.byte	0
-	.uleb128 .Ltmp590-.Lfunc_begin43
-	.uleb128 .Ltmp594-.Ltmp590
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp594-.Lfunc_begin43
-	.uleb128 .Ltmp595-.Ltmp594
-	.uleb128 .Ltmp596-.Lfunc_begin43
-	.byte	0
-	.uleb128 .Ltmp581-.Lfunc_begin43
-	.uleb128 .Ltmp582-.Ltmp581
-	.uleb128 .Ltmp583-.Lfunc_begin43
-	.byte	0
-	.uleb128 .Ltmp592-.Lfunc_begin43
-	.uleb128 .Ltmp593-.Ltmp592
-	.uleb128 .Ltmp602-.Lfunc_begin43
-	.byte	0
-	.uleb128 .Ltmp593-.Lfunc_begin43
-	.uleb128 .Ltmp584-.Ltmp593
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp584-.Lfunc_begin43
-	.uleb128 .Ltmp585-.Ltmp584
-	.uleb128 .Ltmp586-.Lfunc_begin43
-	.byte	1
-	.uleb128 .Ltmp587-.Lfunc_begin43
-	.uleb128 .Ltmp588-.Ltmp587
-	.uleb128 .Ltmp596-.Lfunc_begin43
-	.byte	0
-	.uleb128 .Ltmp597-.Lfunc_begin43
-	.uleb128 .Ltmp598-.Ltmp597
-	.uleb128 .Ltmp599-.Lfunc_begin43
-	.byte	1
-	.uleb128 .Ltmp600-.Lfunc_begin43
-	.uleb128 .Ltmp601-.Ltmp600
-	.uleb128 .Ltmp602-.Lfunc_begin43
-	.byte	0
-	.uleb128 .Ltmp603-.Lfunc_begin43
-	.uleb128 .Ltmp604-.Ltmp603
-	.uleb128 .Ltmp605-.Lfunc_begin43
-	.byte	1
-	.uleb128 .Ltmp604-.Lfunc_begin43
-	.uleb128 .Lfunc_end103-.Ltmp604
-	.byte	0
-	.byte	0
-.Lcst_end43:
-	.byte	127
-	.byte	0
-	.p2align	2
-.Lttbase19:
-	.long	0
-	.p2align	2
 	.fnend
 
 	.section	".text._ZN97_$LT$hopter..sync..mailbox..InnerFullAccessor$u20$as$u20$hopter..sync..soft_lock..RunPendedOp$GT$13run_pended_op17he07f9445ffbc2bd2E","ax",%progbits
@@ -19135,42 +17436,6 @@ _ZN97_$LT$hopter..sync..mailbox..InnerFullAccessor$u20$as$u20$hopter..sync..soft
 	.size	_ZN97_$LT$hopter..sync..mailbox..InnerFullAccessor$u20$as$u20$hopter..sync..soft_lock..RunPendedOp$GT$13run_pended_op17he07f9445ffbc2bd2E, .Lfunc_end104-_ZN97_$LT$hopter..sync..mailbox..InnerFullAccessor$u20$as$u20$hopter..sync..soft_lock..RunPendedOp$GT$13run_pended_op17he07f9445ffbc2bd2E
 	.personality DefaultHandler_
 	.handlerdata
-	.p2align	2
-GCC_except_table104:
-.Lexception44:
-	.byte	255
-	.byte	0
-	.uleb128 .Lttbase20-.Lttbaseref20
-.Lttbaseref20:
-	.byte	1
-	.uleb128 .Lcst_end44-.Lcst_begin44
-.Lcst_begin44:
-	.uleb128 .Lfunc_begin44-.Lfunc_begin44
-	.uleb128 .Ltmp606-.Lfunc_begin44
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp606-.Lfunc_begin44
-	.uleb128 .Ltmp607-.Ltmp606
-	.uleb128 .Ltmp608-.Lfunc_begin44
-	.byte	0
-	.uleb128 .Ltmp607-.Lfunc_begin44
-	.uleb128 .Ltmp609-.Ltmp607
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp609-.Lfunc_begin44
-	.uleb128 .Ltmp610-.Ltmp609
-	.uleb128 .Ltmp611-.Lfunc_begin44
-	.byte	1
-	.uleb128 .Ltmp610-.Lfunc_begin44
-	.uleb128 .Lfunc_end104-.Ltmp610
-	.byte	0
-	.byte	0
-.Lcst_end44:
-	.byte	127
-	.byte	0
-	.p2align	2
-.Lttbase20:
-	.long	0
 	.p2align	2
 	.fnend
 
@@ -19695,86 +17960,6 @@ _ZN6hopter4time38remove_task_from_sleep_queue_allow_isr17h8dcb015f078f4deaE:
 	.personality DefaultHandler_
 	.handlerdata
 	.p2align	2
-GCC_except_table105:
-.Lexception45:
-	.byte	255
-	.byte	0
-	.uleb128 .Lttbase21-.Lttbaseref21
-.Lttbaseref21:
-	.byte	1
-	.uleb128 .Lcst_end45-.Lcst_begin45
-.Lcst_begin45:
-	.uleb128 .Lfunc_begin45-.Lfunc_begin45
-	.uleb128 .Ltmp622-.Lfunc_begin45
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp622-.Lfunc_begin45
-	.uleb128 .Ltmp623-.Ltmp622
-	.uleb128 .Ltmp624-.Lfunc_begin45
-	.byte	0
-	.uleb128 .Ltmp612-.Lfunc_begin45
-	.uleb128 .Ltmp613-.Ltmp612
-	.uleb128 .Ltmp614-.Lfunc_begin45
-	.byte	0
-	.uleb128 .Ltmp613-.Lfunc_begin45
-	.uleb128 .Ltmp629-.Ltmp613
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp629-.Lfunc_begin45
-	.uleb128 .Ltmp630-.Ltmp629
-	.uleb128 .Ltmp631-.Lfunc_begin45
-	.byte	0
-	.uleb128 .Ltmp620-.Lfunc_begin45
-	.uleb128 .Ltmp621-.Ltmp620
-	.uleb128 .Ltmp637-.Lfunc_begin45
-	.byte	0
-	.uleb128 .Ltmp625-.Lfunc_begin45
-	.uleb128 .Ltmp626-.Ltmp625
-	.uleb128 .Ltmp643-.Lfunc_begin45
-	.byte	0
-	.uleb128 .Ltmp627-.Lfunc_begin45
-	.uleb128 .Ltmp628-.Ltmp627
-	.uleb128 .Ltmp637-.Lfunc_begin45
-	.byte	0
-	.uleb128 .Ltmp617-.Lfunc_begin45
-	.uleb128 .Ltmp618-.Ltmp617
-	.uleb128 .Ltmp619-.Lfunc_begin45
-	.byte	0
-	.uleb128 .Ltmp618-.Lfunc_begin45
-	.uleb128 .Ltmp615-.Ltmp618
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp615-.Lfunc_begin45
-	.uleb128 .Ltmp633-.Ltmp615
-	.uleb128 .Ltmp634-.Lfunc_begin45
-	.byte	1
-	.uleb128 .Ltmp635-.Lfunc_begin45
-	.uleb128 .Ltmp636-.Ltmp635
-	.uleb128 .Ltmp637-.Lfunc_begin45
-	.byte	0
-	.uleb128 .Ltmp638-.Lfunc_begin45
-	.uleb128 .Ltmp639-.Ltmp638
-	.uleb128 .Ltmp640-.Lfunc_begin45
-	.byte	1
-	.uleb128 .Ltmp641-.Lfunc_begin45
-	.uleb128 .Ltmp642-.Ltmp641
-	.uleb128 .Ltmp643-.Lfunc_begin45
-	.byte	0
-	.uleb128 .Ltmp644-.Lfunc_begin45
-	.uleb128 .Ltmp645-.Ltmp644
-	.uleb128 .Ltmp646-.Lfunc_begin45
-	.byte	1
-	.uleb128 .Ltmp645-.Lfunc_begin45
-	.uleb128 .Lfunc_end105-.Ltmp645
-	.byte	0
-	.byte	0
-.Lcst_end45:
-	.byte	127
-	.byte	0
-	.p2align	2
-.Lttbase21:
-	.long	0
-	.p2align	2
 	.fnend
 
 	.section	".text._ZN4core3ptr84drop_in_place$LT$hopter..sync..soft_lock..AccessGuard$LT$hopter..time..Inner$GT$$GT$17hbfde5f945e1b39d7E","ax",%progbits
@@ -19889,19 +18074,6 @@ _ZN4core3ptr84drop_in_place$LT$hopter..sync..soft_lock..AccessGuard$LT$hopter..t
 	.size	_ZN4core3ptr84drop_in_place$LT$hopter..sync..soft_lock..AccessGuard$LT$hopter..time..Inner$GT$$GT$17hbfde5f945e1b39d7E, .Lfunc_end106-_ZN4core3ptr84drop_in_place$LT$hopter..sync..soft_lock..AccessGuard$LT$hopter..time..Inner$GT$$GT$17hbfde5f945e1b39d7E
 	.personality DefaultHandler_
 	.handlerdata
-	.p2align	2
-GCC_except_table106:
-.Lexception46:
-	.byte	255
-	.byte	255
-	.byte	1
-	.uleb128 .Lcst_end46-.Lcst_begin46
-.Lcst_begin46:
-	.uleb128 .Lfunc_begin46-.Lfunc_begin46
-	.uleb128 .Lfunc_end106-.Lfunc_begin46
-	.byte	0
-	.byte	0
-.Lcst_end46:
 	.p2align	2
 	.fnend
 
@@ -20210,54 +18382,6 @@ _ZN6hopter4time17InnerFullAccessor18wake_expired_tasks17h3c2736a472e82972E:
 	.personality DefaultHandler_
 	.handlerdata
 	.p2align	2
-GCC_except_table107:
-.Lexception47:
-	.byte	255
-	.byte	0
-	.uleb128 .Lttbase22-.Lttbaseref22
-.Lttbaseref22:
-	.byte	1
-	.uleb128 .Lcst_end47-.Lcst_begin47
-.Lcst_begin47:
-	.uleb128 .Lfunc_begin47-.Lfunc_begin47
-	.uleb128 .Ltmp647-.Lfunc_begin47
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp647-.Lfunc_begin47
-	.uleb128 .Ltmp648-.Ltmp647
-	.uleb128 .Ltmp649-.Lfunc_begin47
-	.byte	0
-	.uleb128 .Ltmp650-.Lfunc_begin47
-	.uleb128 .Ltmp651-.Ltmp650
-	.uleb128 .Ltmp652-.Lfunc_begin47
-	.byte	0
-	.uleb128 .Ltmp655-.Lfunc_begin47
-	.uleb128 .Ltmp656-.Ltmp655
-	.uleb128 .Ltmp657-.Lfunc_begin47
-	.byte	0
-	.uleb128 .Ltmp658-.Lfunc_begin47
-	.uleb128 .Ltmp659-.Ltmp658
-	.uleb128 .Ltmp660-.Lfunc_begin47
-	.byte	0
-	.uleb128 .Ltmp659-.Lfunc_begin47
-	.uleb128 .Ltmp653-.Ltmp659
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp653-.Lfunc_begin47
-	.uleb128 .Ltmp662-.Ltmp653
-	.uleb128 .Ltmp663-.Lfunc_begin47
-	.byte	1
-	.uleb128 .Ltmp662-.Lfunc_begin47
-	.uleb128 .Lfunc_end107-.Ltmp662
-	.byte	0
-	.byte	0
-.Lcst_end47:
-	.byte	127
-	.byte	0
-	.p2align	2
-.Lttbase22:
-	.long	0
-	.p2align	2
 	.fnend
 
 	.section	".text._ZN4core3ptr135drop_in_place$LT$hopter..sync..refcell_sched_safe..RefSchedSafe$LT$hopter..sync..soft_lock..SoftLock$LT$hopter..time..Inner$GT$$GT$$GT$17h04c3c59447f71de6E","ax",%progbits
@@ -20438,19 +18562,6 @@ _ZN7hadusos4link17Link$LT$S$C$T$GT$10send_frame17h83d3b11332b271e9E:
 	.personality DefaultHandler_
 	.handlerdata
 	.p2align	2
-GCC_except_table109:
-.Lexception48:
-	.byte	255
-	.byte	255
-	.byte	1
-	.uleb128 .Lcst_end48-.Lcst_begin48
-.Lcst_begin48:
-	.uleb128 .Lfunc_begin48-.Lfunc_begin48
-	.uleb128 .Lfunc_end109-.Lfunc_begin48
-	.byte	0
-	.byte	0
-.Lcst_end48:
-	.p2align	2
 	.fnend
 
 	.section	".text._ZN4core3ptr164drop_in_place$LT$$LP$hopter..interrupt..mask..HeldInterrupt$LT$hopter..interrupt..mask..AllIrqExceptSvc$GT$$C$hopter..schedule..scheduler..SchedSuspendGuard$RP$$GT$17h83174e9c00e77182E","ax",%progbits
@@ -20595,50 +18706,6 @@ _ZN4core3ptr164drop_in_place$LT$$LP$hopter..interrupt..mask..HeldInterrupt$LT$ho
 	.personality DefaultHandler_
 	.handlerdata
 	.p2align	2
-GCC_except_table110:
-.Lexception49:
-	.byte	255
-	.byte	0
-	.uleb128 .Lttbase23-.Lttbaseref23
-.Lttbaseref23:
-	.byte	1
-	.uleb128 .Lcst_end49-.Lcst_begin49
-.Lcst_begin49:
-	.uleb128 .Lfunc_begin49-.Lfunc_begin49
-	.uleb128 .Ltmp664-.Lfunc_begin49
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp664-.Lfunc_begin49
-	.uleb128 .Ltmp665-.Ltmp664
-	.uleb128 .Ltmp668-.Lfunc_begin49
-	.byte	0
-	.uleb128 .Ltmp665-.Lfunc_begin49
-	.uleb128 .Ltmp666-.Ltmp665
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp666-.Lfunc_begin49
-	.uleb128 .Ltmp667-.Ltmp666
-	.uleb128 .Ltmp668-.Lfunc_begin49
-	.byte	0
-	.uleb128 .Ltmp667-.Lfunc_begin49
-	.uleb128 .Ltmp669-.Ltmp667
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp669-.Lfunc_begin49
-	.uleb128 .Ltmp670-.Ltmp669
-	.uleb128 .Ltmp671-.Lfunc_begin49
-	.byte	1
-	.uleb128 .Ltmp670-.Lfunc_begin49
-	.uleb128 .Lfunc_end110-.Ltmp670
-	.byte	0
-	.byte	0
-.Lcst_end49:
-	.byte	127
-	.byte	0
-	.p2align	2
-.Lttbase23:
-	.long	0
-	.p2align	2
 	.fnend
 
 	.section	".text._ZN4core3ptr183drop_in_place$LT$hopter..sync..spin_lock..SpinSchedIrqSafeGuard$LT$core..option..Option$LT$cortex_m_semihosting..hio..HostStream$GT$$C$hopter..interrupt..mask..AllIrqExceptSvc$GT$$GT$17h2e94cb0a40e01e0fE","ax",%progbits
@@ -20733,42 +18800,6 @@ _ZN4core3ptr183drop_in_place$LT$hopter..sync..spin_lock..SpinSchedIrqSafeGuard$L
 	.size	_ZN4core3ptr183drop_in_place$LT$hopter..sync..spin_lock..SpinSchedIrqSafeGuard$LT$core..option..Option$LT$cortex_m_semihosting..hio..HostStream$GT$$C$hopter..interrupt..mask..AllIrqExceptSvc$GT$$GT$17h2e94cb0a40e01e0fE, .Lfunc_end111-_ZN4core3ptr183drop_in_place$LT$hopter..sync..spin_lock..SpinSchedIrqSafeGuard$LT$core..option..Option$LT$cortex_m_semihosting..hio..HostStream$GT$$C$hopter..interrupt..mask..AllIrqExceptSvc$GT$$GT$17h2e94cb0a40e01e0fE
 	.personality DefaultHandler_
 	.handlerdata
-	.p2align	2
-GCC_except_table111:
-.Lexception50:
-	.byte	255
-	.byte	0
-	.uleb128 .Lttbase24-.Lttbaseref24
-.Lttbaseref24:
-	.byte	1
-	.uleb128 .Lcst_end50-.Lcst_begin50
-.Lcst_begin50:
-	.uleb128 .Lfunc_begin50-.Lfunc_begin50
-	.uleb128 .Ltmp672-.Lfunc_begin50
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp672-.Lfunc_begin50
-	.uleb128 .Ltmp673-.Ltmp672
-	.uleb128 .Ltmp674-.Lfunc_begin50
-	.byte	0
-	.uleb128 .Ltmp673-.Lfunc_begin50
-	.uleb128 .Ltmp675-.Ltmp673
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp675-.Lfunc_begin50
-	.uleb128 .Ltmp676-.Ltmp675
-	.uleb128 .Ltmp677-.Lfunc_begin50
-	.byte	1
-	.uleb128 .Ltmp676-.Lfunc_begin50
-	.uleb128 .Lfunc_end111-.Ltmp676
-	.byte	0
-	.byte	0
-.Lcst_end50:
-	.byte	127
-	.byte	0
-	.p2align	2
-.Lttbase24:
-	.long	0
 	.p2align	2
 	.fnend
 
@@ -21751,146 +19782,6 @@ _ZN6hopter6unwind6unwind22try_concurrent_restart17h01474cb0d2a8547aE:
 	.personality DefaultHandler_
 	.handlerdata
 	.p2align	2
-GCC_except_table114:
-.Lexception51:
-	.byte	255
-	.byte	0
-	.uleb128 .Lttbase25-.Lttbaseref25
-.Lttbaseref25:
-	.byte	1
-	.uleb128 .Lcst_end51-.Lcst_begin51
-.Lcst_begin51:
-	.uleb128 .Lfunc_begin51-.Lfunc_begin51
-	.uleb128 .Ltmp732-.Lfunc_begin51
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp732-.Lfunc_begin51
-	.uleb128 .Ltmp733-.Ltmp732
-	.uleb128 .Ltmp734-.Lfunc_begin51
-	.byte	0
-	.uleb128 .Ltmp678-.Lfunc_begin51
-	.uleb128 .Ltmp679-.Ltmp678
-	.uleb128 .Ltmp729-.Lfunc_begin51
-	.byte	0
-	.uleb128 .Ltmp679-.Lfunc_begin51
-	.uleb128 .Ltmp680-.Ltmp679
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp680-.Lfunc_begin51
-	.uleb128 .Ltmp681-.Ltmp680
-	.uleb128 .Ltmp709-.Lfunc_begin51
-	.byte	0
-	.uleb128 .Ltmp723-.Lfunc_begin51
-	.uleb128 .Ltmp724-.Ltmp723
-	.uleb128 .Ltmp729-.Lfunc_begin51
-	.byte	0
-	.uleb128 .Ltmp682-.Lfunc_begin51
-	.uleb128 .Ltmp683-.Ltmp682
-	.uleb128 .Ltmp690-.Lfunc_begin51
-	.byte	0
-	.uleb128 .Ltmp683-.Lfunc_begin51
-	.uleb128 .Ltmp686-.Ltmp683
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp686-.Lfunc_begin51
-	.uleb128 .Ltmp687-.Ltmp686
-	.uleb128 .Ltmp706-.Lfunc_begin51
-	.byte	0
-	.uleb128 .Ltmp688-.Lfunc_begin51
-	.uleb128 .Ltmp689-.Ltmp688
-	.uleb128 .Ltmp690-.Lfunc_begin51
-	.byte	0
-	.uleb128 .Ltmp691-.Lfunc_begin51
-	.uleb128 .Ltmp692-.Ltmp691
-	.uleb128 .Ltmp715-.Lfunc_begin51
-	.byte	0
-	.uleb128 .Ltmp692-.Lfunc_begin51
-	.uleb128 .Ltmp693-.Ltmp692
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp693-.Lfunc_begin51
-	.uleb128 .Ltmp694-.Ltmp693
-	.uleb128 .Ltmp729-.Lfunc_begin51
-	.byte	0
-	.uleb128 .Ltmp694-.Lfunc_begin51
-	.uleb128 .Ltmp695-.Ltmp694
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp695-.Lfunc_begin51
-	.uleb128 .Ltmp696-.Ltmp695
-	.uleb128 .Ltmp697-.Lfunc_begin51
-	.byte	0
-	.uleb128 .Ltmp696-.Lfunc_begin51
-	.uleb128 .Ltmp700-.Ltmp696
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp700-.Lfunc_begin51
-	.uleb128 .Ltmp701-.Ltmp700
-	.uleb128 .Ltmp729-.Lfunc_begin51
-	.byte	0
-	.uleb128 .Ltmp684-.Lfunc_begin51
-	.uleb128 .Ltmp685-.Ltmp684
-	.uleb128 .Ltmp690-.Lfunc_begin51
-	.byte	0
-	.uleb128 .Ltmp727-.Lfunc_begin51
-	.uleb128 .Ltmp728-.Ltmp727
-	.uleb128 .Ltmp729-.Lfunc_begin51
-	.byte	0
-	.uleb128 .Ltmp725-.Lfunc_begin51
-	.uleb128 .Ltmp726-.Ltmp725
-	.uleb128 .Ltmp734-.Lfunc_begin51
-	.byte	0
-	.uleb128 .Ltmp707-.Lfunc_begin51
-	.uleb128 .Ltmp708-.Ltmp707
-	.uleb128 .Ltmp709-.Lfunc_begin51
-	.byte	0
-	.uleb128 .Ltmp704-.Lfunc_begin51
-	.uleb128 .Ltmp705-.Ltmp704
-	.uleb128 .Ltmp706-.Lfunc_begin51
-	.byte	0
-	.uleb128 .Ltmp702-.Lfunc_begin51
-	.uleb128 .Ltmp703-.Ltmp702
-	.uleb128 .Ltmp715-.Lfunc_begin51
-	.byte	0
-	.uleb128 .Ltmp703-.Lfunc_begin51
-	.uleb128 .Ltmp698-.Ltmp703
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp698-.Lfunc_begin51
-	.uleb128 .Ltmp699-.Ltmp698
-	.uleb128 .Ltmp720-.Lfunc_begin51
-	.byte	1
-	.uleb128 .Ltmp710-.Lfunc_begin51
-	.uleb128 .Ltmp711-.Ltmp710
-	.uleb128 .Ltmp712-.Lfunc_begin51
-	.byte	1
-	.uleb128 .Ltmp713-.Lfunc_begin51
-	.uleb128 .Ltmp714-.Ltmp713
-	.uleb128 .Ltmp715-.Lfunc_begin51
-	.byte	0
-	.uleb128 .Ltmp716-.Lfunc_begin51
-	.uleb128 .Ltmp719-.Ltmp716
-	.uleb128 .Ltmp720-.Lfunc_begin51
-	.byte	1
-	.uleb128 .Ltmp721-.Lfunc_begin51
-	.uleb128 .Ltmp722-.Ltmp721
-	.uleb128 .Ltmp729-.Lfunc_begin51
-	.byte	0
-	.uleb128 .Ltmp730-.Lfunc_begin51
-	.uleb128 .Ltmp736-.Ltmp730
-	.uleb128 .Ltmp737-.Lfunc_begin51
-	.byte	1
-	.uleb128 .Ltmp736-.Lfunc_begin51
-	.uleb128 .Lfunc_end114-.Ltmp736
-	.byte	0
-	.byte	0
-.Lcst_end51:
-	.byte	127
-	.byte	0
-	.p2align	2
-.Lttbase25:
-	.long	0
-	.p2align	2
 	.fnend
 
 	.section	".text._ZN5alloc4sync16Arc$LT$T$C$A$GT$9drop_slow17h27401401ebe58ed8E","ax",%progbits
@@ -22277,19 +20168,6 @@ _ZN6hopter9allocator9Allocator13kernel_malloc17h49ffefb37966e904E:
 	.personality DefaultHandler_
 	.handlerdata
 	.p2align	2
-GCC_except_table117:
-.Lexception52:
-	.byte	255
-	.byte	255
-	.byte	1
-	.uleb128 .Lcst_end52-.Lcst_begin52
-.Lcst_begin52:
-	.uleb128 .Lfunc_begin52-.Lfunc_begin52
-	.uleb128 .Lfunc_end117-.Lfunc_begin52
-	.byte	0
-	.byte	0
-.Lcst_end52:
-	.p2align	2
 	.fnend
 
 	.section	.text._ZN6hopter9interrupt3svc10svc_malloc17hf2216eb5867b96d2E,"ax",%progbits
@@ -22497,46 +20375,6 @@ _ZN6hopter6unwind6unwind11UnwindState13drop_from_ptr17h3c27aa534a52a251E:
 	.size	_ZN6hopter6unwind6unwind11UnwindState13drop_from_ptr17h3c27aa534a52a251E, .Lfunc_end121-_ZN6hopter6unwind6unwind11UnwindState13drop_from_ptr17h3c27aa534a52a251E
 	.personality DefaultHandler_
 	.handlerdata
-	.p2align	2
-GCC_except_table121:
-.Lexception53:
-	.byte	255
-	.byte	0
-	.uleb128 .Lttbase26-.Lttbaseref26
-.Lttbaseref26:
-	.byte	1
-	.uleb128 .Lcst_end53-.Lcst_begin53
-.Lcst_begin53:
-	.uleb128 .Lfunc_begin53-.Lfunc_begin53
-	.uleb128 .Ltmp738-.Lfunc_begin53
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp738-.Lfunc_begin53
-	.uleb128 .Ltmp739-.Ltmp738
-	.uleb128 .Ltmp742-.Lfunc_begin53
-	.byte	0
-	.uleb128 .Ltmp739-.Lfunc_begin53
-	.uleb128 .Ltmp740-.Ltmp739
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp740-.Lfunc_begin53
-	.uleb128 .Ltmp741-.Ltmp740
-	.uleb128 .Ltmp742-.Lfunc_begin53
-	.byte	0
-	.uleb128 .Ltmp743-.Lfunc_begin53
-	.uleb128 .Ltmp744-.Ltmp743
-	.uleb128 .Ltmp745-.Lfunc_begin53
-	.byte	1
-	.uleb128 .Ltmp744-.Lfunc_begin53
-	.uleb128 .Lfunc_end121-.Ltmp744
-	.byte	0
-	.byte	0
-.Lcst_end53:
-	.byte	127
-	.byte	0
-	.p2align	2
-.Lttbase26:
-	.long	0
 	.p2align	2
 	.fnend
 
@@ -22957,62 +20795,6 @@ _ZN6hopter9interrupt7systick15systick_handler17h165320de3410cb85E:
 	.personality DefaultHandler_
 	.handlerdata
 	.p2align	2
-GCC_except_table127:
-.Lexception54:
-	.byte	255
-	.byte	0
-	.uleb128 .Lttbase27-.Lttbaseref27
-.Lttbaseref27:
-	.byte	1
-	.uleb128 .Lcst_end54-.Lcst_begin54
-.Lcst_begin54:
-	.uleb128 .Lfunc_begin54-.Lfunc_begin54
-	.uleb128 .Ltmp746-.Lfunc_begin54
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp746-.Lfunc_begin54
-	.uleb128 .Ltmp747-.Ltmp746
-	.uleb128 .Ltmp748-.Lfunc_begin54
-	.byte	1
-	.uleb128 .Ltmp754-.Lfunc_begin54
-	.uleb128 .Ltmp755-.Ltmp754
-	.uleb128 .Ltmp756-.Lfunc_begin54
-	.byte	1
-	.uleb128 .Ltmp757-.Lfunc_begin54
-	.uleb128 .Ltmp760-.Ltmp757
-	.uleb128 .Ltmp769-.Lfunc_begin54
-	.byte	1
-	.uleb128 .Ltmp761-.Lfunc_begin54
-	.uleb128 .Ltmp762-.Ltmp761
-	.uleb128 .Ltmp763-.Lfunc_begin54
-	.byte	1
-	.uleb128 .Ltmp749-.Lfunc_begin54
-	.uleb128 .Ltmp750-.Ltmp749
-	.uleb128 .Ltmp751-.Lfunc_begin54
-	.byte	1
-	.uleb128 .Ltmp752-.Lfunc_begin54
-	.uleb128 .Ltmp753-.Ltmp752
-	.uleb128 .Ltmp763-.Lfunc_begin54
-	.byte	1
-	.uleb128 .Ltmp764-.Lfunc_begin54
-	.uleb128 .Ltmp765-.Ltmp764
-	.uleb128 .Ltmp766-.Lfunc_begin54
-	.byte	1
-	.uleb128 .Ltmp767-.Lfunc_begin54
-	.uleb128 .Ltmp768-.Ltmp767
-	.uleb128 .Ltmp769-.Lfunc_begin54
-	.byte	1
-	.uleb128 .Ltmp768-.Lfunc_begin54
-	.uleb128 .Lfunc_end127-.Ltmp768
-	.byte	0
-	.byte	0
-.Lcst_end54:
-	.byte	127
-	.byte	0
-	.p2align	2
-.Lttbase27:
-	.long	0
-	.p2align	2
 	.fnend
 
 	.section	.text._ZN6hopter9interrupt10entry_exit4exit17hdc82f87dc82d706aE,"ax",%progbits
@@ -23084,34 +20866,6 @@ _ZN6hopter9interrupt10entry_exit18handler_trampoline17hb4e6e3ea379999a5E:
 	.size	_ZN6hopter9interrupt10entry_exit18handler_trampoline17hb4e6e3ea379999a5E, .Lfunc_end129-_ZN6hopter9interrupt10entry_exit18handler_trampoline17hb4e6e3ea379999a5E
 	.personality DefaultHandler_
 	.handlerdata
-	.p2align	2
-GCC_except_table129:
-.Lexception55:
-	.byte	255
-	.byte	0
-	.uleb128 .Lttbase28-.Lttbaseref28
-.Lttbaseref28:
-	.byte	1
-	.uleb128 .Lcst_end55-.Lcst_begin55
-.Lcst_begin55:
-	.uleb128 .Lfunc_begin55-.Lfunc_begin55
-	.uleb128 .Ltmp770-.Lfunc_begin55
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp770-.Lfunc_begin55
-	.uleb128 .Ltmp771-.Ltmp770
-	.uleb128 .Ltmp772-.Lfunc_begin55
-	.byte	1
-	.uleb128 .Ltmp771-.Lfunc_begin55
-	.uleb128 .Lfunc_end129-.Ltmp771
-	.byte	0
-	.byte	0
-.Lcst_end55:
-	.byte	1
-	.byte	0
-	.p2align	2
-	.long	0
-.Lttbase28:
 	.p2align	2
 	.fnend
 
@@ -24109,134 +21863,6 @@ _ZN6hopter9interrupt14context_switch14pendsv_handler17h0ec9207dd0cf0455E:
 	.personality DefaultHandler_
 	.handlerdata
 	.p2align	2
-GCC_except_table130:
-.Lexception56:
-	.byte	255
-	.byte	0
-	.uleb128 .Lttbase29-.Lttbaseref29
-.Lttbaseref29:
-	.byte	1
-	.uleb128 .Lcst_end56-.Lcst_begin56
-.Lcst_begin56:
-	.uleb128 .Lfunc_begin56-.Lfunc_begin56
-	.uleb128 .Ltmp820-.Lfunc_begin56
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp820-.Lfunc_begin56
-	.uleb128 .Ltmp821-.Ltmp820
-	.uleb128 .Ltmp822-.Lfunc_begin56
-	.byte	1
-	.uleb128 .Ltmp777-.Lfunc_begin56
-	.uleb128 .Ltmp776-.Ltmp777
-	.uleb128 .Ltmp817-.Lfunc_begin56
-	.byte	1
-	.uleb128 .Ltmp779-.Lfunc_begin56
-	.uleb128 .Ltmp780-.Ltmp779
-	.uleb128 .Ltmp828-.Lfunc_begin56
-	.byte	1
-	.uleb128 .Ltmp785-.Lfunc_begin56
-	.uleb128 .Ltmp786-.Ltmp785
-	.uleb128 .Ltmp787-.Lfunc_begin56
-	.byte	1
-	.uleb128 .Ltmp788-.Lfunc_begin56
-	.uleb128 .Ltmp789-.Ltmp788
-	.uleb128 .Ltmp790-.Lfunc_begin56
-	.byte	1
-	.uleb128 .Ltmp793-.Lfunc_begin56
-	.uleb128 .Ltmp794-.Ltmp793
-	.uleb128 .Ltmp795-.Lfunc_begin56
-	.byte	1
-	.uleb128 .Ltmp798-.Lfunc_begin56
-	.uleb128 .Ltmp799-.Ltmp798
-	.uleb128 .Ltmp828-.Lfunc_begin56
-	.byte	1
-	.uleb128 .Ltmp800-.Lfunc_begin56
-	.uleb128 .Ltmp801-.Ltmp800
-	.uleb128 .Ltmp802-.Lfunc_begin56
-	.byte	1
-	.uleb128 .Ltmp781-.Lfunc_begin56
-	.uleb128 .Ltmp782-.Ltmp781
-	.uleb128 .Ltmp795-.Lfunc_begin56
-	.byte	1
-	.uleb128 .Ltmp803-.Lfunc_begin56
-	.uleb128 .Ltmp804-.Ltmp803
-	.uleb128 .Ltmp846-.Lfunc_begin56
-	.byte	1
-	.uleb128 .Ltmp813-.Lfunc_begin56
-	.uleb128 .Ltmp814-.Ltmp813
-	.uleb128 .Ltmp822-.Lfunc_begin56
-	.byte	1
-	.uleb128 .Ltmp811-.Lfunc_begin56
-	.uleb128 .Ltmp812-.Ltmp811
-	.uleb128 .Ltmp828-.Lfunc_begin56
-	.byte	1
-	.uleb128 .Ltmp815-.Lfunc_begin56
-	.uleb128 .Ltmp816-.Ltmp815
-	.uleb128 .Ltmp817-.Lfunc_begin56
-	.byte	1
-	.uleb128 .Ltmp809-.Lfunc_begin56
-	.uleb128 .Ltmp810-.Ltmp809
-	.uleb128 .Ltmp834-.Lfunc_begin56
-	.byte	1
-	.uleb128 .Ltmp783-.Lfunc_begin56
-	.uleb128 .Ltmp784-.Ltmp783
-	.uleb128 .Ltmp795-.Lfunc_begin56
-	.byte	1
-	.uleb128 .Ltmp805-.Lfunc_begin56
-	.uleb128 .Ltmp806-.Ltmp805
-	.uleb128 .Ltmp846-.Lfunc_begin56
-	.byte	1
-	.uleb128 .Ltmp807-.Lfunc_begin56
-	.uleb128 .Ltmp808-.Ltmp807
-	.uleb128 .Ltmp840-.Lfunc_begin56
-	.byte	1
-	.uleb128 .Ltmp791-.Lfunc_begin56
-	.uleb128 .Ltmp797-.Ltmp791
-	.uleb128 .Ltmp831-.Lfunc_begin56
-	.byte	1
-	.uleb128 .Ltmp818-.Lfunc_begin56
-	.uleb128 .Ltmp824-.Ltmp818
-	.uleb128 .Ltmp825-.Lfunc_begin56
-	.byte	1
-	.uleb128 .Ltmp826-.Lfunc_begin56
-	.uleb128 .Ltmp827-.Ltmp826
-	.uleb128 .Ltmp828-.Lfunc_begin56
-	.byte	1
-	.uleb128 .Ltmp829-.Lfunc_begin56
-	.uleb128 .Ltmp830-.Ltmp829
-	.uleb128 .Ltmp831-.Lfunc_begin56
-	.byte	1
-	.uleb128 .Ltmp832-.Lfunc_begin56
-	.uleb128 .Ltmp833-.Ltmp832
-	.uleb128 .Ltmp834-.Lfunc_begin56
-	.byte	1
-	.uleb128 .Ltmp835-.Lfunc_begin56
-	.uleb128 .Ltmp836-.Ltmp835
-	.uleb128 .Ltmp837-.Lfunc_begin56
-	.byte	1
-	.uleb128 .Ltmp838-.Lfunc_begin56
-	.uleb128 .Ltmp839-.Ltmp838
-	.uleb128 .Ltmp840-.Lfunc_begin56
-	.byte	1
-	.uleb128 .Ltmp841-.Lfunc_begin56
-	.uleb128 .Ltmp842-.Ltmp841
-	.uleb128 .Ltmp843-.Lfunc_begin56
-	.byte	1
-	.uleb128 .Ltmp844-.Lfunc_begin56
-	.uleb128 .Ltmp845-.Ltmp844
-	.uleb128 .Ltmp846-.Lfunc_begin56
-	.byte	1
-	.uleb128 .Ltmp845-.Lfunc_begin56
-	.uleb128 .Lfunc_end130-.Ltmp845
-	.byte	0
-	.byte	0
-.Lcst_end56:
-	.byte	127
-	.byte	0
-	.p2align	2
-.Lttbase29:
-	.long	0
-	.p2align	2
 	.fnend
 
 	.section	".text._ZN4core3ptr163drop_in_place$LT$hopter..sync..spin_lock..SpinSchedSafeGuard$LT$alloc..vec..Vec$LT$alloc..sync..Arc$LT$dyn$u20$hopter..schedule..idle..IdleCallback$GT$$GT$$GT$$GT$17hf22f19a543051eaeE","ax",%progbits
@@ -24381,42 +22007,6 @@ _ZN4core3ptr163drop_in_place$LT$hopter..sync..spin_lock..SpinSchedSafeGuard$LT$a
 	.size	_ZN4core3ptr163drop_in_place$LT$hopter..sync..spin_lock..SpinSchedSafeGuard$LT$alloc..vec..Vec$LT$alloc..sync..Arc$LT$dyn$u20$hopter..schedule..idle..IdleCallback$GT$$GT$$GT$$GT$17hf22f19a543051eaeE, .Lfunc_end131-_ZN4core3ptr163drop_in_place$LT$hopter..sync..spin_lock..SpinSchedSafeGuard$LT$alloc..vec..Vec$LT$alloc..sync..Arc$LT$dyn$u20$hopter..schedule..idle..IdleCallback$GT$$GT$$GT$$GT$17hf22f19a543051eaeE
 	.personality DefaultHandler_
 	.handlerdata
-	.p2align	2
-GCC_except_table131:
-.Lexception57:
-	.byte	255
-	.byte	0
-	.uleb128 .Lttbase30-.Lttbaseref30
-.Lttbaseref30:
-	.byte	1
-	.uleb128 .Lcst_end57-.Lcst_begin57
-.Lcst_begin57:
-	.uleb128 .Lfunc_begin57-.Lfunc_begin57
-	.uleb128 .Ltmp847-.Lfunc_begin57
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp847-.Lfunc_begin57
-	.uleb128 .Ltmp848-.Ltmp847
-	.uleb128 .Ltmp849-.Lfunc_begin57
-	.byte	0
-	.uleb128 .Ltmp848-.Lfunc_begin57
-	.uleb128 .Ltmp850-.Ltmp848
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp850-.Lfunc_begin57
-	.uleb128 .Ltmp851-.Ltmp850
-	.uleb128 .Ltmp852-.Lfunc_begin57
-	.byte	1
-	.uleb128 .Ltmp851-.Lfunc_begin57
-	.uleb128 .Lfunc_end131-.Ltmp851
-	.byte	0
-	.byte	0
-.Lcst_end57:
-	.byte	127
-	.byte	0
-	.p2align	2
-.Lttbase30:
-	.long	0
 	.p2align	2
 	.fnend
 
@@ -25667,70 +23257,6 @@ _ZN6hopter9interrupt11svc_handler11svc_handler17hcf725b40cf6e788cE:
 	.personality DefaultHandler_
 	.handlerdata
 	.p2align	2
-GCC_except_table132:
-.Lexception58:
-	.byte	255
-	.byte	0
-	.uleb128 .Lttbase31-.Lttbaseref31
-.Lttbaseref31:
-	.byte	1
-	.uleb128 .Lcst_end58-.Lcst_begin58
-.Lcst_begin58:
-	.uleb128 .Lfunc_begin58-.Lfunc_begin58
-	.uleb128 .Ltmp864-.Lfunc_begin58
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp864-.Lfunc_begin58
-	.uleb128 .Ltmp865-.Ltmp864
-	.uleb128 .Ltmp888-.Lfunc_begin58
-	.byte	1
-	.uleb128 .Ltmp872-.Lfunc_begin58
-	.uleb128 .Ltmp881-.Ltmp872
-	.uleb128 .Ltmp882-.Lfunc_begin58
-	.byte	1
-	.uleb128 .Ltmp866-.Lfunc_begin58
-	.uleb128 .Ltmp861-.Ltmp866
-	.uleb128 .Ltmp888-.Lfunc_begin58
-	.byte	1
-	.uleb128 .Ltmp861-.Lfunc_begin58
-	.uleb128 .Ltmp858-.Ltmp861
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp858-.Lfunc_begin58
-	.uleb128 .Ltmp875-.Ltmp858
-	.uleb128 .Ltmp888-.Lfunc_begin58
-	.byte	1
-	.uleb128 .Ltmp878-.Lfunc_begin58
-	.uleb128 .Ltmp879-.Ltmp878
-	.uleb128 .Ltmp882-.Lfunc_begin58
-	.byte	1
-	.uleb128 .Ltmp876-.Lfunc_begin58
-	.uleb128 .Ltmp877-.Ltmp876
-	.uleb128 .Ltmp888-.Lfunc_begin58
-	.byte	1
-	.uleb128 .Ltmp853-.Lfunc_begin58
-	.uleb128 .Ltmp854-.Ltmp853
-	.uleb128 .Ltmp855-.Lfunc_begin58
-	.byte	1
-	.uleb128 .Ltmp856-.Lfunc_begin58
-	.uleb128 .Ltmp884-.Ltmp856
-	.uleb128 .Ltmp885-.Lfunc_begin58
-	.byte	1
-	.uleb128 .Ltmp886-.Lfunc_begin58
-	.uleb128 .Ltmp887-.Ltmp886
-	.uleb128 .Ltmp888-.Lfunc_begin58
-	.byte	1
-	.uleb128 .Ltmp887-.Lfunc_begin58
-	.uleb128 .Lfunc_end132-.Ltmp887
-	.byte	0
-	.byte	0
-.Lcst_end58:
-	.byte	127
-	.byte	0
-	.p2align	2
-.Lttbase31:
-	.long	0
-	.p2align	2
 	.fnend
 
 	.section	.text._ZN6hopter6unwind6forced15diverted_unwind17h1960131468215f3dE,"ax",%progbits
@@ -26309,54 +23835,6 @@ _ZN6hopter4time18sleep_ms_unchecked27add_cur_task_to_sleep_queue17h26db67c960ab3
 	.personality DefaultHandler_
 	.handlerdata
 	.p2align	2
-GCC_except_table147:
-.Lexception59:
-	.byte	255
-	.byte	0
-	.uleb128 .Lttbase32-.Lttbaseref32
-.Lttbaseref32:
-	.byte	1
-	.uleb128 .Lcst_end59-.Lcst_begin59
-.Lcst_begin59:
-	.uleb128 .Lfunc_begin59-.Lfunc_begin59
-	.uleb128 .Ltmp896-.Lfunc_begin59
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp896-.Lfunc_begin59
-	.uleb128 .Ltmp897-.Ltmp896
-	.uleb128 .Ltmp898-.Lfunc_begin59
-	.byte	0
-	.uleb128 .Ltmp889-.Lfunc_begin59
-	.uleb128 .Ltmp890-.Ltmp889
-	.uleb128 .Ltmp891-.Lfunc_begin59
-	.byte	0
-	.uleb128 .Ltmp890-.Lfunc_begin59
-	.uleb128 .Ltmp894-.Ltmp890
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp894-.Lfunc_begin59
-	.uleb128 .Ltmp895-.Ltmp894
-	.uleb128 .Ltmp898-.Lfunc_begin59
-	.byte	0
-	.uleb128 .Ltmp895-.Lfunc_begin59
-	.uleb128 .Ltmp892-.Ltmp895
-	.byte	0
-	.byte	0
-	.uleb128 .Ltmp892-.Lfunc_begin59
-	.uleb128 .Ltmp900-.Ltmp892
-	.uleb128 .Ltmp901-.Lfunc_begin59
-	.byte	1
-	.uleb128 .Ltmp900-.Lfunc_begin59
-	.uleb128 .Lfunc_end147-.Ltmp900
-	.byte	0
-	.byte	0
-.Lcst_end59:
-	.byte	127
-	.byte	0
-	.p2align	2
-.Lttbase32:
-	.long	0
-	.p2align	2
 	.fnend
 
 	.section	.text._ZN13stm32f4xx_hal3rcc3pll7MainPll10fast_setup17hd86cab006923601dE,"ax",%progbits
@@ -26746,19 +24224,6 @@ _ZN13stm32f4xx_hal3rcc3pll7MainPll10fast_setup17hd86cab006923601dE:
 	.personality DefaultHandler_
 	.handlerdata
 	.p2align	2
-GCC_except_table148:
-.Lexception60:
-	.byte	255
-	.byte	255
-	.byte	1
-	.uleb128 .Lcst_end60-.Lcst_begin60
-.Lcst_begin60:
-	.uleb128 .Lfunc_begin60-.Lfunc_begin60
-	.uleb128 .Lfunc_end148-.Lfunc_begin60
-	.byte	0
-	.byte	0
-.Lcst_end60:
-	.p2align	2
 	.fnend
 
 	.section	.text._ZN13stm32f4xx_hal3rcc3pll6I2sPll14setup_shared_m17hf5a51e4af01367dbE,"ax",%progbits
@@ -26993,19 +24458,6 @@ _ZN13stm32f4xx_hal3rcc3pll6I2sPll14setup_shared_m17hf5a51e4af01367dbE:
 	.size	_ZN13stm32f4xx_hal3rcc3pll6I2sPll14setup_shared_m17hf5a51e4af01367dbE, .Lfunc_end149-_ZN13stm32f4xx_hal3rcc3pll6I2sPll14setup_shared_m17hf5a51e4af01367dbE
 	.personality DefaultHandler_
 	.handlerdata
-	.p2align	2
-GCC_except_table149:
-.Lexception61:
-	.byte	255
-	.byte	255
-	.byte	1
-	.uleb128 .Lcst_end61-.Lcst_begin61
-.Lcst_begin61:
-	.uleb128 .Lfunc_begin61-.Lfunc_begin61
-	.uleb128 .Lfunc_end149-.Lfunc_begin61
-	.byte	0
-	.byte	0
-.Lcst_end61:
 	.p2align	2
 	.fnend
 
@@ -27388,19 +24840,6 @@ _ZN13stm32f4xx_hal3rcc3pll6I2sPll16optimize_fixed_m17he40cae585332fff9E:
 	.size	_ZN13stm32f4xx_hal3rcc3pll6I2sPll16optimize_fixed_m17he40cae585332fff9E, .Lfunc_end150-_ZN13stm32f4xx_hal3rcc3pll6I2sPll16optimize_fixed_m17he40cae585332fff9E
 	.personality DefaultHandler_
 	.handlerdata
-	.p2align	2
-GCC_except_table150:
-.Lexception62:
-	.byte	255
-	.byte	255
-	.byte	1
-	.uleb128 .Lcst_end62-.Lcst_begin62
-.Lcst_begin62:
-	.uleb128 .Lfunc_begin62-.Lfunc_begin62
-	.uleb128 .Lfunc_end150-.Lfunc_begin62
-	.byte	0
-	.byte	0
-.Lcst_end62:
 	.p2align	2
 	.fnend
 
@@ -28428,3 +25867,2572 @@ __INTERRUPTS:
 	.section	".note.GNU-no-split-stack","",%progbits
 	.section	".note.GNU-stack","",%progbits
 	.eabi_attribute	30, 2
+.section	.landing_pad,"ax",%progbits
+.p2align	1
+.type	landing_pad,%function
+.code	16
+.thumb_func
+landing_pad:
+.fnstart
+GCC_except_table2:
+.Lexception0:
+	.byte	255
+	.byte	255
+	.byte	1
+	.uleb128 .Lcst_end0-.Lcst_begin0
+.Lcst_begin0:
+	.uleb128 .Lfunc_begin0-.Lfunc_begin0
+	.uleb128 .Lfunc_end2-.Lfunc_begin0
+	.byte	0
+	.byte	0
+.Lcst_end0:
+	.p2align	2
+GCC_except_table4:
+.Lexception1:
+	.byte	255
+	.byte	0
+	.uleb128 .Lttbase0-.Lttbaseref0
+.Lttbaseref0:
+	.byte	1
+	.uleb128 .Lcst_end1-.Lcst_begin1
+.Lcst_begin1:
+	.uleb128 .Lfunc_begin1-.Lfunc_begin1
+	.uleb128 .Ltmp13-.Lfunc_begin1
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp13-.Lfunc_begin1
+	.uleb128 .Ltmp14-.Ltmp13
+	.uleb128 .Ltmp15-.Lfunc_begin1
+	.byte	0
+	.uleb128 .Ltmp16-.Lfunc_begin1
+	.uleb128 .Ltmp17-.Ltmp16
+	.uleb128 .Ltmp30-.Lfunc_begin1
+	.byte	0
+	.uleb128 .Ltmp18-.Lfunc_begin1
+	.uleb128 .Ltmp19-.Ltmp18
+	.uleb128 .Ltmp27-.Lfunc_begin1
+	.byte	0
+	.uleb128 .Ltmp20-.Lfunc_begin1
+	.uleb128 .Ltmp21-.Ltmp20
+	.uleb128 .Ltmp24-.Lfunc_begin1
+	.byte	0
+	.uleb128 .Ltmp28-.Lfunc_begin1
+	.uleb128 .Ltmp29-.Ltmp28
+	.uleb128 .Ltmp30-.Lfunc_begin1
+	.byte	0
+	.uleb128 .Ltmp25-.Lfunc_begin1
+	.uleb128 .Ltmp26-.Ltmp25
+	.uleb128 .Ltmp27-.Lfunc_begin1
+	.byte	0
+	.uleb128 .Ltmp22-.Lfunc_begin1
+	.uleb128 .Ltmp23-.Ltmp22
+	.uleb128 .Ltmp24-.Lfunc_begin1
+	.byte	0
+	.uleb128 .Ltmp31-.Lfunc_begin1
+	.uleb128 .Ltmp32-.Ltmp31
+	.uleb128 .Ltmp33-.Lfunc_begin1
+	.byte	0
+	.uleb128 .Ltmp32-.Lfunc_begin1
+	.uleb128 .Ltmp34-.Ltmp32
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp34-.Lfunc_begin1
+	.uleb128 .Ltmp39-.Ltmp34
+	.uleb128 .Ltmp42-.Lfunc_begin1
+	.byte	1
+	.uleb128 .Ltmp39-.Lfunc_begin1
+	.uleb128 .Ltmp40-.Ltmp39
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp40-.Lfunc_begin1
+	.uleb128 .Ltmp41-.Ltmp40
+	.uleb128 .Ltmp42-.Lfunc_begin1
+	.byte	1
+	.uleb128 .Ltmp41-.Lfunc_begin1
+	.uleb128 .Lfunc_end4-.Ltmp41
+	.byte	0
+	.byte	0
+.Lcst_end1:
+	.byte	127
+	.byte	0
+	.p2align	2
+.Lttbase0:
+	.long	0
+	.p2align	2
+GCC_except_table9:
+.Lexception2:
+	.byte	255
+	.byte	0
+	.uleb128 .Lttbase1-.Lttbaseref1
+.Lttbaseref1:
+	.byte	1
+	.uleb128 .Lcst_end2-.Lcst_begin2
+.Lcst_begin2:
+	.uleb128 .Lfunc_begin2-.Lfunc_begin2
+	.uleb128 .Ltmp43-.Lfunc_begin2
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp43-.Lfunc_begin2
+	.uleb128 .Ltmp54-.Ltmp43
+	.uleb128 .Ltmp55-.Lfunc_begin2
+	.byte	7
+	.uleb128 .Ltmp54-.Lfunc_begin2
+	.uleb128 .Ltmp56-.Ltmp54
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp56-.Lfunc_begin2
+	.uleb128 .Ltmp57-.Ltmp56
+	.uleb128 .Ltmp58-.Lfunc_begin2
+	.byte	1
+	.uleb128 .Ltmp59-.Lfunc_begin2
+	.uleb128 .Ltmp60-.Ltmp59
+	.uleb128 .Ltmp61-.Lfunc_begin2
+	.byte	7
+	.uleb128 .Ltmp62-.Lfunc_begin2
+	.uleb128 .Ltmp63-.Ltmp62
+	.uleb128 .Ltmp74-.Lfunc_begin2
+	.byte	7
+	.uleb128 .Ltmp66-.Lfunc_begin2
+	.uleb128 .Ltmp67-.Ltmp66
+	.uleb128 .Ltmp68-.Lfunc_begin2
+	.byte	5
+	.uleb128 .Ltmp79-.Lfunc_begin2
+	.uleb128 .Ltmp78-.Ltmp79
+	.uleb128 .Ltmp81-.Lfunc_begin2
+	.byte	1
+	.uleb128 .Ltmp75-.Lfunc_begin2
+	.uleb128 .Ltmp76-.Ltmp75
+	.uleb128 .Ltmp87-.Lfunc_begin2
+	.byte	1
+	.uleb128 .Ltmp64-.Lfunc_begin2
+	.uleb128 .Ltmp65-.Ltmp64
+	.uleb128 .Ltmp68-.Lfunc_begin2
+	.byte	5
+	.uleb128 .Ltmp65-.Lfunc_begin2
+	.uleb128 .Ltmp69-.Ltmp65
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp69-.Lfunc_begin2
+	.uleb128 .Ltmp70-.Ltmp69
+	.uleb128 .Ltmp71-.Lfunc_begin2
+	.byte	1
+	.uleb128 .Ltmp72-.Lfunc_begin2
+	.uleb128 .Ltmp73-.Ltmp72
+	.uleb128 .Ltmp74-.Lfunc_begin2
+	.byte	7
+	.uleb128 .Ltmp73-.Lfunc_begin2
+	.uleb128 .Ltmp82-.Ltmp73
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp82-.Lfunc_begin2
+	.uleb128 .Ltmp83-.Ltmp82
+	.uleb128 .Ltmp84-.Lfunc_begin2
+	.byte	1
+	.uleb128 .Ltmp85-.Lfunc_begin2
+	.uleb128 .Ltmp86-.Ltmp85
+	.uleb128 .Ltmp87-.Lfunc_begin2
+	.byte	1
+	.uleb128 .Ltmp86-.Lfunc_begin2
+	.uleb128 .Lfunc_end9-.Ltmp86
+	.byte	0
+	.byte	0
+.Lcst_end2:
+	.byte	127
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	1
+	.byte	125
+	.byte	1
+	.byte	0
+	.p2align	2
+	.long	0
+.Lttbase1:
+	.long	0
+	.p2align	2
+GCC_except_table10:
+.Lexception3:
+	.byte	255
+	.byte	0
+	.uleb128 .Lttbase2-.Lttbaseref2
+.Lttbaseref2:
+	.byte	1
+	.uleb128 .Lcst_end3-.Lcst_begin3
+.Lcst_begin3:
+	.uleb128 .Lfunc_begin3-.Lfunc_begin3
+	.uleb128 .Ltmp88-.Lfunc_begin3
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp88-.Lfunc_begin3
+	.uleb128 .Ltmp93-.Ltmp88
+	.uleb128 .Ltmp120-.Lfunc_begin3
+	.byte	1
+	.uleb128 .Ltmp93-.Lfunc_begin3
+	.uleb128 .Ltmp94-.Ltmp93
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp94-.Lfunc_begin3
+	.uleb128 .Ltmp97-.Ltmp94
+	.uleb128 .Ltmp98-.Lfunc_begin3
+	.byte	1
+	.uleb128 .Ltmp97-.Lfunc_begin3
+	.uleb128 .Ltmp101-.Ltmp97
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp101-.Lfunc_begin3
+	.uleb128 .Ltmp102-.Ltmp101
+	.uleb128 .Ltmp103-.Lfunc_begin3
+	.byte	1
+	.uleb128 .Ltmp102-.Lfunc_begin3
+	.uleb128 .Ltmp106-.Ltmp102
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp106-.Lfunc_begin3
+	.uleb128 .Ltmp119-.Ltmp106
+	.uleb128 .Ltmp120-.Lfunc_begin3
+	.byte	1
+	.uleb128 .Ltmp110-.Lfunc_begin3
+	.uleb128 .Ltmp111-.Ltmp110
+	.uleb128 .Ltmp112-.Lfunc_begin3
+	.byte	1
+	.uleb128 .Ltmp108-.Lfunc_begin3
+	.uleb128 .Ltmp109-.Ltmp108
+	.uleb128 .Ltmp120-.Lfunc_begin3
+	.byte	1
+	.uleb128 .Ltmp104-.Lfunc_begin3
+	.uleb128 .Ltmp114-.Ltmp104
+	.uleb128 .Ltmp115-.Lfunc_begin3
+	.byte	1
+	.uleb128 .Ltmp116-.Lfunc_begin3
+	.uleb128 .Ltmp117-.Ltmp116
+	.uleb128 .Ltmp120-.Lfunc_begin3
+	.byte	1
+	.uleb128 .Ltmp117-.Lfunc_begin3
+	.uleb128 .Lfunc_end10-.Ltmp117
+	.byte	0
+	.byte	0
+.Lcst_end3:
+	.byte	127
+	.byte	0
+	.p2align	2
+.Lttbase2:
+	.long	0
+	.p2align	2
+GCC_except_table13:
+.Lexception4:
+	.byte	255
+	.byte	0
+	.uleb128 .Lttbase3-.Lttbaseref3
+.Lttbaseref3:
+	.byte	1
+	.uleb128 .Lcst_end4-.Lcst_begin4
+.Lcst_begin4:
+	.uleb128 .Lfunc_begin4-.Lfunc_begin4
+	.uleb128 .Ltmp121-.Lfunc_begin4
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp121-.Lfunc_begin4
+	.uleb128 .Ltmp122-.Ltmp121
+	.uleb128 .Ltmp123-.Lfunc_begin4
+	.byte	0
+	.uleb128 .Ltmp122-.Lfunc_begin4
+	.uleb128 .Ltmp129-.Ltmp122
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp129-.Lfunc_begin4
+	.uleb128 .Ltmp130-.Ltmp129
+	.uleb128 .Ltmp131-.Lfunc_begin4
+	.byte	0
+	.uleb128 .Ltmp130-.Lfunc_begin4
+	.uleb128 .Ltmp132-.Ltmp130
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp132-.Lfunc_begin4
+	.uleb128 .Ltmp133-.Ltmp132
+	.uleb128 .Ltmp142-.Lfunc_begin4
+	.byte	0
+	.uleb128 .Ltmp134-.Lfunc_begin4
+	.uleb128 .Ltmp135-.Ltmp134
+	.uleb128 .Ltmp136-.Lfunc_begin4
+	.byte	0
+	.uleb128 .Ltmp135-.Lfunc_begin4
+	.uleb128 .Ltmp124-.Ltmp135
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp124-.Lfunc_begin4
+	.uleb128 .Ltmp125-.Ltmp124
+	.uleb128 .Ltmp126-.Lfunc_begin4
+	.byte	1
+	.uleb128 .Ltmp127-.Lfunc_begin4
+	.uleb128 .Ltmp128-.Ltmp127
+	.uleb128 .Ltmp136-.Lfunc_begin4
+	.byte	0
+	.uleb128 .Ltmp137-.Lfunc_begin4
+	.uleb128 .Ltmp138-.Ltmp137
+	.uleb128 .Ltmp139-.Lfunc_begin4
+	.byte	1
+	.uleb128 .Ltmp140-.Lfunc_begin4
+	.uleb128 .Ltmp141-.Ltmp140
+	.uleb128 .Ltmp142-.Lfunc_begin4
+	.byte	0
+	.uleb128 .Ltmp143-.Lfunc_begin4
+	.uleb128 .Ltmp144-.Ltmp143
+	.uleb128 .Ltmp145-.Lfunc_begin4
+	.byte	1
+	.uleb128 .Ltmp144-.Lfunc_begin4
+	.uleb128 .Lfunc_end13-.Ltmp144
+	.byte	0
+	.byte	0
+.Lcst_end4:
+	.byte	127
+	.byte	0
+	.p2align	2
+.Lttbase3:
+	.long	0
+	.p2align	2
+GCC_except_table15:
+.Lexception5:
+	.byte	255
+	.byte	255
+	.byte	1
+	.uleb128 .Lcst_end5-.Lcst_begin5
+.Lcst_begin5:
+	.uleb128 .Lfunc_begin5-.Lfunc_begin5
+	.uleb128 .Lfunc_end15-.Lfunc_begin5
+	.byte	0
+	.byte	0
+.Lcst_end5:
+	.p2align	2
+GCC_except_table16:
+.Lexception6:
+	.byte	255
+	.byte	255
+	.byte	1
+	.uleb128 .Lcst_end6-.Lcst_begin6
+.Lcst_begin6:
+	.uleb128 .Lfunc_begin6-.Lfunc_begin6
+	.uleb128 .Lfunc_end16-.Lfunc_begin6
+	.byte	0
+	.byte	0
+.Lcst_end6:
+	.p2align	2
+GCC_except_table19:
+.Lexception7:
+	.byte	255
+	.byte	255
+	.byte	1
+	.uleb128 .Lcst_end7-.Lcst_begin7
+.Lcst_begin7:
+	.uleb128 .Lfunc_begin7-.Lfunc_begin7
+	.uleb128 .Lfunc_end19-.Lfunc_begin7
+	.byte	0
+	.byte	0
+.Lcst_end7:
+	.p2align	2
+GCC_except_table20:
+.Lexception8:
+	.byte	255
+	.byte	255
+	.byte	1
+	.uleb128 .Lcst_end8-.Lcst_begin8
+.Lcst_begin8:
+	.uleb128 .Lfunc_begin8-.Lfunc_begin8
+	.uleb128 .Lfunc_end20-.Lfunc_begin8
+	.byte	0
+	.byte	0
+.Lcst_end8:
+	.p2align	2
+GCC_except_table23:
+.Lexception9:
+	.byte	255
+	.byte	0
+	.uleb128 .Lttbase4-.Lttbaseref4
+.Lttbaseref4:
+	.byte	1
+	.uleb128 .Lcst_end9-.Lcst_begin9
+.Lcst_begin9:
+	.uleb128 .Lfunc_begin9-.Lfunc_begin9
+	.uleb128 .Ltmp146-.Lfunc_begin9
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp146-.Lfunc_begin9
+	.uleb128 .Ltmp147-.Ltmp146
+	.uleb128 .Ltmp148-.Lfunc_begin9
+	.byte	1
+	.uleb128 .Ltmp147-.Lfunc_begin9
+	.uleb128 .Lfunc_end23-.Ltmp147
+	.byte	0
+	.byte	0
+.Lcst_end9:
+	.byte	127
+	.byte	0
+	.p2align	2
+.Lttbase4:
+	.long	0
+	.p2align	2
+GCC_except_table28:
+.Lexception10:
+	.byte	255
+	.byte	255
+	.byte	1
+	.uleb128 .Lcst_end10-.Lcst_begin10
+.Lcst_begin10:
+	.uleb128 .Lfunc_begin10-.Lfunc_begin10
+	.uleb128 .Lfunc_end28-.Lfunc_begin10
+	.byte	0
+	.byte	0
+.Lcst_end10:
+	.p2align	2
+GCC_except_table29:
+.Lexception11:
+	.byte	255
+	.byte	255
+	.byte	1
+	.uleb128 .Lcst_end11-.Lcst_begin11
+.Lcst_begin11:
+	.uleb128 .Lfunc_begin11-.Lfunc_begin11
+	.uleb128 .Lfunc_end29-.Lfunc_begin11
+	.byte	0
+	.byte	0
+.Lcst_end11:
+	.p2align	2
+GCC_except_table37:
+.Lexception12:
+	.byte	255
+	.byte	255
+	.byte	1
+	.uleb128 .Lcst_end12-.Lcst_begin12
+.Lcst_begin12:
+	.uleb128 .Lfunc_begin12-.Lfunc_begin12
+	.uleb128 .Lfunc_end37-.Lfunc_begin12
+	.byte	0
+	.byte	0
+.Lcst_end12:
+	.p2align	2
+GCC_except_table49:
+.Lexception13:
+	.byte	255
+	.byte	0
+	.uleb128 .Lttbase5-.Lttbaseref5
+.Lttbaseref5:
+	.byte	1
+	.uleb128 .Lcst_end13-.Lcst_begin13
+.Lcst_begin13:
+	.uleb128 .Lfunc_begin13-.Lfunc_begin13
+	.uleb128 .Ltmp149-.Lfunc_begin13
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp149-.Lfunc_begin13
+	.uleb128 .Ltmp150-.Ltmp149
+	.uleb128 .Ltmp151-.Lfunc_begin13
+	.byte	1
+	.uleb128 .Ltmp150-.Lfunc_begin13
+	.uleb128 .Ltmp154-.Ltmp150
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp154-.Lfunc_begin13
+	.uleb128 .Ltmp155-.Ltmp154
+	.uleb128 .Ltmp170-.Lfunc_begin13
+	.byte	1
+	.uleb128 .Ltmp155-.Lfunc_begin13
+	.uleb128 .Ltmp156-.Ltmp155
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp156-.Lfunc_begin13
+	.uleb128 .Ltmp157-.Ltmp156
+	.uleb128 .Ltmp158-.Lfunc_begin13
+	.byte	1
+	.uleb128 .Ltmp168-.Lfunc_begin13
+	.uleb128 .Ltmp169-.Ltmp168
+	.uleb128 .Ltmp170-.Lfunc_begin13
+	.byte	1
+	.uleb128 .Ltmp169-.Lfunc_begin13
+	.uleb128 .Ltmp164-.Ltmp169
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp164-.Lfunc_begin13
+	.uleb128 .Ltmp167-.Ltmp164
+	.uleb128 .Ltmp170-.Lfunc_begin13
+	.byte	1
+	.uleb128 .Ltmp159-.Lfunc_begin13
+	.uleb128 .Ltmp153-.Ltmp159
+	.uleb128 .Ltmp161-.Lfunc_begin13
+	.byte	1
+	.uleb128 .Ltmp162-.Lfunc_begin13
+	.uleb128 .Ltmp163-.Ltmp162
+	.uleb128 .Ltmp170-.Lfunc_begin13
+	.byte	1
+	.uleb128 .Ltmp163-.Lfunc_begin13
+	.uleb128 .Lfunc_end49-.Ltmp163
+	.byte	0
+	.byte	0
+.Lcst_end13:
+	.byte	127
+	.byte	0
+	.p2align	2
+.Lttbase5:
+	.long	0
+	.p2align	2
+GCC_except_table50:
+.Lexception14:
+	.byte	255
+	.byte	0
+	.uleb128 .Lttbase6-.Lttbaseref6
+.Lttbaseref6:
+	.byte	1
+	.uleb128 .Lcst_end14-.Lcst_begin14
+.Lcst_begin14:
+	.uleb128 .Lfunc_begin14-.Lfunc_begin14
+	.uleb128 .Ltmp171-.Lfunc_begin14
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp171-.Lfunc_begin14
+	.uleb128 .Ltmp172-.Ltmp171
+	.uleb128 .Ltmp173-.Lfunc_begin14
+	.byte	1
+	.uleb128 .Ltmp172-.Lfunc_begin14
+	.uleb128 .Lfunc_end50-.Ltmp172
+	.byte	0
+	.byte	0
+.Lcst_end14:
+	.byte	1
+	.byte	0
+	.p2align	2
+	.long	0
+.Lttbase6:
+	.p2align	2
+GCC_except_table51:
+.Lexception15:
+	.byte	255
+	.byte	255
+	.byte	1
+	.uleb128 .Lcst_end15-.Lcst_begin15
+.Lcst_begin15:
+	.uleb128 .Lfunc_begin15-.Lfunc_begin15
+	.uleb128 .Lfunc_end51-.Lfunc_begin15
+	.byte	0
+	.byte	0
+.Lcst_end15:
+	.p2align	2
+GCC_except_table52:
+.Lexception16:
+	.byte	255
+	.byte	0
+	.uleb128 .Lttbase7-.Lttbaseref7
+.Lttbaseref7:
+	.byte	1
+	.uleb128 .Lcst_end16-.Lcst_begin16
+.Lcst_begin16:
+	.uleb128 .Lfunc_begin16-.Lfunc_begin16
+	.uleb128 .Ltmp174-.Lfunc_begin16
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp174-.Lfunc_begin16
+	.uleb128 .Ltmp175-.Ltmp174
+	.uleb128 .Ltmp176-.Lfunc_begin16
+	.byte	0
+	.uleb128 .Ltmp177-.Lfunc_begin16
+	.uleb128 .Ltmp178-.Ltmp177
+	.uleb128 .Ltmp191-.Lfunc_begin16
+	.byte	0
+	.uleb128 .Ltmp179-.Lfunc_begin16
+	.uleb128 .Ltmp180-.Ltmp179
+	.uleb128 .Ltmp188-.Lfunc_begin16
+	.byte	0
+	.uleb128 .Ltmp181-.Lfunc_begin16
+	.uleb128 .Ltmp182-.Ltmp181
+	.uleb128 .Ltmp185-.Lfunc_begin16
+	.byte	0
+	.uleb128 .Ltmp189-.Lfunc_begin16
+	.uleb128 .Ltmp190-.Ltmp189
+	.uleb128 .Ltmp191-.Lfunc_begin16
+	.byte	0
+	.uleb128 .Ltmp186-.Lfunc_begin16
+	.uleb128 .Ltmp187-.Ltmp186
+	.uleb128 .Ltmp188-.Lfunc_begin16
+	.byte	0
+	.uleb128 .Ltmp183-.Lfunc_begin16
+	.uleb128 .Ltmp184-.Ltmp183
+	.uleb128 .Ltmp185-.Lfunc_begin16
+	.byte	0
+	.uleb128 .Ltmp192-.Lfunc_begin16
+	.uleb128 .Ltmp193-.Ltmp192
+	.uleb128 .Ltmp194-.Lfunc_begin16
+	.byte	0
+	.uleb128 .Ltmp193-.Lfunc_begin16
+	.uleb128 .Ltmp195-.Ltmp193
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp195-.Lfunc_begin16
+	.uleb128 .Ltmp200-.Ltmp195
+	.uleb128 .Ltmp203-.Lfunc_begin16
+	.byte	1
+	.uleb128 .Ltmp200-.Lfunc_begin16
+	.uleb128 .Ltmp201-.Ltmp200
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp201-.Lfunc_begin16
+	.uleb128 .Ltmp202-.Ltmp201
+	.uleb128 .Ltmp203-.Lfunc_begin16
+	.byte	1
+	.uleb128 .Ltmp202-.Lfunc_begin16
+	.uleb128 .Lfunc_end52-.Ltmp202
+	.byte	0
+	.byte	0
+.Lcst_end16:
+	.byte	127
+	.byte	0
+	.p2align	2
+.Lttbase7:
+	.long	0
+	.p2align	2
+GCC_except_table55:
+.Lexception17:
+	.byte	255
+	.byte	0
+	.uleb128 .Lttbase8-.Lttbaseref8
+.Lttbaseref8:
+	.byte	1
+	.uleb128 .Lcst_end17-.Lcst_begin17
+.Lcst_begin17:
+	.uleb128 .Lfunc_begin17-.Lfunc_begin17
+	.uleb128 .Ltmp210-.Lfunc_begin17
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp210-.Lfunc_begin17
+	.uleb128 .Ltmp211-.Ltmp210
+	.uleb128 .Ltmp212-.Lfunc_begin17
+	.byte	0
+	.uleb128 .Ltmp233-.Lfunc_begin17
+	.uleb128 .Ltmp234-.Ltmp233
+	.uleb128 .Ltmp235-.Lfunc_begin17
+	.byte	0
+	.uleb128 .Ltmp234-.Lfunc_begin17
+	.uleb128 .Ltmp221-.Ltmp234
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp221-.Lfunc_begin17
+	.uleb128 .Ltmp224-.Ltmp221
+	.uleb128 .Ltmp227-.Lfunc_begin17
+	.byte	0
+	.uleb128 .Ltmp204-.Lfunc_begin17
+	.uleb128 .Ltmp205-.Ltmp204
+	.uleb128 .Ltmp218-.Lfunc_begin17
+	.byte	0
+	.uleb128 .Ltmp236-.Lfunc_begin17
+	.uleb128 .Ltmp237-.Ltmp236
+	.uleb128 .Ltmp246-.Lfunc_begin17
+	.byte	0
+	.uleb128 .Ltmp238-.Lfunc_begin17
+	.uleb128 .Ltmp239-.Ltmp238
+	.uleb128 .Ltmp240-.Lfunc_begin17
+	.byte	0
+	.uleb128 .Ltmp225-.Lfunc_begin17
+	.uleb128 .Ltmp226-.Ltmp225
+	.uleb128 .Ltmp227-.Lfunc_begin17
+	.byte	0
+	.uleb128 .Ltmp208-.Lfunc_begin17
+	.uleb128 .Ltmp209-.Ltmp208
+	.uleb128 .Ltmp212-.Lfunc_begin17
+	.byte	0
+	.uleb128 .Ltmp206-.Lfunc_begin17
+	.uleb128 .Ltmp207-.Ltmp206
+	.uleb128 .Ltmp218-.Lfunc_begin17
+	.byte	0
+	.uleb128 .Ltmp207-.Lfunc_begin17
+	.uleb128 .Ltmp228-.Ltmp207
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp228-.Lfunc_begin17
+	.uleb128 .Ltmp229-.Ltmp228
+	.uleb128 .Ltmp230-.Lfunc_begin17
+	.byte	1
+	.uleb128 .Ltmp213-.Lfunc_begin17
+	.uleb128 .Ltmp214-.Ltmp213
+	.uleb128 .Ltmp215-.Lfunc_begin17
+	.byte	1
+	.uleb128 .Ltmp216-.Lfunc_begin17
+	.uleb128 .Ltmp217-.Ltmp216
+	.uleb128 .Ltmp218-.Lfunc_begin17
+	.byte	0
+	.uleb128 .Ltmp219-.Lfunc_begin17
+	.uleb128 .Ltmp220-.Ltmp219
+	.uleb128 .Ltmp230-.Lfunc_begin17
+	.byte	1
+	.uleb128 .Ltmp231-.Lfunc_begin17
+	.uleb128 .Ltmp232-.Ltmp231
+	.uleb128 .Ltmp240-.Lfunc_begin17
+	.byte	0
+	.uleb128 .Ltmp241-.Lfunc_begin17
+	.uleb128 .Ltmp242-.Ltmp241
+	.uleb128 .Ltmp243-.Lfunc_begin17
+	.byte	1
+	.uleb128 .Ltmp244-.Lfunc_begin17
+	.uleb128 .Ltmp245-.Ltmp244
+	.uleb128 .Ltmp246-.Lfunc_begin17
+	.byte	0
+	.uleb128 .Ltmp247-.Lfunc_begin17
+	.uleb128 .Ltmp248-.Ltmp247
+	.uleb128 .Ltmp249-.Lfunc_begin17
+	.byte	1
+	.uleb128 .Ltmp248-.Lfunc_begin17
+	.uleb128 .Lfunc_end55-.Ltmp248
+	.byte	0
+	.byte	0
+.Lcst_end17:
+	.byte	127
+	.byte	0
+	.p2align	2
+.Lttbase8:
+	.long	0
+	.p2align	2
+GCC_except_table56:
+.Lexception18:
+	.byte	255
+	.byte	0
+	.uleb128 .Lttbase9-.Lttbaseref9
+.Lttbaseref9:
+	.byte	1
+	.uleb128 .Lcst_end18-.Lcst_begin18
+.Lcst_begin18:
+	.uleb128 .Lfunc_begin18-.Lfunc_begin18
+	.uleb128 .Ltmp250-.Lfunc_begin18
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp250-.Lfunc_begin18
+	.uleb128 .Ltmp251-.Ltmp250
+	.uleb128 .Ltmp252-.Lfunc_begin18
+	.byte	0
+	.uleb128 .Ltmp251-.Lfunc_begin18
+	.uleb128 .Ltmp253-.Ltmp251
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp253-.Lfunc_begin18
+	.uleb128 .Ltmp254-.Ltmp253
+	.uleb128 .Ltmp255-.Lfunc_begin18
+	.byte	1
+	.uleb128 .Ltmp254-.Lfunc_begin18
+	.uleb128 .Lfunc_end56-.Ltmp254
+	.byte	0
+	.byte	0
+.Lcst_end18:
+	.byte	127
+	.byte	0
+	.p2align	2
+.Lttbase9:
+	.long	0
+	.p2align	2
+GCC_except_table57:
+.Lexception19:
+	.byte	255
+	.byte	0
+	.uleb128 .Lttbase10-.Lttbaseref10
+.Lttbaseref10:
+	.byte	1
+	.uleb128 .Lcst_end19-.Lcst_begin19
+.Lcst_begin19:
+	.uleb128 .Lfunc_begin19-.Lfunc_begin19
+	.uleb128 .Ltmp256-.Lfunc_begin19
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp256-.Lfunc_begin19
+	.uleb128 .Ltmp257-.Ltmp256
+	.uleb128 .Ltmp258-.Lfunc_begin19
+	.byte	0
+	.uleb128 .Ltmp257-.Lfunc_begin19
+	.uleb128 .Ltmp259-.Ltmp257
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp259-.Lfunc_begin19
+	.uleb128 .Ltmp260-.Ltmp259
+	.uleb128 .Ltmp261-.Lfunc_begin19
+	.byte	1
+	.uleb128 .Ltmp260-.Lfunc_begin19
+	.uleb128 .Lfunc_end57-.Ltmp260
+	.byte	0
+	.byte	0
+.Lcst_end19:
+	.byte	127
+	.byte	0
+	.p2align	2
+.Lttbase10:
+	.long	0
+	.p2align	2
+GCC_except_table59:
+.Lexception20:
+	.byte	255
+	.byte	0
+	.uleb128 .Lttbase11-.Lttbaseref11
+.Lttbaseref11:
+	.byte	1
+	.uleb128 .Lcst_end20-.Lcst_begin20
+.Lcst_begin20:
+	.uleb128 .Lfunc_begin20-.Lfunc_begin20
+	.uleb128 .Ltmp262-.Lfunc_begin20
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp262-.Lfunc_begin20
+	.uleb128 .Ltmp263-.Ltmp262
+	.uleb128 .Ltmp266-.Lfunc_begin20
+	.byte	0
+	.uleb128 .Ltmp263-.Lfunc_begin20
+	.uleb128 .Ltmp264-.Ltmp263
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp264-.Lfunc_begin20
+	.uleb128 .Ltmp265-.Ltmp264
+	.uleb128 .Ltmp266-.Lfunc_begin20
+	.byte	0
+	.uleb128 .Ltmp265-.Lfunc_begin20
+	.uleb128 .Ltmp267-.Ltmp265
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp267-.Lfunc_begin20
+	.uleb128 .Ltmp268-.Ltmp267
+	.uleb128 .Ltmp269-.Lfunc_begin20
+	.byte	1
+	.uleb128 .Ltmp268-.Lfunc_begin20
+	.uleb128 .Lfunc_end59-.Ltmp268
+	.byte	0
+	.byte	0
+.Lcst_end20:
+	.byte	127
+	.byte	0
+	.p2align	2
+.Lttbase11:
+	.long	0
+	.p2align	2
+GCC_except_table64:
+.Lexception21:
+	.byte	255
+	.byte	255
+	.byte	1
+	.uleb128 .Lcst_end21-.Lcst_begin21
+.Lcst_begin21:
+	.uleb128 .Lfunc_begin21-.Lfunc_begin21
+	.uleb128 .Lfunc_end64-.Lfunc_begin21
+	.byte	0
+	.byte	0
+.Lcst_end21:
+	.p2align	2
+GCC_except_table66:
+.Lexception22:
+	.byte	255
+	.byte	255
+	.byte	1
+	.uleb128 .Lcst_end22-.Lcst_begin22
+.Lcst_begin22:
+.Lcst_end22:
+	.p2align	2
+GCC_except_table67:
+.Lexception23:
+	.byte	255
+	.byte	255
+	.byte	1
+	.uleb128 .Lcst_end23-.Lcst_begin23
+.Lcst_begin23:
+	.uleb128 .Lfunc_begin23-.Lfunc_begin23
+	.uleb128 .Lfunc_end67-.Lfunc_begin23
+	.byte	0
+	.byte	0
+.Lcst_end23:
+	.p2align	2
+GCC_except_table70:
+.Lexception24:
+	.byte	255
+	.byte	0
+	.uleb128 .Lttbase12-.Lttbaseref12
+.Lttbaseref12:
+	.byte	1
+	.uleb128 .Lcst_end24-.Lcst_begin24
+.Lcst_begin24:
+	.uleb128 .Lfunc_begin24-.Lfunc_begin24
+	.uleb128 .Ltmp292-.Lfunc_begin24
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp292-.Lfunc_begin24
+	.uleb128 .Ltmp293-.Ltmp292
+	.uleb128 .Ltmp294-.Lfunc_begin24
+	.byte	0
+	.uleb128 .Ltmp277-.Lfunc_begin24
+	.uleb128 .Ltmp280-.Ltmp277
+	.uleb128 .Ltmp283-.Lfunc_begin24
+	.byte	0
+	.uleb128 .Ltmp280-.Lfunc_begin24
+	.uleb128 .Ltmp272-.Ltmp280
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp272-.Lfunc_begin24
+	.uleb128 .Ltmp273-.Ltmp272
+	.uleb128 .Ltmp289-.Lfunc_begin24
+	.byte	0
+	.uleb128 .Ltmp274-.Lfunc_begin24
+	.uleb128 .Ltmp275-.Ltmp274
+	.uleb128 .Ltmp276-.Lfunc_begin24
+	.byte	0
+	.uleb128 .Ltmp270-.Lfunc_begin24
+	.uleb128 .Ltmp271-.Ltmp270
+	.uleb128 .Ltmp294-.Lfunc_begin24
+	.byte	0
+	.uleb128 .Ltmp281-.Lfunc_begin24
+	.uleb128 .Ltmp282-.Ltmp281
+	.uleb128 .Ltmp283-.Lfunc_begin24
+	.byte	0
+	.uleb128 .Ltmp282-.Lfunc_begin24
+	.uleb128 .Ltmp284-.Ltmp282
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp284-.Lfunc_begin24
+	.uleb128 .Ltmp285-.Ltmp284
+	.uleb128 .Ltmp286-.Lfunc_begin24
+	.byte	1
+	.uleb128 .Ltmp287-.Lfunc_begin24
+	.uleb128 .Ltmp288-.Ltmp287
+	.uleb128 .Ltmp289-.Lfunc_begin24
+	.byte	0
+	.uleb128 .Ltmp290-.Lfunc_begin24
+	.uleb128 .Ltmp296-.Ltmp290
+	.uleb128 .Ltmp297-.Lfunc_begin24
+	.byte	1
+	.uleb128 .Ltmp296-.Lfunc_begin24
+	.uleb128 .Lfunc_end70-.Ltmp296
+	.byte	0
+	.byte	0
+.Lcst_end24:
+	.byte	127
+	.byte	0
+	.p2align	2
+.Lttbase12:
+	.long	0
+	.p2align	2
+GCC_except_table71:
+.Lexception25:
+	.byte	255
+	.byte	0
+	.uleb128 .Lttbase13-.Lttbaseref13
+.Lttbaseref13:
+	.byte	1
+	.uleb128 .Lcst_end25-.Lcst_begin25
+.Lcst_begin25:
+	.uleb128 .Lfunc_begin25-.Lfunc_begin25
+	.uleb128 .Ltmp321-.Lfunc_begin25
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp321-.Lfunc_begin25
+	.uleb128 .Ltmp316-.Ltmp321
+	.uleb128 .Ltmp323-.Lfunc_begin25
+	.byte	1
+	.uleb128 .Ltmp302-.Lfunc_begin25
+	.uleb128 .Ltmp318-.Ltmp302
+	.uleb128 .Ltmp329-.Lfunc_begin25
+	.byte	1
+	.uleb128 .Ltmp318-.Lfunc_begin25
+	.uleb128 .Ltmp311-.Ltmp318
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp311-.Lfunc_begin25
+	.uleb128 .Ltmp312-.Ltmp311
+	.uleb128 .Ltmp329-.Lfunc_begin25
+	.byte	1
+	.uleb128 .Ltmp313-.Lfunc_begin25
+	.uleb128 .Ltmp314-.Ltmp313
+	.uleb128 .Ltmp323-.Lfunc_begin25
+	.byte	1
+	.uleb128 .Ltmp304-.Lfunc_begin25
+	.uleb128 .Ltmp305-.Ltmp304
+	.uleb128 .Ltmp306-.Lfunc_begin25
+	.byte	1
+	.uleb128 .Ltmp298-.Lfunc_begin25
+	.uleb128 .Ltmp299-.Ltmp298
+	.uleb128 .Ltmp329-.Lfunc_begin25
+	.byte	1
+	.uleb128 .Ltmp299-.Lfunc_begin25
+	.uleb128 .Ltmp300-.Ltmp299
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp300-.Lfunc_begin25
+	.uleb128 .Ltmp310-.Ltmp300
+	.uleb128 .Ltmp329-.Lfunc_begin25
+	.byte	1
+	.uleb128 .Ltmp319-.Lfunc_begin25
+	.uleb128 .Ltmp320-.Ltmp319
+	.uleb128 .Ltmp323-.Lfunc_begin25
+	.byte	1
+	.uleb128 .Ltmp307-.Lfunc_begin25
+	.uleb128 .Ltmp325-.Ltmp307
+	.uleb128 .Ltmp326-.Lfunc_begin25
+	.byte	1
+	.uleb128 .Ltmp327-.Lfunc_begin25
+	.uleb128 .Ltmp328-.Ltmp327
+	.uleb128 .Ltmp329-.Lfunc_begin25
+	.byte	1
+	.uleb128 .Ltmp328-.Lfunc_begin25
+	.uleb128 .Lfunc_end71-.Ltmp328
+	.byte	0
+	.byte	0
+.Lcst_end25:
+	.byte	127
+	.byte	0
+	.p2align	2
+.Lttbase13:
+	.long	0
+	.p2align	2
+GCC_except_table72:
+.Lexception26:
+	.byte	255
+	.byte	0
+	.uleb128 .Lttbase14-.Lttbaseref14
+.Lttbaseref14:
+	.byte	1
+	.uleb128 .Lcst_end26-.Lcst_begin26
+.Lcst_begin26:
+	.uleb128 .Lfunc_begin26-.Lfunc_begin26
+	.uleb128 .Ltmp351-.Lfunc_begin26
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp351-.Lfunc_begin26
+	.uleb128 .Ltmp337-.Ltmp351
+	.uleb128 .Ltmp353-.Lfunc_begin26
+	.byte	1
+	.uleb128 .Ltmp354-.Lfunc_begin26
+	.uleb128 .Ltmp359-.Ltmp354
+	.uleb128 .Ltmp360-.Lfunc_begin26
+	.byte	1
+	.uleb128 .Ltmp332-.Lfunc_begin26
+	.uleb128 .Ltmp333-.Ltmp332
+	.uleb128 .Ltmp353-.Lfunc_begin26
+	.byte	1
+	.uleb128 .Ltmp342-.Lfunc_begin26
+	.uleb128 .Ltmp343-.Ltmp342
+	.uleb128 .Ltmp344-.Lfunc_begin26
+	.byte	1
+	.uleb128 .Ltmp330-.Lfunc_begin26
+	.uleb128 .Ltmp331-.Ltmp330
+	.uleb128 .Ltmp350-.Lfunc_begin26
+	.byte	1
+	.uleb128 .Ltmp340-.Lfunc_begin26
+	.uleb128 .Ltmp341-.Ltmp340
+	.uleb128 .Ltmp344-.Lfunc_begin26
+	.byte	1
+	.uleb128 .Ltmp338-.Lfunc_begin26
+	.uleb128 .Ltmp339-.Ltmp338
+	.uleb128 .Ltmp350-.Lfunc_begin26
+	.byte	1
+	.uleb128 .Ltmp345-.Lfunc_begin26
+	.uleb128 .Ltmp346-.Ltmp345
+	.uleb128 .Ltmp347-.Lfunc_begin26
+	.byte	1
+	.uleb128 .Ltmp348-.Lfunc_begin26
+	.uleb128 .Ltmp349-.Ltmp348
+	.uleb128 .Ltmp350-.Lfunc_begin26
+	.byte	1
+	.uleb128 .Ltmp349-.Lfunc_begin26
+	.uleb128 .Lfunc_end72-.Ltmp349
+	.byte	0
+	.byte	0
+.Lcst_end26:
+	.byte	127
+	.byte	0
+	.p2align	2
+.Lttbase14:
+	.long	0
+	.p2align	2
+GCC_except_table74:
+.Lexception27:
+	.byte	255
+	.byte	0
+	.uleb128 .Lttbase15-.Lttbaseref15
+.Lttbaseref15:
+	.byte	1
+	.uleb128 .Lcst_end27-.Lcst_begin27
+.Lcst_begin27:
+	.uleb128 .Lfunc_begin27-.Lfunc_begin27
+	.uleb128 .Ltmp361-.Lfunc_begin27
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp361-.Lfunc_begin27
+	.uleb128 .Ltmp368-.Ltmp361
+	.uleb128 .Ltmp462-.Lfunc_begin27
+	.byte	0
+	.uleb128 .Ltmp368-.Lfunc_begin27
+	.uleb128 .Ltmp369-.Ltmp368
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp369-.Lfunc_begin27
+	.uleb128 .Ltmp454-.Ltmp369
+	.uleb128 .Ltmp465-.Lfunc_begin27
+	.byte	0
+	.uleb128 .Ltmp455-.Lfunc_begin27
+	.uleb128 .Ltmp456-.Ltmp455
+	.uleb128 .Ltmp457-.Lfunc_begin27
+	.byte	0
+	.uleb128 .Ltmp458-.Lfunc_begin27
+	.uleb128 .Ltmp459-.Ltmp458
+	.uleb128 .Ltmp462-.Lfunc_begin27
+	.byte	0
+	.uleb128 .Ltmp459-.Lfunc_begin27
+	.uleb128 .Ltmp443-.Ltmp459
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp443-.Lfunc_begin27
+	.uleb128 .Ltmp444-.Ltmp443
+	.uleb128 .Ltmp445-.Lfunc_begin27
+	.byte	0
+	.uleb128 .Ltmp451-.Lfunc_begin27
+	.uleb128 .Ltmp452-.Ltmp451
+	.uleb128 .Ltmp465-.Lfunc_begin27
+	.byte	0
+	.uleb128 .Ltmp441-.Lfunc_begin27
+	.uleb128 .Ltmp386-.Ltmp441
+	.uleb128 .Ltmp445-.Lfunc_begin27
+	.byte	0
+	.uleb128 .Ltmp386-.Lfunc_begin27
+	.uleb128 .Ltmp387-.Ltmp386
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp387-.Lfunc_begin27
+	.uleb128 .Ltmp388-.Ltmp387
+	.uleb128 .Ltmp391-.Lfunc_begin27
+	.byte	0
+	.uleb128 .Ltmp406-.Lfunc_begin27
+	.uleb128 .Ltmp415-.Ltmp406
+	.uleb128 .Ltmp416-.Lfunc_begin27
+	.byte	0
+	.uleb128 .Ltmp415-.Lfunc_begin27
+	.uleb128 .Ltmp417-.Ltmp415
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp417-.Lfunc_begin27
+	.uleb128 .Ltmp418-.Ltmp417
+	.uleb128 .Ltmp421-.Lfunc_begin27
+	.byte	0
+	.uleb128 .Ltmp424-.Lfunc_begin27
+	.uleb128 .Ltmp437-.Ltmp424
+	.uleb128 .Ltmp438-.Lfunc_begin27
+	.byte	0
+	.uleb128 .Ltmp437-.Lfunc_begin27
+	.uleb128 .Ltmp463-.Ltmp437
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp463-.Lfunc_begin27
+	.uleb128 .Ltmp464-.Ltmp463
+	.uleb128 .Ltmp465-.Lfunc_begin27
+	.byte	0
+	.uleb128 .Ltmp365-.Lfunc_begin27
+	.uleb128 .Ltmp461-.Ltmp365
+	.uleb128 .Ltmp462-.Lfunc_begin27
+	.byte	0
+	.uleb128 .Ltmp383-.Lfunc_begin27
+	.uleb128 .Ltmp384-.Ltmp383
+	.uleb128 .Ltmp445-.Lfunc_begin27
+	.byte	0
+	.uleb128 .Ltmp432-.Lfunc_begin27
+	.uleb128 .Ltmp433-.Ltmp432
+	.uleb128 .Ltmp438-.Lfunc_begin27
+	.byte	0
+	.uleb128 .Ltmp389-.Lfunc_begin27
+	.uleb128 .Ltmp390-.Ltmp389
+	.uleb128 .Ltmp391-.Lfunc_begin27
+	.byte	0
+	.uleb128 .Ltmp394-.Lfunc_begin27
+	.uleb128 .Ltmp397-.Ltmp394
+	.uleb128 .Ltmp400-.Lfunc_begin27
+	.byte	0
+	.uleb128 .Ltmp410-.Lfunc_begin27
+	.uleb128 .Ltmp411-.Ltmp410
+	.uleb128 .Ltmp416-.Lfunc_begin27
+	.byte	0
+	.uleb128 .Ltmp419-.Lfunc_begin27
+	.uleb128 .Ltmp420-.Ltmp419
+	.uleb128 .Ltmp421-.Lfunc_begin27
+	.byte	0
+	.uleb128 .Ltmp401-.Lfunc_begin27
+	.uleb128 .Ltmp402-.Ltmp401
+	.uleb128 .Ltmp403-.Lfunc_begin27
+	.byte	0
+	.uleb128 .Ltmp398-.Lfunc_begin27
+	.uleb128 .Ltmp399-.Ltmp398
+	.uleb128 .Ltmp400-.Lfunc_begin27
+	.byte	0
+	.uleb128 .Ltmp399-.Lfunc_begin27
+	.uleb128 .Ltmp404-.Ltmp399
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp404-.Lfunc_begin27
+	.uleb128 .Ltmp447-.Ltmp404
+	.uleb128 .Ltmp448-.Lfunc_begin27
+	.byte	1
+	.uleb128 .Ltmp449-.Lfunc_begin27
+	.uleb128 .Ltmp450-.Ltmp449
+	.uleb128 .Ltmp465-.Lfunc_begin27
+	.byte	0
+	.uleb128 .Ltmp466-.Lfunc_begin27
+	.uleb128 .Ltmp469-.Ltmp466
+	.uleb128 .Ltmp470-.Lfunc_begin27
+	.byte	1
+	.uleb128 .Ltmp469-.Lfunc_begin27
+	.uleb128 .Lfunc_end74-.Ltmp469
+	.byte	0
+	.byte	0
+.Lcst_end27:
+	.byte	127
+	.byte	0
+	.p2align	2
+.Lttbase15:
+	.long	0
+	.p2align	2
+GCC_except_table75:
+.Lexception28:
+	.byte	255
+	.byte	255
+	.byte	1
+	.uleb128 .Lcst_end28-.Lcst_begin28
+.Lcst_begin28:
+	.uleb128 .Lfunc_begin28-.Lfunc_begin28
+	.uleb128 .Lfunc_end75-.Lfunc_begin28
+	.byte	0
+	.byte	0
+.Lcst_end28:
+	.p2align	2
+GCC_except_table76:
+.Lexception29:
+	.byte	255
+	.byte	0
+	.uleb128 .Lttbase16-.Lttbaseref16
+.Lttbaseref16:
+	.byte	1
+	.uleb128 .Lcst_end29-.Lcst_begin29
+.Lcst_begin29:
+	.uleb128 .Lfunc_begin29-.Lfunc_begin29
+	.uleb128 .Ltmp477-.Lfunc_begin29
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp477-.Lfunc_begin29
+	.uleb128 .Ltmp478-.Ltmp477
+	.uleb128 .Ltmp479-.Lfunc_begin29
+	.byte	0
+	.uleb128 .Ltmp478-.Lfunc_begin29
+	.uleb128 .Ltmp471-.Ltmp478
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp471-.Lfunc_begin29
+	.uleb128 .Ltmp472-.Ltmp471
+	.uleb128 .Ltmp473-.Lfunc_begin29
+	.byte	0
+	.uleb128 .Ltmp474-.Lfunc_begin29
+	.uleb128 .Ltmp475-.Ltmp474
+	.uleb128 .Ltmp476-.Lfunc_begin29
+	.byte	1
+	.uleb128 .Ltmp475-.Lfunc_begin29
+	.uleb128 .Ltmp480-.Ltmp475
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp480-.Lfunc_begin29
+	.uleb128 .Ltmp481-.Ltmp480
+	.uleb128 .Ltmp482-.Lfunc_begin29
+	.byte	1
+	.uleb128 .Ltmp481-.Lfunc_begin29
+	.uleb128 .Lfunc_end76-.Ltmp481
+	.byte	0
+	.byte	0
+.Lcst_end29:
+	.byte	127
+	.byte	0
+	.p2align	2
+.Lttbase16:
+	.long	0
+	.p2align	2
+GCC_except_table78:
+.Lexception30:
+	.byte	255
+	.byte	0
+	.uleb128 .Lttbase17-.Lttbaseref17
+.Lttbaseref17:
+	.byte	1
+	.uleb128 .Lcst_end30-.Lcst_begin30
+.Lcst_begin30:
+	.uleb128 .Lfunc_begin30-.Lfunc_begin30
+	.uleb128 .Ltmp491-.Lfunc_begin30
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp491-.Lfunc_begin30
+	.uleb128 .Ltmp492-.Ltmp491
+	.uleb128 .Ltmp493-.Lfunc_begin30
+	.byte	0
+	.uleb128 .Ltmp492-.Lfunc_begin30
+	.uleb128 .Ltmp483-.Ltmp492
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp483-.Lfunc_begin30
+	.uleb128 .Ltmp484-.Ltmp483
+	.uleb128 .Ltmp487-.Lfunc_begin30
+	.byte	0
+	.uleb128 .Ltmp484-.Lfunc_begin30
+	.uleb128 .Ltmp485-.Ltmp484
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp485-.Lfunc_begin30
+	.uleb128 .Ltmp486-.Ltmp485
+	.uleb128 .Ltmp487-.Lfunc_begin30
+	.byte	0
+	.uleb128 .Ltmp488-.Lfunc_begin30
+	.uleb128 .Ltmp489-.Ltmp488
+	.uleb128 .Ltmp490-.Lfunc_begin30
+	.byte	1
+	.uleb128 .Ltmp489-.Lfunc_begin30
+	.uleb128 .Ltmp494-.Ltmp489
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp494-.Lfunc_begin30
+	.uleb128 .Ltmp495-.Ltmp494
+	.uleb128 .Ltmp496-.Lfunc_begin30
+	.byte	1
+	.uleb128 .Ltmp495-.Lfunc_begin30
+	.uleb128 .Lfunc_end78-.Ltmp495
+	.byte	0
+	.byte	0
+.Lcst_end30:
+	.byte	127
+	.byte	0
+	.p2align	2
+.Lttbase17:
+	.long	0
+	.p2align	2
+GCC_except_table79:
+.Lexception31:
+	.byte	255
+	.byte	255
+	.byte	1
+	.uleb128 .Lcst_end31-.Lcst_begin31
+.Lcst_begin31:
+	.uleb128 .Lfunc_begin31-.Lfunc_begin31
+	.uleb128 .Lfunc_end79-.Lfunc_begin31
+	.byte	0
+	.byte	0
+.Lcst_end31:
+	.p2align	2
+GCC_except_table81:
+.Lexception32:
+	.byte	255
+	.byte	255
+	.byte	1
+	.uleb128 .Lcst_end32-.Lcst_begin32
+.Lcst_begin32:
+	.uleb128 .Lfunc_begin32-.Lfunc_begin32
+	.uleb128 .Lfunc_end81-.Lfunc_begin32
+	.byte	0
+	.byte	0
+.Lcst_end32:
+	.p2align	2
+GCC_except_table82:
+.Lexception33:
+	.byte	255
+	.byte	255
+	.byte	1
+	.uleb128 .Lcst_end33-.Lcst_begin33
+.Lcst_begin33:
+	.uleb128 .Lfunc_begin33-.Lfunc_begin33
+	.uleb128 .Lfunc_end82-.Lfunc_begin33
+	.byte	0
+	.byte	0
+.Lcst_end33:
+	.p2align	2
+GCC_except_table83:
+.Lexception34:
+	.byte	255
+	.byte	255
+	.byte	1
+	.uleb128 .Lcst_end34-.Lcst_begin34
+.Lcst_begin34:
+	.uleb128 .Lfunc_begin34-.Lfunc_begin34
+	.uleb128 .Lfunc_end83-.Lfunc_begin34
+	.byte	0
+	.byte	0
+.Lcst_end34:
+	.p2align	2
+GCC_except_table85:
+.Lexception35:
+	.byte	255
+	.byte	255
+	.byte	1
+	.uleb128 .Lcst_end35-.Lcst_begin35
+.Lcst_begin35:
+	.uleb128 .Lfunc_begin35-.Lfunc_begin35
+	.uleb128 .Lfunc_end85-.Lfunc_begin35
+	.byte	0
+	.byte	0
+.Lcst_end35:
+	.p2align	2
+GCC_except_table89:
+.Lexception36:
+	.byte	255
+	.byte	255
+	.byte	1
+	.uleb128 .Lcst_end36-.Lcst_begin36
+.Lcst_begin36:
+	.uleb128 .Lfunc_begin36-.Lfunc_begin36
+	.uleb128 .Lfunc_end89-.Lfunc_begin36
+	.byte	0
+	.byte	0
+.Lcst_end36:
+	.p2align	2
+GCC_except_table90:
+.Lexception37:
+	.byte	255
+	.byte	255
+	.byte	1
+	.uleb128 .Lcst_end37-.Lcst_begin37
+.Lcst_begin37:
+	.uleb128 .Lfunc_begin37-.Lfunc_begin37
+	.uleb128 .Lfunc_end90-.Lfunc_begin37
+	.byte	0
+	.byte	0
+.Lcst_end37:
+	.p2align	2
+GCC_except_table96:
+.Lexception38:
+	.byte	255
+	.byte	255
+	.byte	1
+	.uleb128 .Lcst_end38-.Lcst_begin38
+.Lcst_begin38:
+	.uleb128 .Lfunc_begin38-.Lfunc_begin38
+	.uleb128 .Lfunc_end96-.Lfunc_begin38
+	.byte	0
+	.byte	0
+.Lcst_end38:
+	.p2align	2
+GCC_except_table98:
+.Lexception39:
+	.byte	255
+	.byte	255
+	.byte	1
+	.uleb128 .Lcst_end39-.Lcst_begin39
+.Lcst_begin39:
+	.uleb128 .Lfunc_begin39-.Lfunc_begin39
+	.uleb128 .Lfunc_end98-.Lfunc_begin39
+	.byte	0
+	.byte	0
+.Lcst_end39:
+	.p2align	2
+GCC_except_table99:
+.Lexception40:
+	.byte	255
+	.byte	255
+	.byte	1
+	.uleb128 .Lcst_end40-.Lcst_begin40
+.Lcst_begin40:
+	.uleb128 .Lfunc_begin40-.Lfunc_begin40
+	.uleb128 .Lfunc_end99-.Lfunc_begin40
+	.byte	0
+	.byte	0
+.Lcst_end40:
+	.p2align	2
+GCC_except_table100:
+.Lexception41:
+	.byte	255
+	.byte	0
+	.uleb128 .Lttbase18-.Lttbaseref18
+.Lttbaseref18:
+	.byte	1
+	.uleb128 .Lcst_end41-.Lcst_begin41
+.Lcst_begin41:
+	.uleb128 .Lfunc_begin41-.Lfunc_begin41
+	.uleb128 .Ltmp497-.Lfunc_begin41
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp497-.Lfunc_begin41
+	.uleb128 .Ltmp498-.Ltmp497
+	.uleb128 .Ltmp561-.Lfunc_begin41
+	.byte	0
+	.uleb128 .Ltmp553-.Lfunc_begin41
+	.uleb128 .Ltmp554-.Ltmp553
+	.uleb128 .Ltmp555-.Lfunc_begin41
+	.byte	0
+	.uleb128 .Ltmp499-.Lfunc_begin41
+	.uleb128 .Ltmp500-.Ltmp499
+	.uleb128 .Ltmp544-.Lfunc_begin41
+	.byte	0
+	.uleb128 .Ltmp505-.Lfunc_begin41
+	.uleb128 .Ltmp506-.Ltmp505
+	.uleb128 .Ltmp507-.Lfunc_begin41
+	.byte	0
+	.uleb128 .Ltmp501-.Lfunc_begin41
+	.uleb128 .Ltmp502-.Ltmp501
+	.uleb128 .Ltmp550-.Lfunc_begin41
+	.byte	0
+	.uleb128 .Ltmp502-.Lfunc_begin41
+	.uleb128 .Ltmp508-.Ltmp502
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp508-.Lfunc_begin41
+	.uleb128 .Ltmp509-.Ltmp508
+	.uleb128 .Ltmp519-.Lfunc_begin41
+	.byte	0
+	.uleb128 .Ltmp503-.Lfunc_begin41
+	.uleb128 .Ltmp504-.Ltmp503
+	.uleb128 .Ltmp561-.Lfunc_begin41
+	.byte	0
+	.uleb128 .Ltmp504-.Lfunc_begin41
+	.uleb128 .Ltmp510-.Ltmp504
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp510-.Lfunc_begin41
+	.uleb128 .Ltmp511-.Ltmp510
+	.uleb128 .Ltmp512-.Lfunc_begin41
+	.byte	0
+	.uleb128 .Ltmp511-.Lfunc_begin41
+	.uleb128 .Ltmp536-.Ltmp511
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp536-.Lfunc_begin41
+	.uleb128 .Ltmp537-.Ltmp536
+	.uleb128 .Ltmp567-.Lfunc_begin41
+	.byte	0
+	.uleb128 .Ltmp542-.Lfunc_begin41
+	.uleb128 .Ltmp543-.Ltmp542
+	.uleb128 .Ltmp544-.Lfunc_begin41
+	.byte	0
+	.uleb128 .Ltmp540-.Lfunc_begin41
+	.uleb128 .Ltmp541-.Ltmp540
+	.uleb128 .Ltmp555-.Lfunc_begin41
+	.byte	0
+	.uleb128 .Ltmp538-.Lfunc_begin41
+	.uleb128 .Ltmp539-.Ltmp538
+	.uleb128 .Ltmp561-.Lfunc_begin41
+	.byte	0
+	.uleb128 .Ltmp534-.Lfunc_begin41
+	.uleb128 .Ltmp535-.Ltmp534
+	.uleb128 .Ltmp573-.Lfunc_begin41
+	.byte	0
+	.uleb128 .Ltmp515-.Lfunc_begin41
+	.uleb128 .Ltmp516-.Ltmp515
+	.uleb128 .Ltmp525-.Lfunc_begin41
+	.byte	0
+	.uleb128 .Ltmp517-.Lfunc_begin41
+	.uleb128 .Ltmp518-.Ltmp517
+	.uleb128 .Ltmp519-.Lfunc_begin41
+	.byte	0
+	.uleb128 .Ltmp513-.Lfunc_begin41
+	.uleb128 .Ltmp514-.Ltmp513
+	.uleb128 .Ltmp531-.Lfunc_begin41
+	.byte	0
+	.uleb128 .Ltmp514-.Lfunc_begin41
+	.uleb128 .Ltmp520-.Ltmp514
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp520-.Lfunc_begin41
+	.uleb128 .Ltmp521-.Ltmp520
+	.uleb128 .Ltmp522-.Lfunc_begin41
+	.byte	1
+	.uleb128 .Ltmp523-.Lfunc_begin41
+	.uleb128 .Ltmp524-.Ltmp523
+	.uleb128 .Ltmp525-.Lfunc_begin41
+	.byte	0
+	.uleb128 .Ltmp526-.Lfunc_begin41
+	.uleb128 .Ltmp527-.Ltmp526
+	.uleb128 .Ltmp528-.Lfunc_begin41
+	.byte	1
+	.uleb128 .Ltmp529-.Lfunc_begin41
+	.uleb128 .Ltmp530-.Ltmp529
+	.uleb128 .Ltmp531-.Lfunc_begin41
+	.byte	0
+	.uleb128 .Ltmp532-.Lfunc_begin41
+	.uleb128 .Ltmp533-.Ltmp532
+	.uleb128 .Ltmp576-.Lfunc_begin41
+	.byte	1
+	.uleb128 .Ltmp545-.Lfunc_begin41
+	.uleb128 .Ltmp546-.Ltmp545
+	.uleb128 .Ltmp547-.Lfunc_begin41
+	.byte	1
+	.uleb128 .Ltmp548-.Lfunc_begin41
+	.uleb128 .Ltmp549-.Ltmp548
+	.uleb128 .Ltmp550-.Lfunc_begin41
+	.byte	0
+	.uleb128 .Ltmp551-.Lfunc_begin41
+	.uleb128 .Ltmp557-.Ltmp551
+	.uleb128 .Ltmp558-.Lfunc_begin41
+	.byte	1
+	.uleb128 .Ltmp559-.Lfunc_begin41
+	.uleb128 .Ltmp560-.Ltmp559
+	.uleb128 .Ltmp561-.Lfunc_begin41
+	.byte	0
+	.uleb128 .Ltmp562-.Lfunc_begin41
+	.uleb128 .Ltmp563-.Ltmp562
+	.uleb128 .Ltmp564-.Lfunc_begin41
+	.byte	1
+	.uleb128 .Ltmp565-.Lfunc_begin41
+	.uleb128 .Ltmp566-.Ltmp565
+	.uleb128 .Ltmp567-.Lfunc_begin41
+	.byte	0
+	.uleb128 .Ltmp568-.Lfunc_begin41
+	.uleb128 .Ltmp569-.Ltmp568
+	.uleb128 .Ltmp570-.Lfunc_begin41
+	.byte	1
+	.uleb128 .Ltmp571-.Lfunc_begin41
+	.uleb128 .Ltmp572-.Ltmp571
+	.uleb128 .Ltmp573-.Lfunc_begin41
+	.byte	0
+	.uleb128 .Ltmp574-.Lfunc_begin41
+	.uleb128 .Ltmp575-.Ltmp574
+	.uleb128 .Ltmp576-.Lfunc_begin41
+	.byte	1
+	.uleb128 .Ltmp575-.Lfunc_begin41
+	.uleb128 .Lfunc_end100-.Ltmp575
+	.byte	0
+	.byte	0
+.Lcst_end41:
+	.byte	127
+	.byte	0
+	.p2align	2
+.Lttbase18:
+	.long	0
+	.p2align	2
+GCC_except_table101:
+.Lexception42:
+	.byte	255
+	.byte	255
+	.byte	1
+	.uleb128 .Lcst_end42-.Lcst_begin42
+.Lcst_begin42:
+	.uleb128 .Lfunc_begin42-.Lfunc_begin42
+	.uleb128 .Lfunc_end101-.Lfunc_begin42
+	.byte	0
+	.byte	0
+.Lcst_end42:
+	.p2align	2
+GCC_except_table103:
+.Lexception43:
+	.byte	255
+	.byte	0
+	.uleb128 .Lttbase19-.Lttbaseref19
+.Lttbaseref19:
+	.byte	1
+	.uleb128 .Lcst_end43-.Lcst_begin43
+.Lcst_begin43:
+	.uleb128 .Lfunc_begin43-.Lfunc_begin43
+	.uleb128 .Ltmp577-.Lfunc_begin43
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp577-.Lfunc_begin43
+	.uleb128 .Ltmp580-.Ltmp577
+	.uleb128 .Ltmp583-.Lfunc_begin43
+	.byte	0
+	.uleb128 .Ltmp589-.Lfunc_begin43
+	.uleb128 .Ltmp590-.Ltmp589
+	.uleb128 .Ltmp591-.Lfunc_begin43
+	.byte	0
+	.uleb128 .Ltmp590-.Lfunc_begin43
+	.uleb128 .Ltmp594-.Ltmp590
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp594-.Lfunc_begin43
+	.uleb128 .Ltmp595-.Ltmp594
+	.uleb128 .Ltmp596-.Lfunc_begin43
+	.byte	0
+	.uleb128 .Ltmp581-.Lfunc_begin43
+	.uleb128 .Ltmp582-.Ltmp581
+	.uleb128 .Ltmp583-.Lfunc_begin43
+	.byte	0
+	.uleb128 .Ltmp592-.Lfunc_begin43
+	.uleb128 .Ltmp593-.Ltmp592
+	.uleb128 .Ltmp602-.Lfunc_begin43
+	.byte	0
+	.uleb128 .Ltmp593-.Lfunc_begin43
+	.uleb128 .Ltmp584-.Ltmp593
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp584-.Lfunc_begin43
+	.uleb128 .Ltmp585-.Ltmp584
+	.uleb128 .Ltmp586-.Lfunc_begin43
+	.byte	1
+	.uleb128 .Ltmp587-.Lfunc_begin43
+	.uleb128 .Ltmp588-.Ltmp587
+	.uleb128 .Ltmp596-.Lfunc_begin43
+	.byte	0
+	.uleb128 .Ltmp597-.Lfunc_begin43
+	.uleb128 .Ltmp598-.Ltmp597
+	.uleb128 .Ltmp599-.Lfunc_begin43
+	.byte	1
+	.uleb128 .Ltmp600-.Lfunc_begin43
+	.uleb128 .Ltmp601-.Ltmp600
+	.uleb128 .Ltmp602-.Lfunc_begin43
+	.byte	0
+	.uleb128 .Ltmp603-.Lfunc_begin43
+	.uleb128 .Ltmp604-.Ltmp603
+	.uleb128 .Ltmp605-.Lfunc_begin43
+	.byte	1
+	.uleb128 .Ltmp604-.Lfunc_begin43
+	.uleb128 .Lfunc_end103-.Ltmp604
+	.byte	0
+	.byte	0
+.Lcst_end43:
+	.byte	127
+	.byte	0
+	.p2align	2
+.Lttbase19:
+	.long	0
+	.p2align	2
+GCC_except_table104:
+.Lexception44:
+	.byte	255
+	.byte	0
+	.uleb128 .Lttbase20-.Lttbaseref20
+.Lttbaseref20:
+	.byte	1
+	.uleb128 .Lcst_end44-.Lcst_begin44
+.Lcst_begin44:
+	.uleb128 .Lfunc_begin44-.Lfunc_begin44
+	.uleb128 .Ltmp606-.Lfunc_begin44
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp606-.Lfunc_begin44
+	.uleb128 .Ltmp607-.Ltmp606
+	.uleb128 .Ltmp608-.Lfunc_begin44
+	.byte	0
+	.uleb128 .Ltmp607-.Lfunc_begin44
+	.uleb128 .Ltmp609-.Ltmp607
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp609-.Lfunc_begin44
+	.uleb128 .Ltmp610-.Ltmp609
+	.uleb128 .Ltmp611-.Lfunc_begin44
+	.byte	1
+	.uleb128 .Ltmp610-.Lfunc_begin44
+	.uleb128 .Lfunc_end104-.Ltmp610
+	.byte	0
+	.byte	0
+.Lcst_end44:
+	.byte	127
+	.byte	0
+	.p2align	2
+.Lttbase20:
+	.long	0
+	.p2align	2
+GCC_except_table105:
+.Lexception45:
+	.byte	255
+	.byte	0
+	.uleb128 .Lttbase21-.Lttbaseref21
+.Lttbaseref21:
+	.byte	1
+	.uleb128 .Lcst_end45-.Lcst_begin45
+.Lcst_begin45:
+	.uleb128 .Lfunc_begin45-.Lfunc_begin45
+	.uleb128 .Ltmp622-.Lfunc_begin45
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp622-.Lfunc_begin45
+	.uleb128 .Ltmp623-.Ltmp622
+	.uleb128 .Ltmp624-.Lfunc_begin45
+	.byte	0
+	.uleb128 .Ltmp612-.Lfunc_begin45
+	.uleb128 .Ltmp613-.Ltmp612
+	.uleb128 .Ltmp614-.Lfunc_begin45
+	.byte	0
+	.uleb128 .Ltmp613-.Lfunc_begin45
+	.uleb128 .Ltmp629-.Ltmp613
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp629-.Lfunc_begin45
+	.uleb128 .Ltmp630-.Ltmp629
+	.uleb128 .Ltmp631-.Lfunc_begin45
+	.byte	0
+	.uleb128 .Ltmp620-.Lfunc_begin45
+	.uleb128 .Ltmp621-.Ltmp620
+	.uleb128 .Ltmp637-.Lfunc_begin45
+	.byte	0
+	.uleb128 .Ltmp625-.Lfunc_begin45
+	.uleb128 .Ltmp626-.Ltmp625
+	.uleb128 .Ltmp643-.Lfunc_begin45
+	.byte	0
+	.uleb128 .Ltmp627-.Lfunc_begin45
+	.uleb128 .Ltmp628-.Ltmp627
+	.uleb128 .Ltmp637-.Lfunc_begin45
+	.byte	0
+	.uleb128 .Ltmp617-.Lfunc_begin45
+	.uleb128 .Ltmp618-.Ltmp617
+	.uleb128 .Ltmp619-.Lfunc_begin45
+	.byte	0
+	.uleb128 .Ltmp618-.Lfunc_begin45
+	.uleb128 .Ltmp615-.Ltmp618
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp615-.Lfunc_begin45
+	.uleb128 .Ltmp633-.Ltmp615
+	.uleb128 .Ltmp634-.Lfunc_begin45
+	.byte	1
+	.uleb128 .Ltmp635-.Lfunc_begin45
+	.uleb128 .Ltmp636-.Ltmp635
+	.uleb128 .Ltmp637-.Lfunc_begin45
+	.byte	0
+	.uleb128 .Ltmp638-.Lfunc_begin45
+	.uleb128 .Ltmp639-.Ltmp638
+	.uleb128 .Ltmp640-.Lfunc_begin45
+	.byte	1
+	.uleb128 .Ltmp641-.Lfunc_begin45
+	.uleb128 .Ltmp642-.Ltmp641
+	.uleb128 .Ltmp643-.Lfunc_begin45
+	.byte	0
+	.uleb128 .Ltmp644-.Lfunc_begin45
+	.uleb128 .Ltmp645-.Ltmp644
+	.uleb128 .Ltmp646-.Lfunc_begin45
+	.byte	1
+	.uleb128 .Ltmp645-.Lfunc_begin45
+	.uleb128 .Lfunc_end105-.Ltmp645
+	.byte	0
+	.byte	0
+.Lcst_end45:
+	.byte	127
+	.byte	0
+	.p2align	2
+.Lttbase21:
+	.long	0
+	.p2align	2
+GCC_except_table106:
+.Lexception46:
+	.byte	255
+	.byte	255
+	.byte	1
+	.uleb128 .Lcst_end46-.Lcst_begin46
+.Lcst_begin46:
+	.uleb128 .Lfunc_begin46-.Lfunc_begin46
+	.uleb128 .Lfunc_end106-.Lfunc_begin46
+	.byte	0
+	.byte	0
+.Lcst_end46:
+	.p2align	2
+GCC_except_table107:
+.Lexception47:
+	.byte	255
+	.byte	0
+	.uleb128 .Lttbase22-.Lttbaseref22
+.Lttbaseref22:
+	.byte	1
+	.uleb128 .Lcst_end47-.Lcst_begin47
+.Lcst_begin47:
+	.uleb128 .Lfunc_begin47-.Lfunc_begin47
+	.uleb128 .Ltmp647-.Lfunc_begin47
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp647-.Lfunc_begin47
+	.uleb128 .Ltmp648-.Ltmp647
+	.uleb128 .Ltmp649-.Lfunc_begin47
+	.byte	0
+	.uleb128 .Ltmp650-.Lfunc_begin47
+	.uleb128 .Ltmp651-.Ltmp650
+	.uleb128 .Ltmp652-.Lfunc_begin47
+	.byte	0
+	.uleb128 .Ltmp655-.Lfunc_begin47
+	.uleb128 .Ltmp656-.Ltmp655
+	.uleb128 .Ltmp657-.Lfunc_begin47
+	.byte	0
+	.uleb128 .Ltmp658-.Lfunc_begin47
+	.uleb128 .Ltmp659-.Ltmp658
+	.uleb128 .Ltmp660-.Lfunc_begin47
+	.byte	0
+	.uleb128 .Ltmp659-.Lfunc_begin47
+	.uleb128 .Ltmp653-.Ltmp659
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp653-.Lfunc_begin47
+	.uleb128 .Ltmp662-.Ltmp653
+	.uleb128 .Ltmp663-.Lfunc_begin47
+	.byte	1
+	.uleb128 .Ltmp662-.Lfunc_begin47
+	.uleb128 .Lfunc_end107-.Ltmp662
+	.byte	0
+	.byte	0
+.Lcst_end47:
+	.byte	127
+	.byte	0
+	.p2align	2
+.Lttbase22:
+	.long	0
+	.p2align	2
+GCC_except_table109:
+.Lexception48:
+	.byte	255
+	.byte	255
+	.byte	1
+	.uleb128 .Lcst_end48-.Lcst_begin48
+.Lcst_begin48:
+	.uleb128 .Lfunc_begin48-.Lfunc_begin48
+	.uleb128 .Lfunc_end109-.Lfunc_begin48
+	.byte	0
+	.byte	0
+.Lcst_end48:
+	.p2align	2
+GCC_except_table110:
+.Lexception49:
+	.byte	255
+	.byte	0
+	.uleb128 .Lttbase23-.Lttbaseref23
+.Lttbaseref23:
+	.byte	1
+	.uleb128 .Lcst_end49-.Lcst_begin49
+.Lcst_begin49:
+	.uleb128 .Lfunc_begin49-.Lfunc_begin49
+	.uleb128 .Ltmp664-.Lfunc_begin49
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp664-.Lfunc_begin49
+	.uleb128 .Ltmp665-.Ltmp664
+	.uleb128 .Ltmp668-.Lfunc_begin49
+	.byte	0
+	.uleb128 .Ltmp665-.Lfunc_begin49
+	.uleb128 .Ltmp666-.Ltmp665
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp666-.Lfunc_begin49
+	.uleb128 .Ltmp667-.Ltmp666
+	.uleb128 .Ltmp668-.Lfunc_begin49
+	.byte	0
+	.uleb128 .Ltmp667-.Lfunc_begin49
+	.uleb128 .Ltmp669-.Ltmp667
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp669-.Lfunc_begin49
+	.uleb128 .Ltmp670-.Ltmp669
+	.uleb128 .Ltmp671-.Lfunc_begin49
+	.byte	1
+	.uleb128 .Ltmp670-.Lfunc_begin49
+	.uleb128 .Lfunc_end110-.Ltmp670
+	.byte	0
+	.byte	0
+.Lcst_end49:
+	.byte	127
+	.byte	0
+	.p2align	2
+.Lttbase23:
+	.long	0
+	.p2align	2
+GCC_except_table111:
+.Lexception50:
+	.byte	255
+	.byte	0
+	.uleb128 .Lttbase24-.Lttbaseref24
+.Lttbaseref24:
+	.byte	1
+	.uleb128 .Lcst_end50-.Lcst_begin50
+.Lcst_begin50:
+	.uleb128 .Lfunc_begin50-.Lfunc_begin50
+	.uleb128 .Ltmp672-.Lfunc_begin50
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp672-.Lfunc_begin50
+	.uleb128 .Ltmp673-.Ltmp672
+	.uleb128 .Ltmp674-.Lfunc_begin50
+	.byte	0
+	.uleb128 .Ltmp673-.Lfunc_begin50
+	.uleb128 .Ltmp675-.Ltmp673
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp675-.Lfunc_begin50
+	.uleb128 .Ltmp676-.Ltmp675
+	.uleb128 .Ltmp677-.Lfunc_begin50
+	.byte	1
+	.uleb128 .Ltmp676-.Lfunc_begin50
+	.uleb128 .Lfunc_end111-.Ltmp676
+	.byte	0
+	.byte	0
+.Lcst_end50:
+	.byte	127
+	.byte	0
+	.p2align	2
+.Lttbase24:
+	.long	0
+	.p2align	2
+GCC_except_table114:
+.Lexception51:
+	.byte	255
+	.byte	0
+	.uleb128 .Lttbase25-.Lttbaseref25
+.Lttbaseref25:
+	.byte	1
+	.uleb128 .Lcst_end51-.Lcst_begin51
+.Lcst_begin51:
+	.uleb128 .Lfunc_begin51-.Lfunc_begin51
+	.uleb128 .Ltmp732-.Lfunc_begin51
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp732-.Lfunc_begin51
+	.uleb128 .Ltmp733-.Ltmp732
+	.uleb128 .Ltmp734-.Lfunc_begin51
+	.byte	0
+	.uleb128 .Ltmp678-.Lfunc_begin51
+	.uleb128 .Ltmp679-.Ltmp678
+	.uleb128 .Ltmp729-.Lfunc_begin51
+	.byte	0
+	.uleb128 .Ltmp679-.Lfunc_begin51
+	.uleb128 .Ltmp680-.Ltmp679
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp680-.Lfunc_begin51
+	.uleb128 .Ltmp681-.Ltmp680
+	.uleb128 .Ltmp709-.Lfunc_begin51
+	.byte	0
+	.uleb128 .Ltmp723-.Lfunc_begin51
+	.uleb128 .Ltmp724-.Ltmp723
+	.uleb128 .Ltmp729-.Lfunc_begin51
+	.byte	0
+	.uleb128 .Ltmp682-.Lfunc_begin51
+	.uleb128 .Ltmp683-.Ltmp682
+	.uleb128 .Ltmp690-.Lfunc_begin51
+	.byte	0
+	.uleb128 .Ltmp683-.Lfunc_begin51
+	.uleb128 .Ltmp686-.Ltmp683
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp686-.Lfunc_begin51
+	.uleb128 .Ltmp687-.Ltmp686
+	.uleb128 .Ltmp706-.Lfunc_begin51
+	.byte	0
+	.uleb128 .Ltmp688-.Lfunc_begin51
+	.uleb128 .Ltmp689-.Ltmp688
+	.uleb128 .Ltmp690-.Lfunc_begin51
+	.byte	0
+	.uleb128 .Ltmp691-.Lfunc_begin51
+	.uleb128 .Ltmp692-.Ltmp691
+	.uleb128 .Ltmp715-.Lfunc_begin51
+	.byte	0
+	.uleb128 .Ltmp692-.Lfunc_begin51
+	.uleb128 .Ltmp693-.Ltmp692
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp693-.Lfunc_begin51
+	.uleb128 .Ltmp694-.Ltmp693
+	.uleb128 .Ltmp729-.Lfunc_begin51
+	.byte	0
+	.uleb128 .Ltmp694-.Lfunc_begin51
+	.uleb128 .Ltmp695-.Ltmp694
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp695-.Lfunc_begin51
+	.uleb128 .Ltmp696-.Ltmp695
+	.uleb128 .Ltmp697-.Lfunc_begin51
+	.byte	0
+	.uleb128 .Ltmp696-.Lfunc_begin51
+	.uleb128 .Ltmp700-.Ltmp696
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp700-.Lfunc_begin51
+	.uleb128 .Ltmp701-.Ltmp700
+	.uleb128 .Ltmp729-.Lfunc_begin51
+	.byte	0
+	.uleb128 .Ltmp684-.Lfunc_begin51
+	.uleb128 .Ltmp685-.Ltmp684
+	.uleb128 .Ltmp690-.Lfunc_begin51
+	.byte	0
+	.uleb128 .Ltmp727-.Lfunc_begin51
+	.uleb128 .Ltmp728-.Ltmp727
+	.uleb128 .Ltmp729-.Lfunc_begin51
+	.byte	0
+	.uleb128 .Ltmp725-.Lfunc_begin51
+	.uleb128 .Ltmp726-.Ltmp725
+	.uleb128 .Ltmp734-.Lfunc_begin51
+	.byte	0
+	.uleb128 .Ltmp707-.Lfunc_begin51
+	.uleb128 .Ltmp708-.Ltmp707
+	.uleb128 .Ltmp709-.Lfunc_begin51
+	.byte	0
+	.uleb128 .Ltmp704-.Lfunc_begin51
+	.uleb128 .Ltmp705-.Ltmp704
+	.uleb128 .Ltmp706-.Lfunc_begin51
+	.byte	0
+	.uleb128 .Ltmp702-.Lfunc_begin51
+	.uleb128 .Ltmp703-.Ltmp702
+	.uleb128 .Ltmp715-.Lfunc_begin51
+	.byte	0
+	.uleb128 .Ltmp703-.Lfunc_begin51
+	.uleb128 .Ltmp698-.Ltmp703
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp698-.Lfunc_begin51
+	.uleb128 .Ltmp699-.Ltmp698
+	.uleb128 .Ltmp720-.Lfunc_begin51
+	.byte	1
+	.uleb128 .Ltmp710-.Lfunc_begin51
+	.uleb128 .Ltmp711-.Ltmp710
+	.uleb128 .Ltmp712-.Lfunc_begin51
+	.byte	1
+	.uleb128 .Ltmp713-.Lfunc_begin51
+	.uleb128 .Ltmp714-.Ltmp713
+	.uleb128 .Ltmp715-.Lfunc_begin51
+	.byte	0
+	.uleb128 .Ltmp716-.Lfunc_begin51
+	.uleb128 .Ltmp719-.Ltmp716
+	.uleb128 .Ltmp720-.Lfunc_begin51
+	.byte	1
+	.uleb128 .Ltmp721-.Lfunc_begin51
+	.uleb128 .Ltmp722-.Ltmp721
+	.uleb128 .Ltmp729-.Lfunc_begin51
+	.byte	0
+	.uleb128 .Ltmp730-.Lfunc_begin51
+	.uleb128 .Ltmp736-.Ltmp730
+	.uleb128 .Ltmp737-.Lfunc_begin51
+	.byte	1
+	.uleb128 .Ltmp736-.Lfunc_begin51
+	.uleb128 .Lfunc_end114-.Ltmp736
+	.byte	0
+	.byte	0
+.Lcst_end51:
+	.byte	127
+	.byte	0
+	.p2align	2
+.Lttbase25:
+	.long	0
+	.p2align	2
+GCC_except_table117:
+.Lexception52:
+	.byte	255
+	.byte	255
+	.byte	1
+	.uleb128 .Lcst_end52-.Lcst_begin52
+.Lcst_begin52:
+	.uleb128 .Lfunc_begin52-.Lfunc_begin52
+	.uleb128 .Lfunc_end117-.Lfunc_begin52
+	.byte	0
+	.byte	0
+.Lcst_end52:
+	.p2align	2
+GCC_except_table121:
+.Lexception53:
+	.byte	255
+	.byte	0
+	.uleb128 .Lttbase26-.Lttbaseref26
+.Lttbaseref26:
+	.byte	1
+	.uleb128 .Lcst_end53-.Lcst_begin53
+.Lcst_begin53:
+	.uleb128 .Lfunc_begin53-.Lfunc_begin53
+	.uleb128 .Ltmp738-.Lfunc_begin53
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp738-.Lfunc_begin53
+	.uleb128 .Ltmp739-.Ltmp738
+	.uleb128 .Ltmp742-.Lfunc_begin53
+	.byte	0
+	.uleb128 .Ltmp739-.Lfunc_begin53
+	.uleb128 .Ltmp740-.Ltmp739
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp740-.Lfunc_begin53
+	.uleb128 .Ltmp741-.Ltmp740
+	.uleb128 .Ltmp742-.Lfunc_begin53
+	.byte	0
+	.uleb128 .Ltmp743-.Lfunc_begin53
+	.uleb128 .Ltmp744-.Ltmp743
+	.uleb128 .Ltmp745-.Lfunc_begin53
+	.byte	1
+	.uleb128 .Ltmp744-.Lfunc_begin53
+	.uleb128 .Lfunc_end121-.Ltmp744
+	.byte	0
+	.byte	0
+.Lcst_end53:
+	.byte	127
+	.byte	0
+	.p2align	2
+.Lttbase26:
+	.long	0
+	.p2align	2
+GCC_except_table127:
+.Lexception54:
+	.byte	255
+	.byte	0
+	.uleb128 .Lttbase27-.Lttbaseref27
+.Lttbaseref27:
+	.byte	1
+	.uleb128 .Lcst_end54-.Lcst_begin54
+.Lcst_begin54:
+	.uleb128 .Lfunc_begin54-.Lfunc_begin54
+	.uleb128 .Ltmp746-.Lfunc_begin54
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp746-.Lfunc_begin54
+	.uleb128 .Ltmp747-.Ltmp746
+	.uleb128 .Ltmp748-.Lfunc_begin54
+	.byte	1
+	.uleb128 .Ltmp754-.Lfunc_begin54
+	.uleb128 .Ltmp755-.Ltmp754
+	.uleb128 .Ltmp756-.Lfunc_begin54
+	.byte	1
+	.uleb128 .Ltmp757-.Lfunc_begin54
+	.uleb128 .Ltmp760-.Ltmp757
+	.uleb128 .Ltmp769-.Lfunc_begin54
+	.byte	1
+	.uleb128 .Ltmp761-.Lfunc_begin54
+	.uleb128 .Ltmp762-.Ltmp761
+	.uleb128 .Ltmp763-.Lfunc_begin54
+	.byte	1
+	.uleb128 .Ltmp749-.Lfunc_begin54
+	.uleb128 .Ltmp750-.Ltmp749
+	.uleb128 .Ltmp751-.Lfunc_begin54
+	.byte	1
+	.uleb128 .Ltmp752-.Lfunc_begin54
+	.uleb128 .Ltmp753-.Ltmp752
+	.uleb128 .Ltmp763-.Lfunc_begin54
+	.byte	1
+	.uleb128 .Ltmp764-.Lfunc_begin54
+	.uleb128 .Ltmp765-.Ltmp764
+	.uleb128 .Ltmp766-.Lfunc_begin54
+	.byte	1
+	.uleb128 .Ltmp767-.Lfunc_begin54
+	.uleb128 .Ltmp768-.Ltmp767
+	.uleb128 .Ltmp769-.Lfunc_begin54
+	.byte	1
+	.uleb128 .Ltmp768-.Lfunc_begin54
+	.uleb128 .Lfunc_end127-.Ltmp768
+	.byte	0
+	.byte	0
+.Lcst_end54:
+	.byte	127
+	.byte	0
+	.p2align	2
+.Lttbase27:
+	.long	0
+	.p2align	2
+GCC_except_table129:
+.Lexception55:
+	.byte	255
+	.byte	0
+	.uleb128 .Lttbase28-.Lttbaseref28
+.Lttbaseref28:
+	.byte	1
+	.uleb128 .Lcst_end55-.Lcst_begin55
+.Lcst_begin55:
+	.uleb128 .Lfunc_begin55-.Lfunc_begin55
+	.uleb128 .Ltmp770-.Lfunc_begin55
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp770-.Lfunc_begin55
+	.uleb128 .Ltmp771-.Ltmp770
+	.uleb128 .Ltmp772-.Lfunc_begin55
+	.byte	1
+	.uleb128 .Ltmp771-.Lfunc_begin55
+	.uleb128 .Lfunc_end129-.Ltmp771
+	.byte	0
+	.byte	0
+.Lcst_end55:
+	.byte	1
+	.byte	0
+	.p2align	2
+	.long	0
+.Lttbase28:
+	.p2align	2
+GCC_except_table130:
+.Lexception56:
+	.byte	255
+	.byte	0
+	.uleb128 .Lttbase29-.Lttbaseref29
+.Lttbaseref29:
+	.byte	1
+	.uleb128 .Lcst_end56-.Lcst_begin56
+.Lcst_begin56:
+	.uleb128 .Lfunc_begin56-.Lfunc_begin56
+	.uleb128 .Ltmp820-.Lfunc_begin56
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp820-.Lfunc_begin56
+	.uleb128 .Ltmp821-.Ltmp820
+	.uleb128 .Ltmp822-.Lfunc_begin56
+	.byte	1
+	.uleb128 .Ltmp777-.Lfunc_begin56
+	.uleb128 .Ltmp776-.Ltmp777
+	.uleb128 .Ltmp817-.Lfunc_begin56
+	.byte	1
+	.uleb128 .Ltmp779-.Lfunc_begin56
+	.uleb128 .Ltmp780-.Ltmp779
+	.uleb128 .Ltmp828-.Lfunc_begin56
+	.byte	1
+	.uleb128 .Ltmp785-.Lfunc_begin56
+	.uleb128 .Ltmp786-.Ltmp785
+	.uleb128 .Ltmp787-.Lfunc_begin56
+	.byte	1
+	.uleb128 .Ltmp788-.Lfunc_begin56
+	.uleb128 .Ltmp789-.Ltmp788
+	.uleb128 .Ltmp790-.Lfunc_begin56
+	.byte	1
+	.uleb128 .Ltmp793-.Lfunc_begin56
+	.uleb128 .Ltmp794-.Ltmp793
+	.uleb128 .Ltmp795-.Lfunc_begin56
+	.byte	1
+	.uleb128 .Ltmp798-.Lfunc_begin56
+	.uleb128 .Ltmp799-.Ltmp798
+	.uleb128 .Ltmp828-.Lfunc_begin56
+	.byte	1
+	.uleb128 .Ltmp800-.Lfunc_begin56
+	.uleb128 .Ltmp801-.Ltmp800
+	.uleb128 .Ltmp802-.Lfunc_begin56
+	.byte	1
+	.uleb128 .Ltmp781-.Lfunc_begin56
+	.uleb128 .Ltmp782-.Ltmp781
+	.uleb128 .Ltmp795-.Lfunc_begin56
+	.byte	1
+	.uleb128 .Ltmp803-.Lfunc_begin56
+	.uleb128 .Ltmp804-.Ltmp803
+	.uleb128 .Ltmp846-.Lfunc_begin56
+	.byte	1
+	.uleb128 .Ltmp813-.Lfunc_begin56
+	.uleb128 .Ltmp814-.Ltmp813
+	.uleb128 .Ltmp822-.Lfunc_begin56
+	.byte	1
+	.uleb128 .Ltmp811-.Lfunc_begin56
+	.uleb128 .Ltmp812-.Ltmp811
+	.uleb128 .Ltmp828-.Lfunc_begin56
+	.byte	1
+	.uleb128 .Ltmp815-.Lfunc_begin56
+	.uleb128 .Ltmp816-.Ltmp815
+	.uleb128 .Ltmp817-.Lfunc_begin56
+	.byte	1
+	.uleb128 .Ltmp809-.Lfunc_begin56
+	.uleb128 .Ltmp810-.Ltmp809
+	.uleb128 .Ltmp834-.Lfunc_begin56
+	.byte	1
+	.uleb128 .Ltmp783-.Lfunc_begin56
+	.uleb128 .Ltmp784-.Ltmp783
+	.uleb128 .Ltmp795-.Lfunc_begin56
+	.byte	1
+	.uleb128 .Ltmp805-.Lfunc_begin56
+	.uleb128 .Ltmp806-.Ltmp805
+	.uleb128 .Ltmp846-.Lfunc_begin56
+	.byte	1
+	.uleb128 .Ltmp807-.Lfunc_begin56
+	.uleb128 .Ltmp808-.Ltmp807
+	.uleb128 .Ltmp840-.Lfunc_begin56
+	.byte	1
+	.uleb128 .Ltmp791-.Lfunc_begin56
+	.uleb128 .Ltmp797-.Ltmp791
+	.uleb128 .Ltmp831-.Lfunc_begin56
+	.byte	1
+	.uleb128 .Ltmp818-.Lfunc_begin56
+	.uleb128 .Ltmp824-.Ltmp818
+	.uleb128 .Ltmp825-.Lfunc_begin56
+	.byte	1
+	.uleb128 .Ltmp826-.Lfunc_begin56
+	.uleb128 .Ltmp827-.Ltmp826
+	.uleb128 .Ltmp828-.Lfunc_begin56
+	.byte	1
+	.uleb128 .Ltmp829-.Lfunc_begin56
+	.uleb128 .Ltmp830-.Ltmp829
+	.uleb128 .Ltmp831-.Lfunc_begin56
+	.byte	1
+	.uleb128 .Ltmp832-.Lfunc_begin56
+	.uleb128 .Ltmp833-.Ltmp832
+	.uleb128 .Ltmp834-.Lfunc_begin56
+	.byte	1
+	.uleb128 .Ltmp835-.Lfunc_begin56
+	.uleb128 .Ltmp836-.Ltmp835
+	.uleb128 .Ltmp837-.Lfunc_begin56
+	.byte	1
+	.uleb128 .Ltmp838-.Lfunc_begin56
+	.uleb128 .Ltmp839-.Ltmp838
+	.uleb128 .Ltmp840-.Lfunc_begin56
+	.byte	1
+	.uleb128 .Ltmp841-.Lfunc_begin56
+	.uleb128 .Ltmp842-.Ltmp841
+	.uleb128 .Ltmp843-.Lfunc_begin56
+	.byte	1
+	.uleb128 .Ltmp844-.Lfunc_begin56
+	.uleb128 .Ltmp845-.Ltmp844
+	.uleb128 .Ltmp846-.Lfunc_begin56
+	.byte	1
+	.uleb128 .Ltmp845-.Lfunc_begin56
+	.uleb128 .Lfunc_end130-.Ltmp845
+	.byte	0
+	.byte	0
+.Lcst_end56:
+	.byte	127
+	.byte	0
+	.p2align	2
+.Lttbase29:
+	.long	0
+	.p2align	2
+GCC_except_table131:
+.Lexception57:
+	.byte	255
+	.byte	0
+	.uleb128 .Lttbase30-.Lttbaseref30
+.Lttbaseref30:
+	.byte	1
+	.uleb128 .Lcst_end57-.Lcst_begin57
+.Lcst_begin57:
+	.uleb128 .Lfunc_begin57-.Lfunc_begin57
+	.uleb128 .Ltmp847-.Lfunc_begin57
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp847-.Lfunc_begin57
+	.uleb128 .Ltmp848-.Ltmp847
+	.uleb128 .Ltmp849-.Lfunc_begin57
+	.byte	0
+	.uleb128 .Ltmp848-.Lfunc_begin57
+	.uleb128 .Ltmp850-.Ltmp848
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp850-.Lfunc_begin57
+	.uleb128 .Ltmp851-.Ltmp850
+	.uleb128 .Ltmp852-.Lfunc_begin57
+	.byte	1
+	.uleb128 .Ltmp851-.Lfunc_begin57
+	.uleb128 .Lfunc_end131-.Ltmp851
+	.byte	0
+	.byte	0
+.Lcst_end57:
+	.byte	127
+	.byte	0
+	.p2align	2
+.Lttbase30:
+	.long	0
+	.p2align	2
+GCC_except_table132:
+.Lexception58:
+	.byte	255
+	.byte	0
+	.uleb128 .Lttbase31-.Lttbaseref31
+.Lttbaseref31:
+	.byte	1
+	.uleb128 .Lcst_end58-.Lcst_begin58
+.Lcst_begin58:
+	.uleb128 .Lfunc_begin58-.Lfunc_begin58
+	.uleb128 .Ltmp864-.Lfunc_begin58
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp864-.Lfunc_begin58
+	.uleb128 .Ltmp865-.Ltmp864
+	.uleb128 .Ltmp888-.Lfunc_begin58
+	.byte	1
+	.uleb128 .Ltmp872-.Lfunc_begin58
+	.uleb128 .Ltmp881-.Ltmp872
+	.uleb128 .Ltmp882-.Lfunc_begin58
+	.byte	1
+	.uleb128 .Ltmp866-.Lfunc_begin58
+	.uleb128 .Ltmp861-.Ltmp866
+	.uleb128 .Ltmp888-.Lfunc_begin58
+	.byte	1
+	.uleb128 .Ltmp861-.Lfunc_begin58
+	.uleb128 .Ltmp858-.Ltmp861
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp858-.Lfunc_begin58
+	.uleb128 .Ltmp875-.Ltmp858
+	.uleb128 .Ltmp888-.Lfunc_begin58
+	.byte	1
+	.uleb128 .Ltmp878-.Lfunc_begin58
+	.uleb128 .Ltmp879-.Ltmp878
+	.uleb128 .Ltmp882-.Lfunc_begin58
+	.byte	1
+	.uleb128 .Ltmp876-.Lfunc_begin58
+	.uleb128 .Ltmp877-.Ltmp876
+	.uleb128 .Ltmp888-.Lfunc_begin58
+	.byte	1
+	.uleb128 .Ltmp853-.Lfunc_begin58
+	.uleb128 .Ltmp854-.Ltmp853
+	.uleb128 .Ltmp855-.Lfunc_begin58
+	.byte	1
+	.uleb128 .Ltmp856-.Lfunc_begin58
+	.uleb128 .Ltmp884-.Ltmp856
+	.uleb128 .Ltmp885-.Lfunc_begin58
+	.byte	1
+	.uleb128 .Ltmp886-.Lfunc_begin58
+	.uleb128 .Ltmp887-.Ltmp886
+	.uleb128 .Ltmp888-.Lfunc_begin58
+	.byte	1
+	.uleb128 .Ltmp887-.Lfunc_begin58
+	.uleb128 .Lfunc_end132-.Ltmp887
+	.byte	0
+	.byte	0
+.Lcst_end58:
+	.byte	127
+	.byte	0
+	.p2align	2
+.Lttbase31:
+	.long	0
+	.p2align	2
+GCC_except_table147:
+.Lexception59:
+	.byte	255
+	.byte	0
+	.uleb128 .Lttbase32-.Lttbaseref32
+.Lttbaseref32:
+	.byte	1
+	.uleb128 .Lcst_end59-.Lcst_begin59
+.Lcst_begin59:
+	.uleb128 .Lfunc_begin59-.Lfunc_begin59
+	.uleb128 .Ltmp896-.Lfunc_begin59
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp896-.Lfunc_begin59
+	.uleb128 .Ltmp897-.Ltmp896
+	.uleb128 .Ltmp898-.Lfunc_begin59
+	.byte	0
+	.uleb128 .Ltmp889-.Lfunc_begin59
+	.uleb128 .Ltmp890-.Ltmp889
+	.uleb128 .Ltmp891-.Lfunc_begin59
+	.byte	0
+	.uleb128 .Ltmp890-.Lfunc_begin59
+	.uleb128 .Ltmp894-.Ltmp890
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp894-.Lfunc_begin59
+	.uleb128 .Ltmp895-.Ltmp894
+	.uleb128 .Ltmp898-.Lfunc_begin59
+	.byte	0
+	.uleb128 .Ltmp895-.Lfunc_begin59
+	.uleb128 .Ltmp892-.Ltmp895
+	.byte	0
+	.byte	0
+	.uleb128 .Ltmp892-.Lfunc_begin59
+	.uleb128 .Ltmp900-.Ltmp892
+	.uleb128 .Ltmp901-.Lfunc_begin59
+	.byte	1
+	.uleb128 .Ltmp900-.Lfunc_begin59
+	.uleb128 .Lfunc_end147-.Ltmp900
+	.byte	0
+	.byte	0
+.Lcst_end59:
+	.byte	127
+	.byte	0
+	.p2align	2
+.Lttbase32:
+	.long	0
+	.p2align	2
+GCC_except_table148:
+.Lexception60:
+	.byte	255
+	.byte	255
+	.byte	1
+	.uleb128 .Lcst_end60-.Lcst_begin60
+.Lcst_begin60:
+	.uleb128 .Lfunc_begin60-.Lfunc_begin60
+	.uleb128 .Lfunc_end148-.Lfunc_begin60
+	.byte	0
+	.byte	0
+.Lcst_end60:
+	.p2align	2
+GCC_except_table149:
+.Lexception61:
+	.byte	255
+	.byte	255
+	.byte	1
+	.uleb128 .Lcst_end61-.Lcst_begin61
+.Lcst_begin61:
+	.uleb128 .Lfunc_begin61-.Lfunc_begin61
+	.uleb128 .Lfunc_end149-.Lfunc_begin61
+	.byte	0
+	.byte	0
+.Lcst_end61:
+	.p2align	2
+GCC_except_table150:
+.Lexception62:
+	.byte	255
+	.byte	255
+	.byte	1
+	.uleb128 .Lcst_end62-.Lcst_begin62
+.Lcst_begin62:
+	.uleb128 .Lfunc_begin62-.Lfunc_begin62
+	.uleb128 .Lfunc_end150-.Lfunc_begin62
+	.byte	0
+	.byte	0
+.Lcst_end62:
+	.p2align	2
+.fnend

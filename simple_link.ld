@@ -38,7 +38,7 @@ SECTIONS
 {
 
   /* ### .text */
-  .text 0x0800F000 :
+  .text 0x08000000 :
   {
 
     *(.text .text.*);
