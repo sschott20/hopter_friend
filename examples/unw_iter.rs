@@ -162,7 +162,7 @@ fn handle_extab() {
     };
 
     let extab_bytes = get_section_bytes(".ARM.extab");
-
+    
     let extab_entry_addr: usize = u32::from_le_bytes(data[0..4].try_into().unwrap()) as usize;
     let extab_start_addr = &extab_bytes[0] as *const u8 as usize;
     let entry_offset = extab_entry_addr - extab_start_addr;
@@ -270,8 +270,8 @@ fn handle_exidx() {
         entry = <&[u8; 8]>::try_from(&exidx[first..first + 8]).unwrap();
     }
 
-    let exidx_entry = ExIdxEntry::from_bytes(entry).unwrap();
-    println!("exidx entry: {:x?}", exidx_entry);
+    // let exidx_entry = ExIdxEntry::from_bytes(entry).unwrap();
+    // println!("entry_addr + offset: {:x?}", exidx_entry.get_func_addr());
 
     // send the bytes of the exidx entry
     println!("exidx entry bytes: {:x?}", entry);
@@ -279,8 +279,8 @@ fn handle_exidx() {
 
     // send the intended address of the entry which is needed to construct the prel31
     let entry_addr: u32 = &entry[0] as *const _ as u32;
-    let entry_bytes: [u8; 4] = entry_addr.to_le_bytes();
-    unwrap_or_return!(session.send(&entry_bytes, TIMEOUT_MS));
+    let entry_addr_bytes: [u8; 4] = entry_addr.to_le_bytes();
+    unwrap_or_return!(session.send(&entry_addr_bytes, TIMEOUT_MS));
     println!("exidx_entry_addr: {:x?}", entry_addr);
     println!("finished serving exidx request\n");
 }

@@ -415,7 +415,7 @@ impl<'a> ExIdxEntry<'a> {
         if func_offset.is_msb_set() {
             return Err("ExIdxEntry::from_bytes: corrupted entry.");
         }
-
+        println!("ExIdxEntry from bytes prel31: {:?}", func_offset);
         Ok(ExIdxEntry {
             func_addr: func_offset.value() as u32,
             content: ExIdxEntryContent::from_raw(content_prel31, content_bytes_ref),

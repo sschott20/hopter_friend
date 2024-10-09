@@ -317,7 +317,7 @@ fn main() -> () {
     let args: Vec<String> = env::args().collect();
     println!("{args:?}");
 
-    let delay = Duration::from_millis(50);
+    let delay = Duration::from_millis(25);
     println!("\nClean directory");
     clean_dir();
     sleep(delay);
