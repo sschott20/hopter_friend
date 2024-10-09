@@ -1,6 +1,6 @@
 #![allow(dead_code)]
 use hadusos::*;
-use hopter_friend::unwind::{ExTabEntry, PersonalityType::*, Prel31};
+use hopter_friend::unwind::{ExIdxEntry, ExTabEntry, PersonalityType::*, Prel31};
 
 use std::io::prelude::*;
 use std::net::{TcpListener, TcpStream};
@@ -119,10 +119,7 @@ fn get_section_bytes(sec: &str) -> &'static [u8] {
             size = u32::from_str_radix(parts[3], 16).unwrap();
         }
     }
-    println!(
-        "addr: {:x?}, offset: {:x?}, size: {:x?}",
-        addr, offset, size
-    );
+    println!("addr: {:x}, offset: {:x}, size: {:x}", addr, offset, size);
     assert!(addr != 0);
     assert!(offset != 0);
     assert!(size != 0);
@@ -236,7 +233,7 @@ fn handle_exidx() {
     println!("pc: {:x?}", pc);
     let exidx: &[u8] = get_section_bytes(".ARM.exidx");
 
-    // println!("Full exidx: {:?}", exidx);
+    // println!("Full exidx: {:x?}", exidx);
 
     if exidx.len() % 8 != 0 {
         panic!("UnwindAbility::get_for_func: exidx length not multiple of 8.");
@@ -272,8 +269,12 @@ fn handle_exidx() {
         }
         entry = <&[u8; 8]>::try_from(&exidx[first..first + 8]).unwrap();
     }
-    // println!("entry addr: {:x?}", &entry[0] as *const _ as u32);
+
+    let exidx_entry = ExIdxEntry::from_bytes(entry).unwrap();
+    println!("exidx entry: {:x?}", exidx_entry);
+
     // send the bytes of the exidx entry
+    println!("exidx entry bytes: {:x?}", entry);
     unwrap_or_return!(session.send(entry, TIMEOUT_MS));
 
     // send the intended address of the entry which is needed to construct the prel31

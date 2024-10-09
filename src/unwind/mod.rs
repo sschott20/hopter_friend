@@ -378,3 +378,150 @@ impl<'a> ExTabEntry<'a> {
         self.unw_instr_iter.clone()
     }
 }
+
+/// An exidx entry. Each entry in the exidx section consists of two 32-bit
+/// words. The first word is a prel31 offset to a function. The other is the
+/// compound content. Entries are sorted according to the function address in
+/// the exidx section.
+#[derive(Debug)]
+pub struct ExIdxEntry<'a> {
+    /// The corresponding function address. We store the decoded address
+    /// here rather than the raw prel31 offset.
+    func_addr: u32,
+
+    /// The content enum. It has three variants.
+    content: ExIdxEntryContent<'a>,
+}
+
+impl<'a> ExIdxEntry<'a> {
+    /// Construct a new exidx entry from raw bytes. Note that we must read
+    /// the .ARM.exidx section in place without any data copy, because
+    /// prel31 offset is relative to the address of itself.
+    pub fn from_bytes(bytes: &'a [u8; 8]) -> Result<Self, &'static str> {
+        // Make sure we don't copy anything, just manipulating types.
+        let func_offset = Prel31::from_bytes(
+            <&[u8; 4]>::try_from(&bytes[0..4])
+                .map_err(|_| "ExIdxEntry::from_bytes: array reference conversion failed.")
+                .unwrap(),
+        );
+        let content_bytes_ref = <&[u8; 4]>::try_from(&bytes[4..8])
+            .map_err(|_| "ExIdxEntry::from_bytes: array reference conversion failed.")
+            .unwrap();
+        let content_prel31 = Prel31::from_bytes(content_bytes_ref);
+
+        // Sanity check. Citing from the document chapter 6:
+        // "The first word contains a prel31 offset to the start
+        // of a function, with bit 31 clear."
+        if func_offset.is_msb_set() {
+            return Err("ExIdxEntry::from_bytes: corrupted entry.");
+        }
+
+        Ok(ExIdxEntry {
+            func_addr: func_offset.value() as u32,
+            content: ExIdxEntryContent::from_raw(content_prel31, content_bytes_ref),
+        })
+    }
+
+    /// Check if the entry describes a function that can unwind.
+    pub fn can_unwind(&self) -> bool {
+        match self.content {
+            ExIdxEntryContent::ExTabEntryAddr(_) => true,
+            ExIdxEntryContent::Compact(_, _) => true,
+            ExIdxEntryContent::CantUnwind => false,
+        }
+    }
+
+    /// Check if the entry has compact representation.
+    pub fn is_compact(&self) -> bool {
+        if let ExIdxEntryContent::Compact(..) = self.content {
+            true
+        } else {
+            false
+        }
+    }
+
+    /// Get the unwind instructions from the compact representation.
+    /// Precondition: `is_compact()` must return true.
+    pub fn get_unw_instr_iter(&self) -> UnwindInstrIter<'a> {
+        match &self.content {
+            ExIdxEntryContent::Compact(_, iter) => iter.clone(),
+            _ => panic!("ExIdxEntry::into_unw_instr_iter: not compact."),
+        }
+    }
+
+    /// Get the the personality function from the compact representation.
+    /// Precondition: `is_compact()` must return true.
+    pub fn get_personality(&self) -> PersonalityType {
+        match &self.content {
+            ExIdxEntryContent::Compact(pers, _) => pers.clone(),
+            _ => panic!("ExIdxEntry::get_personality: not compact."),
+        }
+    }
+
+    /// Get the .ARM.extab entry address from the generic representation.
+    /// Precondition: `is_compact()` must return false, `can_unwind` must
+    /// return true.
+    pub fn get_extab_entry_addr(&self) -> u32 {
+        match self.content {
+            ExIdxEntryContent::ExTabEntryAddr(offset) => offset,
+            _ => panic!("ExIdxEntry::get_unw_tbl_entry_addr: not generic."),
+        }
+    }
+
+    /// Get the function address represented by this entry.
+    pub fn get_func_addr(&self) -> u32 {
+        self.func_addr
+    }
+}
+
+/// The type of an exidx entry. There are three variants.
+/// Document chapter 6 (Index table entries).
+#[derive(Debug)]
+enum ExIdxEntryContent<'a> {
+    /// The generic variant. The value should be read as a
+    /// prel31 offset. We store the decoded address here.
+    ExTabEntryAddr(u32),
+
+    /// The compact variant. Bit 31 must be 1. Bits [27:24]
+    /// indicate the compact module personality routine number.
+    /// Bits [23:16], [15:8], [7:0] are the data for the personality
+    /// routine. In reality they are ARM unwind instructions.
+    /// Other bits are reserved.
+    Compact(PersonalityType, UnwindInstrIter<'a>),
+
+    /// The 0x0000_0001 bit pattern, indicating that this
+    /// function cannot unwind. No unwind instruction is
+    /// present for this function.
+    CantUnwind,
+}
+
+impl<'a> ExIdxEntryContent<'a> {
+    /// Extract the exidx entry type from a prel31 offset.
+    fn from_raw(prel31: Prel31, bytes: &'a [u8; 4]) -> Self {
+        // If the raw pattern is 0x0000_0001, then can't unwind.
+        if prel31.raw() == 0x1 {
+            return Self::CantUnwind;
+        }
+
+        // If the most significant bit is set, this is the compact model.
+        if prel31.is_msb_set() {
+            // Bits [27:24] are the personality routine selector.
+            let pers_sel = (((prel31.raw() & 0x0f_00_00_00) as u32) >> 24) as u8;
+
+            // Create the byte iterator over the other 3 bytes. The `from_bytes` method
+            // requires the slice to have a length of a multiple of 4. Thus, we create
+            // the iterator from the full 4-byte slice and immediately skip the first byte.
+            let mut byte_iter = UnwindByteIter::from_bytes(&bytes[..]).unwrap();
+            byte_iter.next();
+
+            // Adapt the byte iterator into unwind instruction iterator.
+            let unw_instr_iter = UnwindInstrIter::from_byte_iter(byte_iter);
+
+            return Self::Compact(PersonalityType::Compact(pers_sel), unw_instr_iter);
+        }
+
+        // Otherwise, this is the generic version. We decode the address
+        // pointing to the extab.
+        return Self::ExTabEntryAddr(prel31.value());
+    }
+}

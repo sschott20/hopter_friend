@@ -132,7 +132,7 @@ fn link() {
         .arg("/home/alex/hopter/target/thumbv7em-none-eabihf/release/build/cortex-m-1d21a837d90dea5e/out")
         .arg("-L")
         .arg("/home/alex/opt/rust/lib/rustlib/thumbv7em-none-eabihf/lib")
-        .arg("/home/alex/hopter/target/thumbv7em-none-eabihf/release/deps/libcompiler_builtins-26e22b02094a596d.rlib")
+        .arg("/home/alex/hopter/target/thumbv7em-none-eabihf/release/deps/libcompiler_builtins-5fcd087e471871fb.rlib")
         .arg("-Bdynamic")
         .arg("--eh-frame-hdr")
         .arg("-z")
@@ -317,7 +317,7 @@ fn main() -> () {
     let args: Vec<String> = env::args().collect();
     println!("{args:?}");
 
-    let delay = Duration::from_millis(100);
+    let delay = Duration::from_millis(50);
     println!("\nClean directory");
     clean_dir();
     sleep(delay);
